@@ -4,7 +4,7 @@
 /* ================== */
 .hatch-banner {
 	height: 679px;
-	background: url(../img/hatch/hatch_bg.jpg) no-repeat center;
+	background: url(../images/hatch/hatch_bg.jpg) no-repeat center;
 }
 .hatch-banner-in {
 	padding-top: 150px;
@@ -54,7 +54,7 @@
 .hatch-semicircle .ico span {
 	display: block;
 	height: 100%;
-	background: url(../img/hatch/hatch_icon.png) no-repeat;
+	background: url(../images/hatch/hatch_icon.png) no-repeat;
 }
 
 .hatch-semicircle .name {
@@ -141,6 +141,11 @@
 	.hatch-alliance div.hatch-semicircle { padding-left: 10%; }
 }
 
+@media screen and ( max-width: 1300px ) {
+	.hatch-skill div.hatch-semicircle,
+	.hatch-fund div.hatch-semicircle,
+	.hatch-alliance div.hatch-semicircle { padding-left: 5%; }
+}
 
 
 

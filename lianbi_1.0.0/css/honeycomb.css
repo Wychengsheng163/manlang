@@ -15,7 +15,7 @@
 /* = Banner = */
 /* ========== */
 .honeycomb-banner {
-	background: url(../img/honeycomb/honeycomb_bg_1.jpg) no-repeat center;
+	background: url(../images/honeycomb/honeycomb_bg_1.jpg) no-repeat center;
 	background-size: cover;
 }
 
@@ -67,7 +67,7 @@
 	background-color: #fff;
 	-webkit-box-shadow: 1px 1px 20px rgba(30,151,204,.25);
 	-moz-box-shadow: 1px 1px 20px rgba(30,151,204,.25);
-	box-shadow: 1px 1px 20px rgba(30,151,204,.25);
+	box-shadow: 1px 1px 20px rgba(0,0,0,.9);
 	background-image: -webkit-linear-gradient(bottom, #cc8437, #ecd257);
 	background-image: -moz-linear-gradient(bottom, #cc8437, #ecd257);
 	background-image: -o-linear-gradient(bottom, #cc8437, #ecd257);
@@ -84,7 +84,7 @@
 /* = SERVE = */
 /* ========== */
 .honeycomb-serve {
-	background: url(../img/honeycomb/honeycomb_bg_2.jpg) no-repeat center;
+	background: url(../images/honeycomb/honeycomb_bg_2.jpg) no-repeat center;
 }
 
 .honeycomb-serve-in {
@@ -135,7 +135,7 @@
 /* = RELAX = */
 /* ========== */
 .honeycomb-relax {
-	background:url('../img/honeycomb/honeycomb_bg_3.jpg') no-repeat center;
+	background:url('../images/honeycomb/honeycomb_bg_3.jpg') no-repeat center;
 	background-size: cover;
 }
 
@@ -178,7 +178,7 @@
 /* = PLACE = */
 /* ========== */
 .honeycomb-place {
-	background:url('../img/honeycomb/honeycomb_bg_4.jpg') no-repeat center;
+	background:url('../images/honeycomb/honeycomb_bg_4.jpg') no-repeat center;
 }
 .honeycomb-place .honeycomb-relax-head {
 	color: #0f0f0f;	
@@ -206,7 +206,7 @@
 /* = APP */
 /* ========== */
 .honeycomb-app {
-	background: url('../img/honeycomb/honeycomb_bg_5.jpg') no-repeat 50%;
+	background: url('../images/honeycomb/honeycomb_bg_5.jpg') no-repeat 50%;
 	background-size: cover;
 }
 .honeycomb-app-in {
