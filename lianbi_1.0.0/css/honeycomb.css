@@ -1,5 +1,5 @@
 .honeycomb_wrap {
-	width: 1300px;
+	width: 1318px;
 	margin: 0 auto;
 }
 
@@ -160,7 +160,7 @@
 }
 
 .honeycomb-relax-head .des-eng {
-	font-size: 13px;
+	font-size: 16px;
 }
 
 .honeycomb-relax-body {
@@ -239,9 +239,9 @@
 	-moz-border-radius: 30px;
 	border-radius: 30px;
 	background-color: #fff;
-	-webkit-box-shadow: 1px 1px 20px rgba(48,103,160,.2);
-	-moz-box-shadow: 1px 1px 20px rgba(48,103,160,.2);
-	box-shadow: 1px 1px 20px rgba(48,103,160,.2);
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,1);
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,1);
+	box-shadow: 0 0 20px rgba(0,0,0,1);
 }
 
 .honeycomb-app-inform .app-download img {
@@ -256,7 +256,6 @@
 	font-size: 40px;
 	line-height: 40px;
 	font-weight: bold;
-	text-shadow: 1px 1px 1px rgba(22,132,183,.3);
 }
 .honeycomb-app-inform .app-name span {
 	font-size: 26px;
@@ -264,7 +263,6 @@
 
 .honeycomb-app-inform .des-china {
 	margin-bottom: 15px;
-	text-shadow: 1px 1px 1px rgba(22,132,183,.3);
 }
 
 .honeycomb-app-inform .des-eng {
