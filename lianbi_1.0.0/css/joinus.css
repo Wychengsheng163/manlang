@@ -242,10 +242,10 @@
 	width: 124px;
 	text-align: center;
 }
-.work_classify li:nth-child(2) { left: 21.91%; }
-.work_classify li:nth-child(3) { left: 43.82%; }
-.work_classify li:nth-child(4) { left: 65.73%; }
-.work_classify li:nth-child(5) { right: 0; }
+.work_classify li:nth-child(2) { left: 22%; }
+.work_classify li:nth-child(3) { left: 44%; }
+.work_classify li:nth-child(4) { left: 66%; }
+.work_classify li:nth-child(5) { left: 88%; }
 
 .work_classify li:last-child {
 	margin-right: 0;
