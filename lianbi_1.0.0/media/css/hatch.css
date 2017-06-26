@@ -1,0 +1,165 @@
+
+/* ================== */
+/* = Banner section = */
+/* ================== */
+.hatch-banner {
+	height: 679px;
+	background: url(../img/hatch/hatch_bg.jpg) no-repeat center;
+}
+.hatch-banner-in {
+	padding-top: 150px;
+}
+.hatch-banner-text { 
+	color: #fff;
+	text-align: center;
+}
+.hatch-banner-text .name {
+	font-size: 38px;
+	padding: 20px 0 16px;
+}
+.hatch-banner-text .name-eng {
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+
+
+/* ================== */
+/* = Public section = */
+/* ================== */
+.cs-hatch { padding: 75px 0; }
+.cs-hatch >div:nth-child(1) { float: left; text-align: right; }
+.cs-hatch >div:nth-child(2) { float: right; text-align: left; }
+.hatch-img { width: 48.65%; } 
+
+.hatch-semicircle { 
+	box-sizing: border-box;
+	width: 51.35%; 
+	color: #3a4953;
+	padding-left: 126px;
+	box-shadow: #f1f1f1 1px 1px 36px; 
+}
+.hatch-semicircle .ico {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	box-shadow: #e3e2e2 0 0 24px;
+	background-image: -webkit-linear-gradient(bottom, #735df9, #11b5fc);
+	background-image: -moz-linear-gradient(bottom, #735df9, #11b5fc);
+	background-image: -o-linear-gradient(bottom, #735df9, #11b5fc);
+	background-image: -ms-linear-gradient(bottom, #735df9, #11b5fc);
+	background-image: linear-gradient(to top, #735df9, #11b5fc);
+}
+.hatch-semicircle .ico span {
+	display: block;
+	height: 100%;
+	background: url(../img/hatch/hatch_icon.png) no-repeat;
+}
+
+.hatch-semicircle .name {
+	font-size: 34px;
+	line-height: 100px;
+}
+.hatch-semicircle .list {
+	font-size: 16px;
+	line-height: 40px;
+}
+.hatch-semicircle .list p {
+	max-width: 560px;
+	padding-left: 28px;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjNGN0Y4Mzk1NTgyOTExRTdBNjQ3RDlBMEJBOTE2RTYxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjNGN0Y4Mzk2NTgyOTExRTdBNjQ3RDlBMEJBOTE2RTYxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6M0Y3RjgzOTM1ODI5MTFFN0E2NDdEOUEwQkE5MTZFNjEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6M0Y3RjgzOTQ1ODI5MTFFN0E2NDdEOUEwQkE5MTZFNjEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4F9f2EAAABUklEQVR42pzTzysFURTA8TuavJeF5JWVsvBjQaIoEhslO3+CiJUfIT+yoYiUSC9li97S1oKyYCFEsmElG9mQkt3MU8/3jDMa03vDc+pT987MOXPnnjtW8eGHCUU9+tCJClh4xAl2cRV82Ers/yiwiDkTHeuY8id2YTrjjw/QbX6PSbSg46uA611c+mOyH+3YwpBVk0pXMrg3/4tmO+aYiTyTzvGMHszYMdd05ZF8hjas6rxVVlCukwuUojpH8ql+u3RqWq+V2HHX67PR/o7gFrVZ3izJC6E2F7CCzBODKgzjAXW4QUPozZI8Hyr8Zscdc6wF/EMi0YhXvEcke6uWTdxgMBg6aXEkdL6C2Rz7siabeMcgibHAjWU4KIpITsnnyQokxtGky/2uHtHOa/QGj7LRs72pnYiKbQxk+5kkRrGHfjkkKNPf+QWX2MFRMOFTgAEACi1K+xcbvq8AAAAASUVORK5CYII=");
+	background-repeat: no-repeat;
+	background-position: left 12px;
+}
+
+
+
+
+/* ============ */
+/* = 半圆区域 = */
+/* ============ */
+.hatch-interspace .hatch-semicircle,
+.hatch-setting .hatch-semicircle,
+.hatch-media .hatch-semicircle { padding-left: 126px; border-radius: 248px 0 0 248px; }
+.hatch-skill .hatch-semicircle,
+.hatch-fund .hatch-semicircle,
+.hatch-alliance .hatch-semicircle { padding-right: 80px; border-radius: 0 248px 248px 0; }
+
+.hatch-interspace .hatch-img img { margin-right: 40px; }
+.hatch-skill .hatch-img img { margin-left: 30px; }
+.hatch-setting .hatch-img img { margin-right: 40px; }
+.hatch-fund .hatch-img img { margin-left: 30px; }
+.hatch-media .hatch-img img { margin-right: 30px; }
+.hatch-alliance .hatch-img img { margin-left: 80px; } 
+
+.hatch-interspace .ico span { background-position: 0 0; }
+.hatch-skill .ico span { background-position: 0 -60px; }
+.hatch-setting .ico span { background-position: 0 -120px; }
+.hatch-fund .ico span { background-position: 0 -180px; }
+.hatch-media .ico span { background-position: 0 -240px; }
+.hatch-alliance .ico span { background-position: 0 -300px; } 
+
+
+
+.hatch-interspace .hatch-semicircle {
+	padding-top: 94px;
+	padding-bottom: 104px;
+}
+.hatch-skill div.hatch-semicircle {
+	text-align: left;
+	padding-top: 42px;
+	padding-left: 18%;
+	padding-bottom: 70px;
+}
+.hatch-setting .hatch-semicircle {
+	padding-top: 110px;
+	padding-bottom: 135px;
+}
+.hatch-fund div.hatch-semicircle {
+	text-align: left;
+	padding-top: 60px;
+	padding-left: 18%;
+	padding-bottom: 90px;
+}
+.hatch-media .hatch-semicircle {
+	padding-top: 100px;
+	padding-bottom: 95px;
+}
+.hatch-alliance div.hatch-semicircle {
+	text-align: left;
+	padding-top: 50px;
+	padding-left: 18%;
+	padding-bottom: 40px;
+}
+
+
+
+@media screen and ( max-width: 1600px ) {
+	.hatch-skill div.hatch-semicircle,
+	.hatch-fund div.hatch-semicircle,
+	.hatch-alliance div.hatch-semicircle { padding-left: 10%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

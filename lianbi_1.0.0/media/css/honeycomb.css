@@ -1,0 +1,320 @@
+.honeycomb_wrap {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+@media (max-width:1320px) {
+	.honeycomb_wrap {
+		width: 100%;
+		padding: 0 15px;
+	}
+}
+	
+
+/* ========== */
+/* = Banner = */
+/* ========== */
+.honeycomb-banner {
+	background: url(../img/honeycomb/honeycomb_bg_1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.honeycomb-banner-in { padding: 135px 0 116px;}
+
+
+.honeycomb-banner-text {
+	float: left;
+	padding: 53px 0 0 85px;
+	width: 60%;
+	color: #f1d332;
+}
+
+.honeycomb-banner-text .ico img {
+	margin-left: -10px;
+}
+.honeycomb-banner-text .name {
+	margin-bottom: 30px;
+	font-size: 54px;
+	line-height: 54px;
+	text-shadow: 1px 1px 1px rgba(22,132,183,.3);
+}
+.honeycomb-banner-text .name span { 
+	font-size: 30px;
+}
+
+.honeycomb-banner-text .name-eng {
+	margin-bottom: 65px;
+	font-size: 17px;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(22,132,183,.3);
+}
+
+.honeycomb-banner-text .name-eng span { margin-left: 15px;}
+
+.honeycomb-banner-text .more {
+	display: inline-block;
+	width: 173px;
+	height: 49px;
+	line-height: 49px;
+	font-size: 18px;
+	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
+	-webkit-border-radius: 24px/25px 25px 24px 24px;
+	-moz-border-radius: 24px/25px 25px 24px 24px;
+	border-radius: 24px/25px 25px 24px 24px;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 1px 20px rgba(30,151,204,.25);
+	-moz-box-shadow: 1px 1px 20px rgba(30,151,204,.25);
+	box-shadow: 1px 1px 20px rgba(30,151,204,.25);
+	background-image: -webkit-linear-gradient(bottom, #cc8437, #ecd257);
+	background-image: -moz-linear-gradient(bottom, #cc8437, #ecd257);
+	background-image: -o-linear-gradient(bottom, #cc8437, #ecd257);
+	background-image: -ms-linear-gradient(bottom, #cc8437, #ecd257);
+	background-image: linear-gradient(to top, #cc8437, #ecd257);
+}
+
+.honeycomb-banner-img {
+	margin-left: 50%;
+	text-align: right;
+}
+
+/* ========== */
+/* = SERVE = */
+/* ========== */
+.honeycomb-serve {
+	background: url(../img/honeycomb/honeycomb_bg_2.jpg) no-repeat center;
+}
+
+.honeycomb-serve-in {
+	padding-top: 95px;
+	padding-bottom: 90px;
+}
+
+.honeycomb-serve-head {
+	padding: 0 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #0a0a0a;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.honeycomb-serve-head .title {
+	margin-bottom: 25px;
+	font-size: 34px;
+	line-height: 35px;
+	color: #0a0a0a;
+	font-weight: bold;
+}
+
+.honeycomb-serve-head .des-china {
+	margin-bottom: 4px;
+}
+
+.honeycomb-serve-head .des-eng {
+	opacity: 0.5;
+	font-size: 13px;
+}
+
+
+.honeycomb-serve-body .serve-l {
+	float: left;
+	width: 735px;
+}
+
+.honeycomb-serve-body .serve-r {
+	padding-top: 80px;
+	margin-left: 735px;
+}
+
+
+
+/* ========== */
+/* = RELAX = */
+/* ========== */
+.honeycomb-relax {
+	background:url('../img/honeycomb/honeycomb_bg_3.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.honeycomb-relax-in {
+	padding-top: 80px;
+	padding-bottom: 58px;
+}
+
+.honeycomb-relax-head {
+	padding: 0 20px;
+	text-align: center;
+	color: #f1d332;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.honeycomb-relax-head .title {
+	margin-bottom: 17px;
+	font-size: 34px;
+	line-height: 35px;
+	font-weight: bold;
+}
+
+.honeycomb-relax-head .des-eng {
+	font-size: 13px;
+}
+
+.honeycomb-relax-body {
+	position: relative;
+}
+
+.honeycomb-relax-body .pic { 
+	position: relative; 
+	zoom: 1; 
+}
+
+
+
+/* ========== */
+/* = PLACE = */
+/* ========== */
+.honeycomb-place {
+	background:url('../img/honeycomb/honeycomb_bg_4.jpg') no-repeat center;
+}
+.honeycomb-place .honeycomb-relax-head {
+	color: #0f0f0f;	
+}
+.honeycomb-place .honeycomb-place-in {
+	padding-top: 105px;
+	padding-bottom: 120px;
+}
+.honeycomb-place-menu {
+	padding-top: 56px;
+}
+.honeycomb-place-menu li {
+	float:left;
+	width: 23.07%;
+	margin-right: 2.46%;
+}
+.honeycomb-place-menu li:last-child {
+	margin-right: 0;
+}
+
+
+
+
+/* ========== */
+/* = APP */
+/* ========== */
+.honeycomb-app {
+	background: url('../img/honeycomb/honeycomb_bg_5.jpg') no-repeat 50%;
+	background-size: cover;
+}
+.honeycomb-app-in {
+	padding-top: 177px;
+	padding-bottom: 70px;
+}
+
+.honeycomb-app-img {
+	float: left;
+	padding-left: 85px;
+	width: 50%;
+}
+
+.honeycomb-app-inform {
+	margin-left: 50%;
+	padding: 84px 20px 0 95px;
+	color: #f1d332;
+	font-size: 16px;
+}
+
+.honeycomb-app-inform .app-download {
+	display: block;
+	margin-bottom: 40px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #fff;
+	overflow: hidden;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 1px 20px rgba(48,103,160,.2);
+	-moz-box-shadow: 1px 1px 20px rgba(48,103,160,.2);
+	box-shadow: 1px 1px 20px rgba(48,103,160,.2);
+}
+
+.honeycomb-app-inform .app-download img {
+	-webkit-transition: all ease .4s;
+	   -moz-transition: all ease .4s;
+	    -ms-transition: all ease .4s;
+	        transition: all ease .4s;
+}
+
+.honeycomb-app-inform .app-name {
+	margin-bottom: 20px;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(22,132,183,.3);
+}
+.honeycomb-app-inform .app-name span {
+	font-size: 26px;
+}
+
+.honeycomb-app-inform .des-china {
+	margin-bottom: 15px;
+	text-shadow: 1px 1px 1px rgba(22,132,183,.3);
+}
+
+.honeycomb-app-inform .des-eng {
+	margin-bottom: 35px;
+	line-height: 26px;
+	font-size: 13px;
+	opacity: .5;
+}
+
+.honeycomb-app-inform .app-ewm {
+	float: left;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 23px;
+	width: 132px;
+	height: 132px;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 1px 20px rgba(48,103,160,.2);
+	-moz-box-shadow: 1px 1px 20px rgba(48,103,160,.2);
+	box-shadow: 1px 1px 20px rgba(48,103,160,.2);
+}
+
+
+@media (max-width:1250px) {
+	.honeycomb-banner-text {
+		width: 50%;
+	}
+
+	.honeycomb-serve-body .serve-l {
+		width: 53%;
+	}
+	
+	.honeycomb-serve-body .serve-r {
+		margin-left: 53%;
+		padding-top: 20px;
+	}
+
+}
+
+@media (max-width:1100px) {
+	.honeycomb-app-img { padding-left: 0;}
+	.honeycomb-app-inform { padding-top: 50px; padding-left: 5%;}
+}
+
+
+
+
+
+

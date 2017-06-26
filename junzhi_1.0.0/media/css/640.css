@@ -1,0 +1,325 @@
+.auto_center { max-width: 1200px; margin: 0 auto; padding-top: 20px; }
+
+
+/* 头部标题 */
+.header { 
+	width: 100%; 
+	height: 257px; 
+	background: url(../img/m_header_bg.jpg) no-repeat center; 
+}
+.header_block { 
+	padding-top: 20px;
+	padding-left: 20px;
+	color: #fff; 
+	text-align:left; 
+}
+.header_block .date_address { 
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 1px; 
+}
+.header_block .big_title { 
+	padding-top: 5px; 
+	font-size: 24px;
+	line-height: 44px;
+	font-weight: bold; 
+	letter-spacing: 2px; 
+	text-shadow: 5px 5px 10px #000; 
+}
+.header_block .text_describe { 
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 2px; 
+	padding-top: 5px; 
+}
+.header_block .text_describe .text_red { 
+	font-size: 18px; 
+	color: #e60012;   
+}
+.header_block .btn_block { 
+	position: relative; 
+}
+.header_block .btn_block .number { 
+	display: inline-block; 
+	margin: 16px 0 8px; 
+	padding: 0 10px; 
+	font-size: 16px;
+	line-height: 30px;
+	border: 1px solid #fff; 
+	font-weight: 100; 
+}
+.header_block .btn_block .text_apply { 
+	position:relative; 
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 4px; 
+}
+.header_block .btn_block .arrow { 
+	position:absolute; 
+	top:8px; 
+	margin-left: 10px; 
+	width:0; 
+	height:0; 
+	border-width: 7px 14px; 
+	border-style: solid; 
+	border-color: transparent; 
+	border-left-color: #fff;
+}
+.header_block .btn_block .btn_apply { 
+	position: absolute; 
+	left: 150px; 
+	bottom:-2px; 
+	cursor: pointer; 
+	box-shadow: 4px 4px 10px #000; 
+	letter-spacing: 4px; 
+	padding: 0 24px; 
+	font-size: 18px;
+	line-height: 36px;
+	background: #e60012; 
+	color: #fff; 
+}
+
+
+
+
+/* 公共标题 */
+.headline_center { 
+	position: relative; 
+}
+.headline_center .title { 
+	font-size: 20px;
+	line-height: 40px;
+	color:#e60012; 
+	font-weight:bold; 
+	letter-spacing: 6px;
+}
+.headline_center .btm_border { 
+	position:absolute; 
+	left:50%;  
+	margin-left: -20px; 
+	width: 40px; 
+	height: 40px; 
+	border-bottom: 1px solid #e60012; 
+}
+.headline_center .text { 
+	padding:8px 0; 
+	font-size: 14px;
+	line-height: 24px; 
+	color:#8f9399; 
+}
+
+.unload { box-shadow:inset 0 0 10px #c7c7c7; background:#f8f5f5; }
+
+
+
+
+/* 大咖推荐 */
+.portrait_menu { 
+	position: relative; 
+	margin-top: 10px; 
+	color: #686767; 
+}
+.portrait_menu li { 
+	width: 96%; 
+	padding: 15px;
+	margin: 10px auto;
+	text-align: left;
+	background: #f8f5f5;
+	box-sizing: border-box;
+}
+.portrait_menu li:after {
+	display: block; 
+	content: ''; 
+	clear: both; 
+}
+.portrait_menu .portrait_logo { 
+	float:left; 
+	width: 85px; 
+	height: 85px;
+	margin-right: 20px;  
+	background:#f8f5f5 url("../img/m_portrait.png") no-repeat;
+	border-radius:50%; 
+	overflow: hidden; 
+}
+.portrait_menu .title { 
+	margin-right: 20px;
+	font-size: 14px;
+	line-height: 30px; 
+}
+.portrait_menu .subhead { 
+	font-size: 13px;
+	line-height: 30px; 
+}
+.portrait_menu .description { 
+	font-size: 13px;
+	line-height: 22px; 
+	text-align: left;
+	padding-left: 105px;
+}
+.portrait_menu li:nth-child(2) .portrait_logo { background-position:-85px 0; }
+.portrait_menu li:nth-child(3) .portrait_logo { background-position:-170px 0; }
+.portrait_menu li:last-child { margin-bottom: 0; }
+
+
+
+
+/* 定位案例 */
+.case_menu li { 
+	width: 96%; 
+	padding: 15px;
+	color: #686767;
+	margin: 10px auto;
+	box-sizing: border-box;
+	background: #f8f5f5;
+}
+.case_menu li:after {
+	display: block; 
+	content: ''; 
+	clear: both;
+}
+.case_menu .front { 
+	float: left;
+	width: 119px;
+	height: 174px;
+	margin-right: 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.case_menu li:nth-child(1) .front { background-image: url(../img/case_1.jpg); }
+.case_menu li:nth-child(2) .front { background-image: url(../img/case_2.jpg); }
+.case_menu li:nth-child(3) .front { background-image: url(../img/case_3.jpg); }
+.case_menu li:nth-child(4) .front { background-image: url(../img/case_4.jpg); }
+.case_menu li:nth-child(5) .front { background-image: url(../img/case_1.jpg); }
+
+.case_menu .behind {
+	text-align: left;
+}
+.case_menu .b_title {
+	font-size: 14px;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+.case_menu .b_position {
+	font-size: 13px;
+	line-height: 22px;
+}
+.case_menu .b_location {
+	font-size: 13px;
+	line-height: 22px;
+}
+.case_menu .b_text {
+	font-size: 13px;
+	line-height: 22px;
+}
+.case_menu li:last-child { margin-bottom: 0; }
+
+
+
+
+/* 学院评价 */
+.evaluate {
+	width: 96%; 
+	color: #686767;
+	margin:0 auto;
+	box-sizing: border-box;
+}
+.video_box {  
+	width: 100%;
+	height: 200px; 
+	background: #ccc; 
+}
+.video_box video {
+	height: 100%;
+}
+.evaluate_menu { 
+	position:relative; 
+	padding-top:14px; 
+}
+.evaluate_menu .logo {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-image: url("../img/m_evaluate_logo.png");
+	background-repeat: no-repeat;
+}
+.evaluate_menu li:nth-child(2) .logo { background-position: -70px 0; }
+.evaluate_menu li:nth-child(3) .logo { background-position: -140px 0; }
+.evaluate_menu li:nth-child(4) .logo { background-position: -210px 0; }
+.evaluate_menu li:nth-child(5) .logo { background-position: -280px 0; }
+.evaluate_menu li:nth-child(1n) .name_position { text-align: left; }
+.evaluate_menu li:nth-child(2n) .name_position { text-align: right; }
+.evaluate_menu li:nth-child(1n) .logo { float: left; margin: 0 20px 0 0; }
+.evaluate_menu li:nth-child(2n) .logo { float: right; margin: 0 0 0 20px; }
+.evaluate_menu li { 
+	padding: 15px;
+	margin-bottom: 10px;
+	background:#f8f5f5; 
+}
+.evaluate_menu li:last-child { margin-bottom: 0; }
+.evaluate_menu .description {
+	font-size: 13px;
+	line-height: 22px;
+	text-align: left;
+} 
+.evaluate_menu .name_position {
+	font-size: 13px;
+	line-height: 30px;
+}
+.evaluate_menu .name_position p:first-child {
+	font-size: 14px;
+}
+
+
+
+
+/* 课程主讲师 */
+.lecturer_menu { 
+	width:96%; 
+	margin: 0 auto;
+	position:relative; 
+	padding-top:35px; 
+	color:#fff; 
+}
+.lecturer_menu li { 
+	height: 400px;
+}
+/* .lecturer_menu li:nth-child(2) { left:50%; margin-left:-167px; }
+.lecturer_menu li:nth-child(3) { right:0; }
+.lecturer_menu .text_describe { position:absolute; width:100%; bottom:0; background:rgba(0,0,0,0.5); color:#fff; }
+.lecturer_menu .name { width:210px; margin:0 auto; font-size:16px; line-height:45px; border-bottom:1px solid #fff;  }
+.lecturer_menu .text { width:210px; margin:0 auto; padding:12px 0 30px; font:14px/22px "微软雅黑"; }
+.lecturer_menu .behind { position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); font:12px/22px "微软雅黑"; }
+.lecturer_menu .behind_box { position:absolute; bottom:0; padding:30px 30px 30px 20px; text-align: left; }
+.lecturer_menu .big_name { display: block; font:bold 24px/40px "微软雅黑"; }
+.lecturer_menu .subhead { font-size:14px; line-height:24px; margin-bottom:10px; }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
