@@ -1,0 +1,165 @@
+.harbor-wrap { width: 1300px; margin: 0 auto; }
+/*
+ *	公共标题
+ *
+ * */
+.harbor-common-head {
+	color: #2a5289;
+	text-align: center;
+}
+.harbor-common-head .title {
+	font-size: 34px;
+    line-height: 65px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
+.harbor-common-head .des-china {
+	font-size: 16px;
+	line-height: 32px;
+	margin-bottom: 4px
+}
+.harbor-common-head .des-eng {
+	font-size: 13px;
+	line-height: 20px;
+	opacity: .6;
+}
+
+
+
+/*
+ *	联璧港BANNER
+ *
+ * */
+.harbor-banner {
+	height: 680px;
+	background: url(../images/harbor/harbor_banner.png) no-repeat center;
+	background-size: cover;
+}
+.harbor-banner-in { padding-top: 141px;}
+
+.harbor-banner-text {
+	float: left;
+	padding: 53px 0 0 85px;
+	width: 60%;
+	color: #fff;
+}
+.harbor-banner-text .ico {
+	margin-bottom: 16px;
+}
+.harbor-banner-text .name {
+	margin-bottom: 30px;
+	font-size: 54px;
+	line-height: 54px;
+	letter-spacing: 4px;
+	text-shadow: 1px 1px 1px rgba(22,132,183,.3);
+}
+.harbor-banner-text .name span { 
+	font-size: 26px;
+	letter-spacing: 1px;
+}
+
+.harbor-banner-text .name-eng {
+	margin-bottom: 60px;
+	font-size: 17px;
+	line-height: 30px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(22,132,183,.3);
+}
+
+.harbor-banner-text .name-eng span { margin-left: 15px;}
+
+.harbor-banner-text .more {
+	display: inline-block;
+	width: 173px;
+	height: 49px;
+	line-height: 49px;
+	font-size: 18px;
+	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
+	-webkit-border-radius: 24px/25px 25px 24px 24px;
+	-moz-border-radius: 24px/25px 25px 24px 24px;
+	border-radius: 24px/25px 25px 24px 24px;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 1px 20px rgba(30,151,204,.25);
+	-moz-box-shadow: 1px 1px 20px rgba(30,151,204,.25);
+	box-shadow: 1px 1px 20px rgba(26,101,182,.9);
+}
+
+.harbor-banner-img {
+	margin-left: 50%;
+	text-align: right;
+}
+
+
+
+
+/*
+ *	联璧港SERVER
+ *
+ * */
+.harbor-server {
+	padding-top: 82px;
+	padding-bottom: 100px;
+	background:url('../images/harbor/harbor_bg_4.jpg') no-repeat center;
+}
+.harbor-place .harbor-server-in {
+	padding-top: 105px;
+	padding-bottom: 120px;
+}
+.harbor-place-menu {
+	padding-top: 56px;
+}
+.harbor-place-menu li {
+	float:left;
+	width: 23.07%;
+	margin-right: 2.46%;
+}
+.harbor-place-menu li:last-child {
+	margin-right: 0;
+}
+
+
+
+
+/*
+ *	联璧港SUPPORT
+ *
+ * */
+.harbor-support {
+	height: 836px;
+	background: url(../images/harbor/harbor_support_bg.jpg) no-repeat center;
+}
+.harbor-support .harbor-common-head { 
+	color: #fff; 
+	padding-top: 86px;
+}
+
+
+
+
+/*
+ *	联璧港RUN
+ *
+ * */
+.harbor-run {
+	padding-bottom: 100px;
+}
+.harbor-run .harbor-common-head { 
+	padding-top: 90px;
+}
+.harbor-run .harbor-common-head .title { 
+	letter-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
