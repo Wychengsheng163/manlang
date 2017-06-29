@@ -1,3 +1,4 @@
+.container { max-width: 1920px; margin: 0 auto; }
 .harbor-wrap { width: 1300px; margin: 0 auto; }
 /*
  *	公共标题
@@ -35,6 +36,7 @@
 	height: 680px;
 	background: url(../images/harbor/harbor_banner.png) no-repeat center;
 	background-size: cover;
+	transition: all 600ms;
 }
 .harbor-banner-in { padding-top: 141px;}
 
@@ -88,15 +90,15 @@
 }
 
 .harbor-banner-img {
-	margin-left: 50%;
-	text-align: right;
+	float: right;
+	width: 39.53846%;
 }
 
 
 
 
 /*
- *	联璧港SERVER
+ *	大数据服务
  *
  * */
 .harbor-server {
@@ -104,27 +106,106 @@
 	padding-bottom: 100px;
 	background:url('../images/harbor/harbor_bg_4.jpg') no-repeat center;
 }
-.harbor-place .harbor-server-in {
-	padding-top: 105px;
-	padding-bottom: 120px;
+.harbor-server-menu {
+	padding-top: 60px; 
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+	justify-content: space-between;
+	text-align: center;
 }
-.harbor-place-menu {
-	padding-top: 56px;
+.harbor-server-menu li {
+	position: relative;
+	float: left;
+	width: 23.07692%;
+	padding-top: 66px;
+	padding-bottom: 63px;
+	box-shadow: rgba(0,0,0,.2) 0 0 10px;
+	border-radius: 8px;
+	cursor: pointer;
 }
-.harbor-place-menu li {
-	float:left;
-	width: 23.07%;
-	margin-right: 2.46%;
+.harbor-server-menu li:hover .hiding {
+	opacity: 1;
 }
-.harbor-place-menu li:last-child {
-	margin-right: 0;
+.harbor-server-menu li:hover {
+	color: #fff;
+	box-shadow: rgba(0,0,0,.5) 0 0 20px;
+}
+.harbor-server-menu li:hover .number {
+	color: #fff;
+}
+.harbor-server-menu li:hover .smalltxt {
+	opacity: .8;
+}
+.harbor-server-menu .text_box {
+	position: relative;
+	z-index: 1;
+}
+.harbor-server-menu .hiding {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	border-radius: 8px;
+	transition: all 800ms;
+	background: #1053a6;
+	background: linear-gradient(to bottom,#1053a6,#44adfb);
+}
+.harbor-server-menu .number {
+	position: absolute;
+	top: 10px; left: 10px;
+	z-index: 1;
+	width: 50px;
+	line-height: 50px;
+	color: #44adfb;
+	font-size: 16px;
+	transition: all 1s;
+}
+.harbor-server-menu .server_icon {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+	background: url(../images/harbor/harbor_server_icon.png) no-repeat;
+}
+.harbor-server-menu li:nth-child(2) .server_icon {
+	background-position: -100px 0;
+}
+.harbor-server-menu li:nth-child(3) .server_icon {
+	background-position: -200px 0;
+}
+.harbor-server-menu li:nth-child(4) .server_icon {
+	background-position: -300px 0;
+}
+.harbor-server-menu li:nth-child(1):hover .server_icon {
+	background-position: 0 -100px;
+}
+.harbor-server-menu li:nth-child(2):hover .server_icon {
+	background-position: -100px -100px;
+}
+.harbor-server-menu li:nth-child(3):hover .server_icon {
+	background-position: -200px -100px;
+}
+.harbor-server-menu li:nth-child(4):hover .server_icon {
+	background-position: -300px -100px;
 }
 
+.harbor-server-menu .bigtxt {
+	font-size: 18px;
+	line-height: 30px;
+}
+.harbor-server-menu .smalltxt {
+	font-size: 12px;
+	opacity: .2;
+	line-height: 22px;
+}
 
 
 
 /*
- *	联璧港SUPPORT
+ *	开发支持服务
  *
  * */
 .harbor-support {
@@ -133,33 +214,251 @@
 }
 .harbor-support .harbor-common-head { 
 	color: #fff; 
-	padding-top: 86px;
+	padding-top: 85px;
+}
+.harbor-support-tab {
+	position: relative;
+	padding-top: 28px;
+}
+.harbor-support-tab .tab-content {
+	position: relative;
+}
+.harbor-support-tab .tab-content > div {
+	display: none;
+	position: absolute;
+	right: 0; top: 0;
+	width: 71.76923%;
+	text-align: right;
+}
+.harbor-support-tab .tab-title {
+	position: absolute;
+	left: 0; top: 140px;
+	color: #fff;
+	width: 280px;
+}
+.harbor-support-tab .on {
+	background: url(../images/harbor/harbor_support_tab_bg.png) no-repeat;
+}
+.harbor-support-tab .title {
+	line-height: 49px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	background: url(../images/harbor/support-tab.png) no-repeat;
+}
+.harbor-support-tab .tab-title > div:nth-child(2) .title {
+	background-position: 0 -49px;
+}
+.harbor-support-tab .tabs {
+	margin-bottom: 45px;
+}
+.harbor-support-tab .tabs ul {
+	display: none;
+	padding: 6px 0;
+}
+.harbor-support-tab .tabs li {
+	font-size: 16px;
+	line-height: 42px;
+	padding-left: 102px;
+	background: url(../images/harbor/tick.png) no-repeat 80px center;
 }
 
 
 
-
 /*
- *	联璧港RUN
+ *	SaaS运营服务
  *
  * */
 .harbor-run {
 	padding-bottom: 100px;
 }
 .harbor-run .harbor-common-head { 
-	padding-top: 90px;
+	padding-top: 85px;
 }
-.harbor-run .harbor-common-head .title { 
+.harbor-run-menu {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 145px;
+}
+.harbor-run-menu li {
+	float: left;
+	width: 30.76923%;
+	padding-top: 102px;
+	padding-bottom: 46px;
+	color: #3c3735;
+	box-shadow: #f7f2f1 0 0 20px;
+	transition: all 300ms;
+	cursor: pointer;
+}
+.harbor-run-menu li:hover {
+	box-shadow: rgba(0,0,0,.2) 0 0 80px;
+}
+.harbor-run-menu .bigtxt {
+	font-size: 18px;
+	line-height: 30px;
+}
+.harbor-run-menu .smalltxt {
+	font-size: 12px;
+	opacity: .2;
+	line-height: 22px;
+}
+.harbor-run-menu .circle-border {
+	width: 170px;
+	height: 85px;
+	border-radius: 0 0 85px 85px;
+	border: 10px solid #eeeaea;
+	margin: -102px auto 0;
+}
+.harbor-run-menu .circle {
+	width: 150px;
+	height: 150px;
+	margin-top: -85px;
+	border-radius: 50%;
+	background-color: #06d79d;
+	background-image: url(../images/harbor/harbor_run_icon.png);
+	background-repeat: no-repeat;
+}
+.harbor-run-menu li:nth-child(2) .circle {
+	background: #1053a6;
+	background: linear-gradient(to top,#1053a6,#44adfb);
+}
+.harbor-run-menu li:nth-child(2) .circle-img {
+	height: 150px;
+	background: url(../images/harbor/harbor_run_icon.png) no-repeat 0 -150px;
+} 
+.harbor-run-menu li:nth-child(3) .circle {
+	background-position: 0 -300px;
+} 
+
+
+
+/*
+ *	SaaS增值服务
+ *
+ * */
+.harbor-appreciation {
+	height: 834px;
+	background: url(../images/harbor/harbor_appreciation_bg.jpg) no-repeat center;
+}
+.harbor-appreciation .harbor-common-head { 
+	color: #fff; 
+	padding-top: 85px;
+}
+
+
+
+
+/*
+ *	智慧物联服务
+ *
+ * */
+.harbor-wulian .harbor-common-head {
+	padding-top: 85px;
+}
+.harbor-wulian-imgroup {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.harbor-wulian-imgroup .imgLeft {
+	float: left;
+	width: 56.76923%;
+}
+.harbor-wulian-imgroup .imgRight {
+	float: right;
+	width: 35%;
+}
+
+
+
+
+/*
+ *	联璧港APP
+ *
+ * */
+.harbor-app {
+	height: 838px;
+	background: url(../images/harbor/harbor_app_bg.jpg) no-repeat center;
+}
+.harbor-app-in {
+	padding-top: 170px;
+}
+.harbor-app-img {
+	float: left;
+	width: 44.23076%;
+}
+.harbor-app-inform {
+	float: right;
+	width: 43.38461%;
+	padding-top: 90px;
+	color: #fff;
+	font-size: 16px;
+}
+.harbor-app-inform .app-download {
+	display: block;
+	margin-bottom: 40px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #fff;
+	overflow: hidden;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 0 0 20px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 20px rgba(0,0,0,.2);
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.harbor-app-inform .app-download img {
+	-webkit-transition: all ease .4s;
+	   -moz-transition: all ease .4s;
+	    -ms-transition: all ease .4s;
+	        transition: all ease .4s;
+}
+
+.harbor-app-inform .app-name {
+	margin-bottom: 20px;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: normal;
+	letter-spacing: 5px;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.3);
+}
+.harbor-app-inform .app-name span {
+	font-size: 26px;
 	letter-spacing: 0;
 }
 
+.harbor-app-inform .des-china {
+	line-height: 30px;
+	margin-bottom: 15px;
+	text-shadow: 1px 1px 5px rgba(0,0,0,.3);
+}
+.harbor-app-inform .app-ewm {
+	float: left;
+	display: inline-block;
+	width: 132px;
+	height: 132px;
+	margin-top: 60px;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 1px 20px rgba(48,103,160,.2);
+	-moz-box-shadow: 1px 1px 20px rgba(48,103,160,.2);
+	box-shadow: 1px 1px 20px rgba(48,103,160,.2);
+}
 
 
+@media screen and (max-width: 1200px) {
+	.harbor-banner-img { padding-top: 70px; }
+}
 
-
-
-
-
-
-
-
+@media screen and (max-width: 1300px) {
+	.harbor-wrap { width: 100%; }
+	.harbor-app-inform { padding-top: 0; }
+}
