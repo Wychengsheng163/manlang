@@ -96,111 +96,124 @@
 
 
 
-
 /*
  *	大数据服务
  *
  * */
 .harbor-server {
 	padding-top: 82px;
-	padding-bottom: 100px;
 	background:url('../images/harbor/harbor_bg_4.jpg') no-repeat center;
 }
-.harbor-server-menu {
-	padding-top: 60px; 
-	display: flex;
-	flex-flow: row nowrap;
-	align-items: stretch;
-	justify-content: space-between;
-	text-align: center;
+.data-serve-type { 
+	margin-top: 82px;
+	margin-bottom: 100px;
 }
-.harbor-server-menu li {
-	position: relative;
+
+.data-serve-type ul {
+	margin-left: -16px;
+	margin-right: -16px;
+}
+
+.data-serve-type li {
 	float: left;
-	width: 23.07692%;
-	padding-top: 66px;
-	padding-bottom: 63px;
-	box-shadow: rgba(0,0,0,.2) 0 0 10px;
-	border-radius: 8px;
-	cursor: pointer;
+	padding: 0 16px;
+	width: 25%;
 }
-.harbor-server-menu li:hover .hiding {
-	opacity: 1;
+
+.serve-type-item {
+	padding: 25px 20px;
+	height: 300px;
+	color: #3c3735;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	background-color: rgba(255,255,255,.93);
+	-webkit-box-shadow: 1px 1px 20px rgba(143,44,38,.1);
+	-moz-box-shadow: 1px 1px 20px rgba(143,44,38,.1);
+	box-shadow: 1px 1px 20px rgba(143,44,38,.1);
 }
-.harbor-server-menu li:hover {
-	color: #fff;
-	box-shadow: rgba(0,0,0,.5) 0 0 20px;
+
+.serve-type-item .num {
+	margin-bottom: 50px;
+	font-size: 16px;
+	color: #29ade5;
+	text-align: left;
 }
-.harbor-server-menu li:hover .number {
-	color: #fff;
+
+.serve-type-item .img {
+	position: relative; 
+	height: 66px;
+	width: 66px;
+	margin: 0 auto;
+	margin-bottom: 20px;
 }
-.harbor-server-menu li:hover .smalltxt {
-	opacity: .8;
+
+.serve-type-item i { display: block;}
+
+.serve-type-item,
+.serve-type-item .before,
+.serve-type-item .after {
+	-webkit-transition: all ease .2s;
+	-moz-transition: all ease .2s;
+	-ms-transition: all ease .2s;
+	/* transition: all ease .2s; */
 }
-.harbor-server-menu .text_box {
-	position: relative;
-	z-index: 1;
-}
-.harbor-server-menu .hiding {
+
+.serve-type-item .after {
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	opacity: 0;
-	border-radius: 8px;
-	transition: all 800ms;
-	background: #1053a6;
-	background: linear-gradient(to bottom,#1053a6,#44adfb);
-}
-.harbor-server-menu .number {
-	position: absolute;
-	top: 10px; left: 10px;
-	z-index: 1;
-	width: 50px;
-	line-height: 50px;
-	color: #44adfb;
-	font-size: 16px;
-	transition: all 1s;
-}
-.harbor-server-menu .server_icon {
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	margin-bottom: 15px;
-	background: url(../images/harbor/harbor_server_icon.png) no-repeat;
-}
-.harbor-server-menu li:nth-child(2) .server_icon {
-	background-position: -100px 0;
-}
-.harbor-server-menu li:nth-child(3) .server_icon {
-	background-position: -200px 0;
-}
-.harbor-server-menu li:nth-child(4) .server_icon {
-	background-position: -300px 0;
-}
-.harbor-server-menu li:nth-child(1):hover .server_icon {
-	background-position: 0 -100px;
-}
-.harbor-server-menu li:nth-child(2):hover .server_icon {
-	background-position: -100px -100px;
-}
-.harbor-server-menu li:nth-child(3):hover .server_icon {
-	background-position: -200px -100px;
-}
-.harbor-server-menu li:nth-child(4):hover .server_icon {
-	background-position: -300px -100px;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	/* transform: scale(0); */
 }
 
-.harbor-server-menu .bigtxt {
+.serve-type-item .des { opacity: .25;}
+
+.serve-type-item:hover {
+	color: #fff;
+	-webkit-box-shadow: 1px 1px 24px rgba(143,44,38,.33);
+	-moz-box-shadow: 1px 1px 24px rgba(143,44,38,.33);
+	box-shadow: 1px 1px 24px rgba(143,44,38,.33);
+	background-image: -webkit-linear-gradient(bottom, #706ffb, #28ade5 99%);
+	background-image: -moz-linear-gradient(bottom, #706ffb, #28ade5 99%);
+	background-image: -o-linear-gradient(bottom, #706ffb, #28ade5 99%);
+	background-image: -ms-linear-gradient(bottom, #706ffb, #28ade5 99%);
+	background-image: linear-gradient(to top, #706ffb, #28ade5 99%);
+}
+
+.serve-type-item:hover .num { color: #fff;}
+
+.serve-type-item:hover .before {
+	opacity: 0;
+	-webkit-transform: scale(0);
+	   -moz-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+}
+
+.serve-type-item:hover .after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+}
+
+.serve-type-item:hover .des { opacity: 1;}
+
+.serve-type-item .name {
 	font-size: 18px;
-	line-height: 30px;
+	margin-bottom: 5px;
 }
-.harbor-server-menu .smalltxt {
-	font-size: 12px;
-	opacity: .2;
-	line-height: 22px;
-}
+
+
 
 
 
@@ -224,10 +237,10 @@
 	position: relative;
 }
 .harbor-support-tab .tab-content > div {
-	display: none;
 	position: absolute;
 	right: 0; top: 0;
 	width: 71.76923%;
+	opacity: 0;
 	text-align: right;
 }
 .harbor-support-tab .tab-title {

@@ -56,44 +56,59 @@
 					</div>
 				</div>
 
-				<ul class="harbor-server-menu clearfix">
-					<li>
-						<span class="number">01</span>
-						<div class="text_box">
-							<span class="server_icon"></span>
-							<p class="bigtxt">数据算法服务</p>
-							<p class="smalltxt">DATA ALGORITHM SERVICE</p>
-						</div>
-						<div class="hiding"></div>
-					</li>
-					<li>
-						<span class="number">02</span>
-						<div class="text_box">
-							<span class="server_icon"></span>
-							<p class="bigtxt">多场景算法优化</p>
-							<p class="smalltxt">MULTI-SCENE ALGORITHM OPTIMIZATION</p>
-						</div>
-						<div class="hiding"></div>
-					</li>
-					<li>
-						<span class="number">03</span>
-						<div class="text_box">
-							<span class="server_icon"></span>
-							<p class="bigtxt">通用解决方案</p>
-							<p class="smalltxt">GENERAL SOLUTION SCHEME</p>
-						</div>
-						<div class="hiding"></div>
-					</li>
-					<li>
-						<span class="number">04</span>
-						<div class="text_box">
-							<span class="server_icon"></span>
-							<p class="bigtxt">定制化行业解决方案</p>
-							<p class="smalltxt">CUSTOMIZED INDUSTRY SOLUTIONS</p>
-						</div>
-						<div class="hiding"></div>
-					</li>
-				</ul>
+
+
+				<div class="data-serve-type">
+					<ul class="clearfix">
+						<li class="revealator-duration10 revealator-slideup revealator-delay revealator-partially-above">
+							<div class="serve-type-item">
+									<div class="num">01</div>
+									<div class="img">
+										<i class="before"><img src="images/harbor/data_serve_ico1.png"></i>
+										<i class="after"><img src="images/harbor/data_serve_ico1_h.png"></i>
+									</div>
+									<div class="name">数据算法服务</div>
+									<p class="des">DATA ALGORITHM SERVICE</p>
+							</div>
+						</li>
+						
+						<li class="revealator-duration10 revealator-slideup revealator-delay2 revealator-partially-above">
+							<div class="serve-type-item">
+									<div class="num">02</div>
+									<div class="img">
+										<i class="before"><img src="images/harbor/data_serve_ico2.png"></i>
+										<i class="after"><img src="images/harbor/data_serve_ico2_h.png"></i>
+									</div>
+									<div class="name">多场景算法优化</div>
+									<p class="des">MULTI-SCENE ALGORITHM OPTIMIZATION</p>
+							</div>
+						</li>
+						
+						<li class="revealator-duration10 revealator-slideup revealator-delay3 revealator-partially-above">
+							<div class="serve-type-item">
+									<div class="num">03</div>
+									<div class="img">
+										<i class="before"><img src="images/harbor/data_serve_ico3.png"></i>
+										<i class="after"><img src="images/harbor/data_serve_ico3_h.png"></i>
+									</div>
+									<div class="name">通用解决方案</div>
+									<p class="des">GENERAL SOLUTION SCHEME</p>
+							</div>
+						</li>
+						
+						<li class="revealator-duration10 revealator-slideup revealator-delay4 revealator-partially-above">
+							<div class="serve-type-item">
+									<div class="num">04</div>
+									<div class="img">
+										<i class="before"><img src="images/harbor/data_serve_ico4.png"></i>
+										<i class="after"><img src="images/harbor/data_serve_ico4_h.png"></i>
+									</div>
+									<div class="name">定制化行业解决方案</div>
+									<p class="des">CUSTOMIZED INDUSTRY SOLUTIONS</p>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
@@ -111,7 +126,7 @@
 
 				<div class="revealator-duration10 revealator-slideup harbor-support-tab">
 					<div class="tab-content">
-						<div class="content-a" style="display:block;"><img src="images/harbor/harbor_support_1.png"></div>
+						<div class="content-a" style="display:block;opacity:1;"><img src="images/harbor/harbor_support_1.png"></div>
 						<div class="content-b"><img src="images/harbor/harbor_support_2.png"></div>
 					</div>
 					<div class="tab-title">
@@ -258,6 +273,7 @@
 			var ContentB = support.find(".content-b");
 			var TitleBox = support.find(".title-box");
 
+
 			TitleBox.click( function() {
 
 					var parent = $(this).parent();
@@ -270,11 +286,13 @@
 
 					if ( parent.hasClass("tab-a") ) 
 					{
-						ContentA.show(300) , ContentB.hide(300);
+						ContentA.stop().animate({ 'right': '0' 	 , 'opacity': 1 },1000);
+						ContentB.stop().animate({ 'right': '-100px' , 'opacity': 0 },800);
 					} 
 					else 
 					{
-						ContentB.show(300) , ContentA.hide(300);
+						ContentA.stop().animate({ 'right': '-100px' , 'opacity': 0 },800);
+						ContentB.stop().animate({ 'right': '0'		 , 'opacity': 1 },1000);
 					}
 
 			});
