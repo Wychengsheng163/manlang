@@ -1,0 +1,256 @@
+@charset "utf-8"; 
+
+/* reset */  
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}  /* 初始化标签在所有浏览器中的margin、padding值 */  
+fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/  
+dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */  
+blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */  
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/  
+input,select,textarea,button {vertical-align:middle}  /* 重置表单控件垂直居中*/  
+button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */  
+html {font-size: 16px;}  /* 项目根字体大小 */  
+body {background:#fff}   /* 重置body 页面背景为白色 */  
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1 ;font-family:"微软雅黑", "黑体","宋体";color:#666} /* 重置页面文字属性 */  
+a {color:#999;text-decoration:none}  /* 重置链接a标签 */  
+a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */  
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* 重置样式标签的样式 */  
+caption {display:none;}    /* 重置表格标题为隐藏 */  
+table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}    /* 重置table属性 */  
+img {vertical-align:top;max-width:100%;}  /* 图片在当前行内的垂直位置 */  
+html,body { height: 100%; }
+
+/* 取消a标签点击后的虚线框 */  
+a {outline: none;}    
+a:active {star:expression(this.onFocus=this.blur());}  
+   
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */  
+/*   
+::selection {color: #fff;background-color: #4C6E78;}      
+::-moz-selection {color: #fff;background-color: #4C6E78;}   
+*/  
+  
+
+/*清除浮动*/  
+.clearfix:before,.clearfix:after{content: '';display: table;}  
+.clearfix:after{clear: both;}
+
+/*页面居中*/
+.wrap {max-width: 1200px;margin: 0 auto;}
+
+/* 移动端菜单效果 */
+.container {max-width: 1920px;height: 100%;margin: 0 auto;box-shadow: 0 0 20px #ccc;transition: all 300ms ease;}
+.slideLeft {transform: translate(-200px, 0);}
+.slideLeft .shadow {position: absolute;left: 0;top: 0;z-index: 100;width: 100%;height: 100%;background:rgba(0,0,0,0.2);transition: all 300ms ease;}
+
+/* 面包屑地图ICON */
+.mapIcon {background-repeat: no-repeat;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAIAAACwQdIgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3OUVGQ0FBNTU0NTVFNzExOEMzMkJCRjc0M0JBQTk0NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBRUYwNTBEQzZEMjQxMUU3OUUyNEZCMUE2NTgxQjA2QyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBRUYwNTBEQjZEMjQxMUU3OUUyNEZCMUE2NTgxQjA2QyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjczNzJBNEQ5NEQ2NUU3MTFCNkY0QzMxMzU1RTZFMEYwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjc5RUZDQUE1NTQ1NUU3MTE4QzMyQkJGNzQzQkFBOTQ2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+c/ggwgAAAXtJREFUeNpMUkvPwVAQda+SLjyjaRDiEWIhdmLRn92ysMIKm6ZpaocQiUckiBBv/U7N58YsbubMnXvOnGmZ67q+T6xWq8ViAcgYozOVSmWzWbpl1Gfb9na7LRaLmUwmEAi8Xq/lcjmZTEKhUL1e9xrRNx6PDcN4v9/uJ/b7vfuNdrs9Go08ruv12mq1brcbwPF47PV6w+Gw2+3udjtqbTabqPPZbBaPx4PBIEpQLxQKjUajUqk4jgN1CKqqOp1OOVSi0Sjw/X5HNw2eTCYjkcjpdEKuKArUuN/vJytoAgEsI99sNufzGSaQY27OuQTz8/ncc85YrVYj4xi6Wq2CAnXARCLhtWP2w+EgPP76vVwunU7n8Xhw0JRKJcuyfN+IxWIiN00zl8tJksQB0uk0MlL/jfV6DXPYwP+eiV/XdZxC8fl8YvnYHEFOT2VZhol+vy/IBoNBuVwOh8MEubjI5/OoYiDk+FaYG9sWt0z8LxSgxNphX9O03/qfAAMApA0UMYGC1r0AAAAASUVORK5CYII=");}
+
+/* 右箭头ICON */
+.rArrow {background-repeat: no-repeat;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAHCAIAAACk8qu6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3OUVGQ0FBNTU0NTVFNzExOEMzMkJCRjc0M0JBQTk0NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo3RUEzRkQwMzZEMjcxMUU3OTRENzgxNDg3QTNGMjlCNyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo3RUEzRkQwMjZEMjcxMUU3OTRENzgxNDg3QTNGMjlCNyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjczNzJBNEQ5NEQ2NUU3MTFCNkY0QzMxMzU1RTZFMEYwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjc5RUZDQUE1NTQ1NUU3MTE4QzMyQkJGNzQzQkFBOTQ2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+DD7pSQAAAGBJREFUeNpiuHDhws+fP/8jASYGBob169ffvXuXAQYYgcJfv349f/7806dPHRwcxMXFQUIQyevXrx8+fNjZ2Rkk9PLly3PnzgFFjYyMgKpYtm/fDudADXvx4sV/VAAQYAB/GUg0EQYCCAAAAABJRU5ErkJggg==");}
+
+/* banner公共样式 */
+header .banner {background-repeat: no-repeat;background-position: center;background-size: cover;}
+
+/* 面包屑导航 */
+.mapLink {float: right;line-height: 30px;padding: 29px 0 29px 24px;background-position: left center;}
+.mapLink .rArrow {display: inline-block;width: 10px;height: 7px;background-position: center right;}
+
+
+/* 引用的图片只会在各范围内下载,不会全部下载 */
+/* 兼容PC */
+@media screen and (min-width: 1024px) {
+
+	/* 公共头部 */
+	header {
+
+		.mbHeader {display:none;}
+
+		.pcHeader {
+
+			.top {
+				color: #999;
+				line-height: 44px;
+				background-color: #fafafa;
+
+				span { float: right; }
+			}
+
+			nav {
+				display: flex;
+				justify-content: flex-end;
+				height: 100px;
+				background: url(../images/logo.jpg) no-repeat left center;
+				
+				a {
+					padding: 0 20px;
+					margin: 0 2px;
+					font-size: 16px;
+					line-height: 100px;
+					transition: all 300ms ease;
+				}
+
+				a:hover, .active {
+					color: #fff;
+					background-color: #005c87;
+				}
+			}
+			
+			.banner {height: 500px;}
+			.indexBanner {background-image: url(../images/aboutUs_banner.jpg);}
+			.aboutUsBanner {background-image: url(../images/aboutUs_banner.jpg);}
+			.caseBanner {background-image: url(../images/case_banner.jpg);}
+			.teamBanner {background-image: url(../images/team_banner.jpg);}
+			.evaluationBanner {background-image: url(../images/evaluation_banner.jpg);}
+			.contactUsBanner {background-image: url(../images/contactUs_banner.jpg);}
+		}
+	}
+
+
+	/* 公共尾部 */
+	footer {
+		
+		.mbFooter {display:none;}
+
+		.pcFooter {
+
+			line-height: 24px;
+			color: #fff;
+			padding-top: 34px;
+			padding-bottom: 18px; 
+			background-color: #053d57;
+			
+			.copyright { float: left; padding: 12px 0; }
+
+			.fLink { float: right; }
+		}
+	}
+
+}
+
+
+/* 兼容平板 */
+@media screen and (max-width: 1024px) {
+
+	.slideLeft header .mbHeader nav .nav_menu {transform: translate(0, 0);}
+
+	header {
+
+		.pcHeader {display: none;}
+
+		.mbHeader {
+			display: block;
+
+			nav {
+				position: relative;
+				height: 80px;
+				background: url(../images/logo.jpg) no-repeat left center;
+			
+				.navIcon {
+					position: absolute;
+					top: 50%;
+					right: 10px;
+					width: 40px;
+					height: 40px;
+					margin-top: -20px;
+					background: url(../images/menu.png) no-repeat;
+					background-size: cover;
+				}
+				.navMenu {
+					position: fixed;
+					left: 100%;
+					top: 0;
+					width: 200px;
+					height: 100%;
+					padding-top: 80px;
+					z-index: 100;
+					background: #fff;
+					border-left: 1px solid #ccc;
+					box-sizing: border-box;
+					transition: all 300ms ease;
+
+					a {
+						display: block;
+						font-size: 16px;
+						line-height: 50px;
+						color: #000;
+						padding-left: 20px;
+						border-top: 1px solid #ccc;
+					}
+					a:last-child {
+						border-bottom: 1px solid #ccc;
+					}
+				}
+			}
+
+			.banner {height: 300px;} 
+			.indexBanner {background-image: url(../images/ipad/aboutUs_banner.ipad.jpg);}
+			.aboutUsBanner {background-image: url(../images/ipad/aboutUs_banner.ipad.jpg);}
+			.caseBanner {background-image: url(../images/ipad/case_banner.ipad.jpg);}
+			.teamBanner {background-image: url(../images/ipad/team_banner.ipad.jpg);}
+			.evaluationBanner {background-image: url(../images/ipad/evaluation_banner.ipad.jpg);}
+			.contactUsBanner {background-image: url(../images/ipad/contactUs_banner.ipad.jpg);}
+		}
+	}
+
+	footer {
+		.pcFooter {display:none;}
+
+		.mbFooter {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			display: flex;
+			align-items: center;
+			background-color: #888;
+
+			a {
+				flex: 1;
+				height: 50px;
+				color: #fff;
+				font-size: 14px;
+				text-align: center;
+			}
+		}
+	}
+
+}
+
+
+/* 兼容手机 */
+@media screen and (max-width: 640px) {
+
+	header {
+
+		.mbHeader {
+
+			nav {
+
+				height: 60px; 
+				background: url(../images/logo_phone.jpg) no-repeat left center;
+
+				.navMenu {
+
+					padding-top: 60px;
+
+					a {
+						font-size: 14px;
+						line-height: 40px;
+					}
+				}
+			}
+
+			.banner {height: 166px;}
+			.indexBanner {background-image: url(../images/phone/aboutUs_banner.phone.jpg);}
+			.aboutUsBanner {background-image: url(../images/phone/aboutUs_banner.phone.jpg);}
+			.caseBanner {background-image: url(../images/phone/case_banner.phone.jpg);}
+			.teamBanner {background-image: url(../images/phone/team_banner.phone.jpg);}
+			.evaluationBanner {background-image: url(../images/phone/evaluation_banner.phone.jpg);}
+			.contactUsBanner {background-image: url(../images/phone/contactUs_banner.phone.jpg);}
+		}
+	}
+
+	footer .mbFooter a { font-size: 12px; }
+
+}

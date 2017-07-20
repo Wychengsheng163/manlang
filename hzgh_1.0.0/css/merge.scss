@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+
+
+
+.aboutUs {
+
+	.sidebar {
+		float: left;
+		width: 24.16666%;
+
+		a {
+			position: relative;
+			display: block;
+			color: #333;
+			font-size: 14px;
+			line-height: 40px;
+			padding-left: 50px;
+			margin-bottom: 10px;
+			background-color: #f7f7f6;
+		}
+
+		a:before {
+			position: absolute;
+			content: "";
+			left: 20px;
+			top: 50%;
+			width: 5px;
+			height: 5px;
+			margin-top: -3px;
+			border: 1px solid #333;
+		}
+		.active {
+			color: #fff;
+			background-color: #005c87;
+		}
+		.active:after {
+			position: absolute;
+			content: "";
+			top: 50%;
+			right: 28px;
+			width: 6px;
+			height: 10px;
+			margin-top: -5px;
+			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAYAAACXDi8zAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3OUVGQ0FBNTU0NTVFNzExOEMzMkJCRjc0M0JBQTk0NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozRDQyQzgyRTZEMkYxMUU3QTcwQUFDODFFMzc0M0M3RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozRDQyQzgyRDZEMkYxMUU3QTcwQUFDODFFMzc0M0M3RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjZFNzJBNEQ5NEQ2NUU3MTFCNkY0QzMxMzU1RTZFMEYwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjc5RUZDQUE1NTQ1NUU3MTE4QzMyQkJGNzQzQkFBOTQ2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+q6VPYAAAAEVJREFUeNpi+P///2sg3g/EDMgYRNT+h4D16BIgnAyV3IQugSy5Al0ChJ2gkoeZGFDBHyjNQtAorJbjdC7Ig/vQPQgQYABOc7RKPzPo7wAAAABJRU5ErkJggg==");
+			background-repeat: no-repeat;
+		}
+		.active:before {
+			border-color: #fff;
+			background-color: #fff;
+		}
+	}
+
+	.tabCont {
+		float: right;
+		width: 70.66666%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 引用的图片只会在各范围内下载,不会全部下载 */
+/* 兼容PC */
+@media screen and (min-width: 1024px) {
+
+	/* 首页样式 */
+
+
+	/* 关于我们 */
+
+
+	/* 服务案例 */
+
+
+	/* 鉴定团队 */
+
+
+	/* 鉴定程序 */
+
+
+	/* 联系我们 */
+
+}
+
+
+/* 兼容平板 */
+@media screen and (max-width: 1024px) {
+
+	/* 首页样式 */
+
+
+	/* 关于我们 */
+
+
+	/* 服务案例 */
+
+
+	/* 鉴定团队 */
+
+
+	/* 鉴定程序 */
+
+
+	/* 联系我们 */
+	
+}
+
+
+/* 兼容手机 */
+@media screen and (max-width: 640px) {
+
+	/* 首页样式 */
+
+
+	/* 关于我们 */
+
+
+	/* 服务案例 */
+
+
+	/* 鉴定团队 */
+
+
+	/* 鉴定程序 */
+
+
+	/* 联系我们 */
+
+}

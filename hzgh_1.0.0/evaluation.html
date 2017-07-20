@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鉴定程序</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/merge.css">
+</head>
+<body>
+	<div class="container">
+		<!-- 移动端遮罩 -->
+		<div class="shadow"></div>
+		<!-- 公共头 -->
+		<header>
+			<div class="pcHeader">
+				<div class="top">
+					<div class="wrap">
+						欢迎访问汉之光华司法鉴定服务网！ 
+						<span>
+							<a href="contactUs.html">联系我们</a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="">加入收藏</a>
+						</span>
+					</div>
+				</div>
+				<div class="wrap">
+					<nav>
+						<a href="/">首页</a>
+						<a href="aboutUs.html">关于我们</a>
+						<a href="case.html">服务案例</a>
+						<a href="team.html">司法鉴定团队</a>
+						<a href="evaluation.html" class="active">鉴定程序</a>
+						<a href="contactUs.html">联系我们</a>
+					</nav>
+				</div>
+				<div class="banner evaluationBanner"></div>
+			</div>
+			
+			<div class="mbHeader">
+				<nav>
+					<span class="navIcon"></span>
+					<div class="navMenu">
+						<a href="/">首页</a>
+						<a href="aboutUs.html">关于我们</a>
+						<a href="case.html">服务案例</a>
+						<a href="team.html">司法鉴定团队</a>
+						<a href="evaluation.html">鉴定程序</a>
+						<a href="contactUs.html">联系我们</a>
+					</div>
+				</nav>
+				<div class="banner evaluationBanner"></div>
+			</div>
+		</header>
+
+		
+		<div class="content">
+			<div class="wrap"></div>
+		</div>
+
+		<!-- 公共尾 -->
+		<footer>
+			<div class="pcFooter">
+				<div class="wrap clearfix">
+					<div class="copyright">
+						版权所有 Copyright © 2016 汉之光华 All Rights Reserved. 沪ICP备05053582号-5 技术支持：曼朗策划
+					</div>
+					<div class="fLink">
+						<p>返回顶部 | 服务时间：工作日 09:30-11:30 13:30-17:00</p>
+						<p>友情链接汉光网站：www.iprhg.com      www.iprtop.com</p>
+					</div>
+				</div>
+			</div>
+
+			<nav class="mbFooter">
+				<a href="aboutUs.html">关于我们</a>
+				<a href="case.html">服务案例</a>
+				<a href="/">首页</a>
+				<a href="team.html">团队</a>
+				<a href="contactUs.html">联系我们</a>
+			</nav>
+		</footer>
+
+	</div>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(".navIcon").click(function(){
+			$(".container").addClass("slideLeft");
+		});
+		$(".shadow").click(function(){
+			$(".container").removeClass("slideLeft");
+		});
+	</script>
+</body>
+</html>
