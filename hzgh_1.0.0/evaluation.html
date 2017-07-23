@@ -26,7 +26,7 @@
 				</div>
 				<div class="wrap">
 					<nav>
-						<a href="/">首页</a>
+						<a href="index.html">首页</a>
 						<a href="aboutUs.html">关于我们</a>
 						<a href="case.html">服务案例</a>
 						<a href="team.html">司法鉴定团队</a>
@@ -37,7 +37,7 @@
 				<div class="banner evaluationBanner"></div>
 			</div>
 			
-			<div class="mbHeader">
+			<div class="mbHeader ">
 				<nav>
 					<span class="navIcon"></span>
 					<div class="navMenu">
@@ -54,8 +54,130 @@
 		</header>
 
 		
-		<div class="content">
-			<div class="wrap"></div>
+		<div class="content evaluation">
+			<div class="wrap">
+				
+				<!-- 面包屑导航 -->
+				<div class="map clearfix">
+					<div class="mapLink mapIcon">
+						<a href="/">首页</a>
+						<b class="rArrow"></b>
+						<a href="evaluation.html">鉴定程序</a>
+						<b class="rArrow"></b>
+						<a href="javascript:;">鉴定程序</a>
+					</div>
+				</div>
+
+
+				<div id="tabPiece_1" class="tabControl" style="display: block;">
+					<div class="clearfix">
+						<div class="tabTitle">
+							<a class="aTit tabSelect" href="#tabPiece_1">鉴定程序</a>
+							<a class="aTit" href="#tabPiece_2">相关文档下载</a>
+						</div>
+						<div class="tabContent">
+							<h4 class="title evaluaIcon">鉴定程序<b class="line"></b></h4>
+							<img src="images/evaluation_1.png">
+							<div class="evalonText">
+								<p class="note">备注：以上流程根据每个鉴定情况可能有所调整。</p>
+								<p class="stong">资料提供</p>
+								<p>委托鉴定需提供的材料</p>
+								<p>（1）委托人的身份证明资料；</p>
+								<p>（2）委托人出具的鉴定委托书；</p>
+								<p>（3）鉴定涉及的知识产权有效文件，包括复印件；</p> 
+								<p>（4）被鉴定对象实物（或照片）及相关证据材料。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tabPiece_2" class="tabControl" style="display: none;">
+					<div class="clearfix">
+						<div class="tabTitle">
+							<a class="aTit" href="#tabPiece_1">鉴定程序</a>
+							<a class="aTit tabSelect" href="#tabPiece_2">相关文档下载</a>
+						</div>
+						<div class="tabContent">
+							<h4 class="title doctIcon">司法鉴定<b class="line"></b></h4>
+							<ul class="downloadMenu">
+								<li>
+									[2017-6-22] 司法部《司法鉴定机构内部管理规范》
+									<div class="downloadBtn">
+										<div class="box transition">
+											<a class="dIcon" href="javascript:;"></a>
+											<a class="btn" href="javascript:;">下载</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									[2017-6-22] 司法部《司法鉴定机构内部管理规范》
+									<div class="downloadBtn">
+										<div class="box transition">
+											<a class="dIcon" href="javascript:;"></a>
+											<a class="btn" href="javascript:;">下载</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									[2017-6-22] 司法部《司法鉴定机构内部管理规范》
+									<div class="downloadBtn">
+										<div class="box transition">
+											<a class="dIcon" href="javascript:;"></a>
+											<a class="btn" href="javascript:;">下载</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									[2017-6-22] 司法部《司法鉴定机构内部管理规范》
+									<div class="downloadBtn">
+										<div class="box transition">
+											<a class="dIcon" href="javascript:;"></a>
+											<a class="btn" href="javascript:;">下载</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									[2017-6-22] 司法部《司法鉴定机构内部管理规范》
+									<div class="downloadBtn">
+										<div class="box transition">
+											<a class="dIcon" href="javascript:;"></a>
+											<a class="btn" href="javascript:;">下载</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									[2017-6-22] 司法部《司法鉴定机构内部管理规范》
+									<div class="downloadBtn">
+										<div class="box transition">
+											<a class="dIcon" href="javascript:;"></a>
+											<a class="btn" href="javascript:;">下载</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									[2017-6-22] 司法部《司法鉴定机构内部管理规范》
+									<div class="downloadBtn">
+										<div class="box transition">
+											<a class="dIcon" href="javascript:;"></a>
+											<a class="btn" href="javascript:;">下载</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									[2017-6-22] 司法部《司法鉴定机构内部管理规范》
+									<div class="downloadBtn">
+										<div class="box transition">
+											<a class="dIcon" href="javascript:;"></a>
+											<a class="btn" href="javascript:;">下载</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
 		</div>
 
 		<!-- 公共尾 -->
@@ -90,6 +212,15 @@
 		$(".shadow").click(function(){
 			$(".container").removeClass("slideLeft");
 		});
+
+		/*Tab控件*/
+		$('.tabControl').css({'display':'none'});
+        $('#tabPiece_1').css({'display':'block'});
+        $('.tabControl').find('.tabTitle a').click(function() {
+            $('.tabControl').css({'display':'none'});
+            $($(this).attr('href')).css({'display':'block'});
+            $('.map .mapLink a:last-child').text($(this).text());
+        });
 	</script>
 </body>
 </html>
