@@ -6,9 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/merge.css">
-	<style type="text/css">
-	#allmap {height: 500px;width:100%;overflow: hidden;}
-	</style>
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=24748238d6579f384cf9811fd3b4ee19"></script>
 	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
 	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
@@ -100,27 +97,27 @@
 							<h4 class="title peopleIcon">上海联系人<b class="line"></b></h4>
 							<div class="aboutMaps">
 								<p><span>地址：</span>上海市静安区南京西路580号仲益大厦32C</p>
-								<p><span>联系人：</span>胡惠&nbsp;&nbsp;&nbsp;&nbsp;直线021-52666106	021-51096606-839&nbsp;&nbsp;&nbsp;&nbsp;15000113172&nbsp;&nbsp;&nbsp;&nbsp;Email：huh@iprtop.com</p>
+								<p><span>联系人：</span> 胡惠&nbsp;&nbsp;&nbsp;&nbsp;直线 021-52666106&nbsp;&nbsp;&nbsp;&nbsp;021-51096606-839&nbsp;&nbsp;&nbsp;&nbsp;15000113172&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email：huh@iprtop.com</p>
 	     						<p><span>交通路线：</span>地铁2号线南京西路站2号口；地铁12/13号线南京西路11号口；地铁8号线人民广场10号口。公交：20、37、934、109、330、921等可到</p>
 
-	     						<div id="allmap"></div>
+	     						<div id="shanghai_map" class="maps"></div>
 								<script type="text/javascript">
 									// 百度地图API功能
-								    var map = new BMap.Map('allmap');
-								    var poi = new BMap.Point(116.307852,40.057031);
+								    var map = new BMap.Map('shanghai_map');
+								    var poi = new BMap.Point(121.472462,31.237777);
 								    map.centerAndZoom(poi, 16);
 								    map.enableScrollWheelZoom();
 
 								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-								                    '地址：北京市海淀区上地十街10号<br/>电话：(010)59928888<br/>简介：百度大厦位于北京市海淀区西二旗地铁站附近，为百度公司综合研发及办公总部。' +
+								                    '地址：上海市静安区南京西路580号仲益大厦32C<br/>电话：021-51096606<br/>简介：汉之光华，您身边的专利管家' +
 								                  '</div>';
 
 								    //创建检索信息窗口对象
 								    var searchInfoWindow = null;
 									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
 											title  : "上海汉光知识产权数据科技有限公司",      //标题
-											width  : 290,             //宽度
-											height : 105,              //高度
+											width  : 280,             //宽度
+											height : 60,              //高度
 											panel  : "panel",         //检索结果面板
 											enableAutoPan : true,     //自动平移
 											searchTypes   :[
@@ -155,21 +152,51 @@
 							<div class="contentus clearfix">
 								<img src="images/contentUs_1.jpg">
 								<div class="code">
-									<p>直线：021-52666106</p>
-									<p>外线 ：021-51096606 转 839</p>
+									<p>直线：0551-65528587(8002)&nbsp;&nbsp;&nbsp;&nbsp;18655181210</p>
 									<img src="images/code.jpg">
 									<span>汉之光华</span>
 								</div>
 							</div>
 							<h4 class="title peopleIcon">合肥联系人<b class="line"></b></h4>
 							<div class="aboutMaps">
-								<p><span>地址：</span>上海市静安区南京西路580号仲益大厦32C</p>
-								<p><span>联系人：</span>胡惠&nbsp;&nbsp;&nbsp;&nbsp;直线021-52666106	021-51096606-839&nbsp;&nbsp;&nbsp;&nbsp;15000113172&nbsp;&nbsp;&nbsp;&nbsp;Email：huh@iprtop.com</p>
-	     						<p><span>交通路线：</span>地铁2号线南京西路站2号口；地铁12/13号线南京西路11号口；地铁8号线人民广场10号口。公交：20、37、934、109、330、921等可到</p>
+								<p><span>地址：</span>合肥市政务区南二环3818号天鹅湖万达广场8号楼1901室</p>
+								<p><span>联系人：</span>倪纯&nbsp;&nbsp;&nbsp;&nbsp;直线 0551-65528587(8002)&nbsp;&nbsp;&nbsp;&nbsp;18655181210&nbsp;&nbsp;&nbsp;&nbsp;Email：nic@iprtop.com</p>
 
-	     						<div class="maps">
+	     						<div id="hefei_map" class="maps">
 	     							
 	     						</div>
+	     						<script type="text/javascript">
+									// 百度地图API功能
+								    var map = new BMap.Map('hefei_map');
+								    var poi = new BMap.Point(117.228381,31.82718);
+								    map.centerAndZoom(poi, 16);
+								    map.enableScrollWheelZoom();
+
+								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+								                    '地址：合肥市政务区南二环3818号天鹅湖万达广场8号楼1901室<br/>电话：0551-65528587（8002）<br/>简介：汉之光华，您身边的专利管家' +
+								                  '</div>';
+
+								    //创建检索信息窗口对象
+								    var searchInfoWindow = null;
+									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+											title  : "上海汉光知识产权数据科技有限公司",      //标题
+											width  : 280,             //宽度
+											height : 90,              //高度
+											panel  : "panel",         //检索结果面板
+											enableAutoPan : true,     //自动平移
+											searchTypes   :[
+												BMAPLIB_TAB_SEARCH,   //周边检索
+												BMAPLIB_TAB_TO_HERE,  //到这里去
+												BMAPLIB_TAB_FROM_HERE //从这里出发
+											]
+										});
+								    var marker = new BMap.Marker(poi); //创建marker对象
+								    marker.enableDragging(); //marker可拖拽
+								    marker.addEventListener("click", function(e){
+									    searchInfoWindow.open(marker);
+								    })
+								    map.addOverlay(marker); //在地图中添加marker
+								</script>
 							</div>
 						</div>
 					</div>
@@ -189,21 +216,49 @@
 							<div class="contentus clearfix">
 								<img src="images/contentUs_1.jpg">
 								<div class="code">
-									<p>直线：021-52666106</p>
-									<p>外线 ：021-51096606 转 839</p>
+									<p>直线：023-63054799&nbsp;&nbsp;&nbsp;&nbsp;18623554138</p>
 									<img src="images/code.jpg">
 									<span>汉之光华</span>
 								</div>
 							</div>
 							<h4 class="title peopleIcon">重庆联系人<b class="line"></b></h4>
 							<div class="aboutMaps">
-								<p><span>地址：</span>上海市静安区南京西路580号仲益大厦32C</p>
-								<p><span>联系人：</span>胡惠&nbsp;&nbsp;&nbsp;&nbsp;直线021-52666106	021-51096606-839&nbsp;&nbsp;&nbsp;&nbsp;15000113172&nbsp;&nbsp;&nbsp;&nbsp;Email：huh@iprtop.com</p>
-	     						<p><span>交通路线：</span>地铁2号线南京西路站2号口；地铁12/13号线南京西路11号口；地铁8号线人民广场10号口。公交：20、37、934、109、330、921等可到</p>
+								<p><span>地址：</span>重庆市江北区建新北路一支路6号未来国际大厦24楼9号</p>
+								<p><span>联系人：</span>皮燕&nbsp;&nbsp;&nbsp;&nbsp;直线 023-63054799&nbsp;&nbsp;&nbsp;&nbsp;18623554138&nbsp;&nbsp;&nbsp;&nbsp;Email：chongqing@iprtop.com</p>
 
-	     						<div class="maps">
-	     							
-	     						</div>
+	     						<div id="chongqing_map" class="maps"></div>
+	     						<script type="text/javascript">
+									// 百度地图API功能
+								    var map = new BMap.Map('chongqing_map');
+								    var poi = new BMap.Point(106.539372,29.58045);
+								    map.centerAndZoom(poi, 16);
+								    map.enableScrollWheelZoom();
+
+								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+								                    '地址：重庆市江北区建新北路一支路6号未来国际大厦24楼9号<br/>电话：023-63054799      18623554138<br/>简介：汉之光华，您身边的专利管家' +
+								                  '</div>';
+
+								    //创建检索信息窗口对象
+								    var searchInfoWindow = null;
+									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+											title  : "上海汉光知识产权数据科技有限公司",      //标题
+											width  : 280,             //宽度
+											height : 90,              //高度
+											panel  : "panel",         //检索结果面板
+											enableAutoPan : true,     //自动平移
+											searchTypes   :[
+												BMAPLIB_TAB_SEARCH,   //周边检索
+												BMAPLIB_TAB_TO_HERE,  //到这里去
+												BMAPLIB_TAB_FROM_HERE //从这里出发
+											]
+										});
+								    var marker = new BMap.Marker(poi); //创建marker对象
+								    marker.enableDragging(); //marker可拖拽
+								    marker.addEventListener("click", function(e){
+									    searchInfoWindow.open(marker);
+								    })
+								    map.addOverlay(marker); //在地图中添加marker
+								</script>
 							</div>
 						</div>
 					</div>
@@ -223,21 +278,49 @@
 							<div class="contentus clearfix">
 								<img src="images/contentUs_1.jpg">
 								<div class="code">
-									<p>直线：021-52666106</p>
-									<p>外线 ：021-51096606 转 839</p>
+									<p>直线：0531-87964350&nbsp;&nbsp;&nbsp;&nbsp;18560132701</p>
 									<img src="images/code.jpg">
 									<span>汉之光华</span>
 								</div>
 							</div>
 							<h4 class="title peopleIcon">山东联系人<b class="line"></b></h4>
 							<div class="aboutMaps">
-								<p><span>地址：</span>上海市静安区南京西路580号仲益大厦32C</p>
-								<p><span>联系人：</span>胡惠&nbsp;&nbsp;&nbsp;&nbsp;直线021-52666106	021-51096606-839&nbsp;&nbsp;&nbsp;&nbsp;15000113172&nbsp;&nbsp;&nbsp;&nbsp;Email：huh@iprtop.com</p>
-	     						<p><span>交通路线：</span>地铁2号线南京西路站2号口；地铁12/13号线南京西路11号口；地铁8号线人民广场10号口。公交：20、37、934、109、330、921等可到</p>
+								<p><span>地址：</span>济南市槐荫区和谐广场银座中型2号楼3513室</p>
+								<p><span>联系人：</span>于璐&nbsp;&nbsp;&nbsp;&nbsp;直线 0531-87964350&nbsp;&nbsp;&nbsp;&nbsp;18560132701&nbsp;&nbsp;&nbsp;&nbsp;Email：yul@iprtop.com</p>
 
-	     						<div class="maps">
-	     							
-	     						</div>
+	     						<div id="shandong_map" class="maps"></div>
+	     						<script type="text/javascript">
+									// 百度地图API功能
+								    var map = new BMap.Map('shandong_map');
+								    var poi = new BMap.Point(116.98544,36.655463);
+								    map.centerAndZoom(poi, 16);
+								    map.enableScrollWheelZoom();
+
+								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+								                    '地址：济南市槐荫区和谐广场银座中型2号楼3513室<br/>电话：0531-87964350      18560132701<br/>简介：汉之光华，您身边的专利管家' +
+								                  '</div>';
+
+								    //创建检索信息窗口对象
+								    var searchInfoWindow = null;
+									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+											title  : "上海汉光知识产权数据科技有限公司",      //标题
+											width  : 280,             //宽度
+											height : 90,              //高度
+											panel  : "panel",         //检索结果面板
+											enableAutoPan : true,     //自动平移
+											searchTypes   :[
+												BMAPLIB_TAB_SEARCH,   //周边检索
+												BMAPLIB_TAB_TO_HERE,  //到这里去
+												BMAPLIB_TAB_FROM_HERE //从这里出发
+											]
+										});
+								    var marker = new BMap.Marker(poi); //创建marker对象
+								    marker.enableDragging(); //marker可拖拽
+								    marker.addEventListener("click", function(e){
+									    searchInfoWindow.open(marker);
+								    })
+								    map.addOverlay(marker); //在地图中添加marker
+								</script>
 							</div>
 						</div>
 					</div>
@@ -257,21 +340,49 @@
 							<div class="contentus clearfix">
 								<img src="images/contentUs_1.jpg">
 								<div class="code">
-									<p>直线：021-52666106</p>
-									<p>外线 ：021-51096606 转 839</p>
+									<p>直线：010-62620991&nbsp;&nbsp;&nbsp;&nbsp;17801057185</p>
 									<img src="images/code.jpg">
 									<span>汉之光华</span>
 								</div>
 							</div>
 							<h4 class="title peopleIcon">北京联系人<b class="line"></b></h4>
 							<div class="aboutMaps">
-								<p><span>地址：</span>上海市静安区南京西路580号仲益大厦32C</p>
-								<p><span>联系人：</span>胡惠&nbsp;&nbsp;&nbsp;&nbsp;直线021-52666106	021-51096606-839&nbsp;&nbsp;&nbsp;&nbsp;15000113172&nbsp;&nbsp;&nbsp;&nbsp;Email：huh@iprtop.com</p>
-	     						<p><span>交通路线：</span>地铁2号线南京西路站2号口；地铁12/13号线南京西路11号口；地铁8号线人民广场10号口。公交：20、37、934、109、330、921等可到</p>
+								<p><span>地址：</span>北京市海淀区知春里甲10号楼3层307室</p>
+								<p><span>联系人：</span>冯华&nbsp;&nbsp;&nbsp;&nbsp;直线 010-62620991&nbsp;&nbsp;&nbsp;&nbsp;17801057185&nbsp;&nbsp;&nbsp;&nbsp;Email：fengh@iprtop.com</p>
 
-	     						<div class="maps">
-	     							
-	     						</div>
+	     						<div id="beijing_map" class="maps"></div>
+	     						<script type="text/javascript">
+									// 百度地图API功能
+								    var map = new BMap.Map('beijing_map');
+								    var poi = new BMap.Point(116.327695,39.979454);
+								    map.centerAndZoom(poi, 16);
+								    map.enableScrollWheelZoom();
+
+								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+								                    '地址：北京市海淀区知春里甲10号楼3层307室<br/>电话：010-62620991     17801057185<br/>简介：汉之光华，您身边的专利管家' +
+								                  '</div>';
+
+								    //创建检索信息窗口对象
+								    var searchInfoWindow = null;
+									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+											title  : "上海汉光知识产权数据科技有限公司",      //标题
+											width  : 280,             //宽度
+											height : 90,              //高度
+											panel  : "panel",         //检索结果面板
+											enableAutoPan : true,     //自动平移
+											searchTypes   :[
+												BMAPLIB_TAB_SEARCH,   //周边检索
+												BMAPLIB_TAB_TO_HERE,  //到这里去
+												BMAPLIB_TAB_FROM_HERE //从这里出发
+											]
+										});
+								    var marker = new BMap.Marker(poi); //创建marker对象
+								    marker.enableDragging(); //marker可拖拽
+								    marker.addEventListener("click", function(e){
+									    searchInfoWindow.open(marker);
+								    })
+								    map.addOverlay(marker); //在地图中添加marker
+								</script>
 							</div>
 						</div>
 					</div>
@@ -291,21 +402,49 @@
 							<div class="contentus clearfix">
 								<img src="images/contentUs_1.jpg">
 								<div class="code">
-									<p>直线：021-52666106</p>
-									<p>外线 ：021-51096606 转 839</p>
+									<p>直线：0571-86020881&nbsp;&nbsp;&nbsp;&nbsp;18667130106</p>
 									<img src="images/code.jpg">
 									<span>汉之光华</span>
 								</div>
 							</div>
 							<h4 class="title peopleIcon">杭州联系人<b class="line"></b></h4>
 							<div class="aboutMaps">
-								<p><span>地址：</span>上海市静安区南京西路580号仲益大厦32C</p>
-								<p><span>联系人：</span>胡惠&nbsp;&nbsp;&nbsp;&nbsp;直线021-52666106	021-51096606-839&nbsp;&nbsp;&nbsp;&nbsp;15000113172&nbsp;&nbsp;&nbsp;&nbsp;Email：huh@iprtop.com</p>
-	     						<p><span>交通路线：</span>地铁2号线南京西路站2号口；地铁12/13号线南京西路11号口；地铁8号线人民广场10号口。公交：20、37、934、109、330、921等可到</p>
+								<p><span>地址：</span>杭州市余杭区仓前街道景兴路999号11幢103室</p>
+								<p><span>联系人：</span>毛矛&nbsp;&nbsp;&nbsp;&nbsp;直线 0571-86020881&nbsp;&nbsp;&nbsp;&nbsp;18667130106&nbsp;&nbsp;&nbsp;&nbsp;Email：maom@iprtop.com</p>
 
-	     						<div class="maps">
-	     							
-	     						</div>
+	     						<div id="hangzhou_map" class="maps"></div>
+	     						<script type="text/javascript">
+									// 百度地图API功能
+								    var map = new BMap.Map('hangzhou_map');
+								    var poi = new BMap.Point(120.006644,30.296625);
+								    map.centerAndZoom(poi, 16);
+								    map.enableScrollWheelZoom();
+
+								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+								                    '地址：杭州市余杭区仓前街道景兴路999号11幢103室<br/>电话：0571-86020881 18667130106<br/>简介：汉之光华，您身边的专利管家' +
+								                  '</div>';
+
+								    //创建检索信息窗口对象
+								    var searchInfoWindow = null;
+									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+											title  : "上海汉光知识产权数据科技有限公司",      //标题
+											width  : 280,             //宽度
+											height : 90,              //高度
+											panel  : "panel",         //检索结果面板
+											enableAutoPan : true,     //自动平移
+											searchTypes   :[
+												BMAPLIB_TAB_SEARCH,   //周边检索
+												BMAPLIB_TAB_TO_HERE,  //到这里去
+												BMAPLIB_TAB_FROM_HERE //从这里出发
+											]
+										});
+								    var marker = new BMap.Marker(poi); //创建marker对象
+								    marker.enableDragging(); //marker可拖拽
+								    marker.addEventListener("click", function(e){
+									    searchInfoWindow.open(marker);
+								    })
+								    map.addOverlay(marker); //在地图中添加marker
+								</script>
 							</div>
 						</div>
 					</div>

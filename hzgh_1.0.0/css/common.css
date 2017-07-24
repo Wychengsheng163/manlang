@@ -23,7 +23,8 @@ html,body { height: 100%; }
 /* 取消a标签点击后的虚线框 */  
 a {outline: none;}    
 a:active {star:expression(this.onFocus=this.blur());}  
-   
+
+.blueColor { color: #005c87; }
  
 /* 清除浮动 */ 
 .clearfix:before,.clearfix:after {
@@ -51,9 +52,6 @@ a:active {star:expression(this.onFocus=this.blur());}
 	margin: 0 auto;
 	box-shadow: 0 0 20px #ccc;
 	transition: all 300ms ease
-}
-.content {
-	padding-bottom: 80px;
 }
 .slideLeft {
 	transform: translate(-200px, 0)
@@ -279,13 +277,16 @@ header .banner {
 
 	header .mbHeader nav .navIcon {
 		position: absolute;
-		top: 50%;
-		right: 10px;
-		width: 40px;
-		height: 40px;
-		margin-top: -20px;
-		background: url(../images/menu.png) no-repeat;
+		top: 0;
+		right: 0;
+		width: 80px;
+		height: 80px;
+		text-align: center;
 		background-size: cover
+	}
+	header .mbHeader nav .navIcon img {
+		width: 60px;
+		margin-top: 10px;
 	}
 
 	header .mbHeader nav .navMenu {
@@ -351,32 +352,36 @@ header .banner {
 		position: fixed;
 		bottom: 0;
 		width: 100%;
-		height: 50px;
+		height: 64px;
 		line-height: 50px;
 		display: flex;
+		z-index: 999;
 		align-items: center;
-		background-color: #888
+		background-color: #333
 	}
 
 	footer .mbFooter a {
 		flex: 1;
-		height: 50px;
-		color: #fff;
-		font-size: 14px;
-		text-align: center
+		height: 64px;
+		text-align: center;
+		margin-top: 3px;
+	}
+	footer .mbFooter a img {
+		width: 64px;
 	}
 }
 
 /* 兼容手机 */
 @media screen and (max-width: 640px) {
 	header .mbHeader .logo {
-		height: 60px;
-	}
-	header .mbHeader nav {
-		height: 60px;
 		background: url(../images/logo_phone.jpg) no-repeat left center
 	}
-
+	header .mbHeader nav {
+		height: 80px;
+	}
+	header .mbHeader .indexBanner {
+		background-image: url(../images/indexBanner.phone.jpg);
+	}
 	header .mbHeader nav .navMenu {
 		padding-top: 60px
 	}
@@ -387,7 +392,7 @@ header .banner {
 	}
 
 	header .mbHeader .banner {
-		height: 166px
+		height: 180px
 	}
 
 	footer .mbFooter a {

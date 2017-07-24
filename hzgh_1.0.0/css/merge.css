@@ -2,6 +2,9 @@
 
 
 /*  TabControl:start  */
+	.tabControl {
+		padding-bottom: 80px;
+	}
 	.tabControl .tabTitle {
 		float: left;
 		width: 24.16666%
@@ -470,7 +473,7 @@
 	.contentUs .aboutMaps .maps {
 		width: 100%;
 		margin-top: 40px;
-		height: 210px;
+		height: 350px;
 		background: #ccc;
 	}
 /*  contentUs:end  */
@@ -1022,12 +1025,113 @@
 		height: 940px;
 		background-color: #f8f8f8;
 	}
+	.index .indexContentUs .tCont {
+		padding-top: 80px;
+	}
+	.index .indexContentUs .contus {
+		width: 50%;
+		box-sizing: border-box;
+	}
+	.index .indexContentUs .shCont {
+    	padding-right: 60px;
+	}
+	.index .indexContentUs .contList {
+		box-sizing: border-box;
+    	padding-left: 60px;
+	}
+	.index .indexContentUs .t1 {
+		color: #333;
+		font-size: 26px;
+		line-height: 50px;
+		margin-bottom: 30px;
+	}
+	.index .indexContentUs .card {
+		width: 550px;
+		padding: 40px;
+		line-height: 35px;
+		font-size: 18px;
+		margin-bottom: 50px;
+		box-sizing: border-box;
+		box-shadow: 0 3px 15px #cecece;
+	}
+	.index .indexContentUs .card p:nth-child(1) {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.index .indexContentUs .card p:nth-child(2) {
+		margin-bottom: 20px;
+	}
+	.index .indexContentUs .t2 {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	.index .indexContentUs .p1, .index .indexContentUs .p2 {
+		font-size: 14px;
+		line-height: 25px;
+		color: #666;
+	}
+	.index .indexContentUs .p1 {
+		margin-bottom: 5px;
+	}
+	.index .indexContentUs .ema {
+		font-size: 14px;
+		color: #666;
+		line-height: 50px;
+		margin-top: 50px;
+		text-align: center;
+	}
+	.index .indexContentUs .ema span {
+		float: left;
+		width: 160px;
+		margin-right: 60px;
+	}
+	.index .indexContentUs .ema b {
+		font-weight: normal;
+	}
+	.index .indexContentUs .contList h4 {
+		color: #333;
+		font-size: 18px;
+		line-height: 40px;
+		font-weight: normal;
+	}
+	.index .indexContentUs .contList p {
+		color: #666;
+		font-size: 14px;
+		line-height: 30px;
+	}
+	.index .indexContentUs .contList li {
+		position: relative;
+		border-bottom: 1px solid #c9c9c9;
+		padding: 15px 0;
+	}
+	.index .indexContentUs .contList li:last-child {
+		border-bottom: none;
+	}
+	.index .indexContentUs .contList li:before {
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		left: 0;
+		bottom: -5px;
+		content: '';
+		border: 1px solid #c9c9c9;
+		transform: rotate(45deg);
+		background-color: #f8f8f8;
+	}
+	.index .indexContentUs .contList li:last-child:before {
+		border: none;
+	}
+	.index .indexContentUs .contList .blueColor {
+		font-size: 16px;
+		vertical-align: middle;
+	}
 /*  index:end  */
 
 
 /*  detail:start  */
 	.detail {
 		padding-top: 30px;
+		padding-bottom: 80px;
 	}
 	.detail .detailHead {
 		color: #333;
@@ -1133,7 +1237,7 @@
 
 @media screen and (max-width: 1024px) {
 	.map {
-		display: none
+		display: none;
 	}
 
 	/*  TabControl:start  */
@@ -1195,6 +1299,63 @@
 	/*  aboutUs:end  */
 
 
+	/*  index:start  */
+		.index .indexCase {
+			height: auto;
+			margin-bottom: 50px;
+			padding-top: 30px;
+		}
+		.index .indexCase .txtCont {
+			width: 100%;
+		}
+		.index .indexAbout .textCont .img {
+			display: none;
+		}
+		.index .indexAbout .textCont {
+			padding: 20px 20px 0 110px;
+		}
+		.index .indexAbout {
+			height: auto;
+			padding-bottom: 50px;
+		}
+		.index .indexAbout .tCont {
+			padding-top: 40px;
+		}
+		.index .indexTeam {
+			height: auto;
+			padding: 50px 0 80px;
+		}
+		.index .indexTeam .title {
+			padding-top: 0;
+		}
+		.index .indexTeam .item:hover {
+			box-shadow: none;
+		}
+		.index .indexNews {
+			height: auto;
+			padding: 50px 0 80px;
+		}
+		.index .indexNews .title {
+			padding-top: 0;
+		}
+		.index .indexNews .sourceDate .date {
+			display: none;
+		}
+		.index .indexContentUs {
+			height: auto;
+			padding-bottom: 100px;
+		}
+		.index .indexContentUs .contus {
+			width: 100%;
+			padding: 0 5%;
+		}
+		.index .indexContentUs .card {
+			width: 100%;
+		}
+	/*  index:end  */
+
+
+
 	.team .twoMenuCont li {
 		display: block;
 		border: 2px solid #f5f5f5;
@@ -1246,7 +1407,78 @@
 			font-size: 25px
 		}
 	/*  TabControl:end  */
-	
+	.index {
+		background-color: #f2f2f2;
+	}
+	.index {
+		padding-bottom: 80px;
+	}
+	.index .indexAbout, .index .indexCase, .index .indexTeam, .index .indexNews, .index .indexContentUs {
+		display: none;
+	}
+	.mbsection {
+		background-color: #fff;
+		box-shadow: 0 0 8px #ccc;
+		margin-bottom: 20px;
+		padding: 20px 2%;
+	}
+	.mbIndexCase a {
+		float: left;
+		width: 50%;
+	}
+	.mbIndexCase .caseMenu {
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	.mbIndexNews .newsList li {
+		padding: 30px 0 30px 100px;
+		border-bottom: 1px solid #eee;
+	}
+	.mbIndexNews .date {
+		float: left;
+		color: #fff;
+		width: 86px;
+		text-align: center;
+		margin-left: -100px;
+		background-color: #005c87;
+	}
+	.mbIndexNews .date .month {
+		display: block;
+		font-size: 24px;
+		line-height: 45px;
+		border-bottom: 1px solid #fff;
+	}
+	.mbIndexNews .date .year {
+		font-size: 16px;
+		line-height: 32px;
+	}
+	.mbIndexNews .newsList h4 {
+		font-size: 18px;
+		color: #333;
+		font-weight: normal;
+		line-height: 38px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.mbIndexNews .newsList p {
+		font-size: 14px;
+		color: #999;
+		line-height: 20px;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+	}
+	.mbIndexNews .more {
+		margin-top: 20px;
+		display: block;
+		font-size: 16px;
+		text-align: center;
+		line-height: 40px;
+		color: #fff;
+		background-color: #005c87;
+	}
+
 
 	.detail {
 		padding: 30px 10px 10px;
