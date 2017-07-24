@@ -6,6 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/merge.css">
+	<style type="text/css">
+	#allmap {height: 500px;width:100%;overflow: hidden;}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=24748238d6579f384cf9811fd3b4ee19"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
 </head>
 <body>
 	<div class="container">
@@ -25,6 +31,7 @@
 					</div>
 				</div>
 				<div class="wrap">
+					<a class="logo" href="index.html"></a>
 					<nav>
 						<a href="index.html">首页</a>
 						<a href="aboutUs.html">关于我们</a>
@@ -38,6 +45,7 @@
 			</div>
 			
 			<div class="mbHeader">
+				<a class="logo" href="index.html"></a>
 				<nav>
 					<span class="navIcon"></span>
 					<div class="navMenu">
@@ -95,9 +103,39 @@
 								<p><span>联系人：</span>胡惠&nbsp;&nbsp;&nbsp;&nbsp;直线021-52666106	021-51096606-839&nbsp;&nbsp;&nbsp;&nbsp;15000113172&nbsp;&nbsp;&nbsp;&nbsp;Email：huh@iprtop.com</p>
 	     						<p><span>交通路线：</span>地铁2号线南京西路站2号口；地铁12/13号线南京西路11号口；地铁8号线人民广场10号口。公交：20、37、934、109、330、921等可到</p>
 
-	     						<div class="maps">
-	     							
-	     						</div>
+	     						<div id="allmap"></div>
+								<script type="text/javascript">
+									// 百度地图API功能
+								    var map = new BMap.Map('allmap');
+								    var poi = new BMap.Point(116.307852,40.057031);
+								    map.centerAndZoom(poi, 16);
+								    map.enableScrollWheelZoom();
+
+								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+								                    '地址：北京市海淀区上地十街10号<br/>电话：(010)59928888<br/>简介：百度大厦位于北京市海淀区西二旗地铁站附近，为百度公司综合研发及办公总部。' +
+								                  '</div>';
+
+								    //创建检索信息窗口对象
+								    var searchInfoWindow = null;
+									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+											title  : "上海汉光知识产权数据科技有限公司",      //标题
+											width  : 290,             //宽度
+											height : 105,              //高度
+											panel  : "panel",         //检索结果面板
+											enableAutoPan : true,     //自动平移
+											searchTypes   :[
+												BMAPLIB_TAB_SEARCH,   //周边检索
+												BMAPLIB_TAB_TO_HERE,  //到这里去
+												BMAPLIB_TAB_FROM_HERE //从这里出发
+											]
+										});
+								    var marker = new BMap.Marker(poi); //创建marker对象
+								    marker.enableDragging(); //marker可拖拽
+								    marker.addEventListener("click", function(e){
+									    searchInfoWindow.open(marker);
+								    })
+								    map.addOverlay(marker); //在地图中添加marker
+								</script>
 							</div>
 						</div>
 					</div>
@@ -301,22 +339,6 @@
 
 	</div>
 	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script>
-		$(".navIcon").click(function(){
-			$(".container").addClass("slideLeft");
-		});
-		$(".shadow").click(function(){
-			$(".container").removeClass("slideLeft");
-		});
-
-		/*Tab控件*/
-		$('.tabControl').css({'display':'none'});
-        $('#tabPiece_1').css({'display':'block'});
-        $('.tabControl').find('.tabTitle a').click(function() {
-            $('.tabControl').css({'display':'none'});
-            $($(this).attr('href')).css({'display':'block'});
-            $('.map .mapLink a:last-child').text($(this).text());
-        });
-	</script>
+	<script src="script/script.js"></script>
 </body>
 </html>

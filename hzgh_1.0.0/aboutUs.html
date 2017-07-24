@@ -27,6 +27,7 @@
 					</div>
 				</div>
 				<div class="wrap">
+					<a class="logo" href="index.html"></a>
 					<nav>
 						<a href="index.html">首页</a>
 						<a href="aboutUs.html" class="active">关于我们</a>
@@ -41,6 +42,7 @@
 			
 			<!-- iPad/Phone共用头结构，屏幕小于1024px显示 -->
 			<div class="mbHeader">
+				<a class="logo" href="index.html"></a>
 				<nav>
 					<span class="navIcon"></span>
 					<div class="navMenu">
@@ -222,23 +224,6 @@
 
 	</div>
 	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script>
-		/*移动端菜单切换*/
-		$(".navIcon").click(function(){
-			$(".container").addClass("slideLeft");
-		});
-		$(".shadow").click(function(){
-			$(".container").removeClass("slideLeft");
-		});
-
-		/*Tab控件*/
-		$('.tabControl').css({'display':'none'});
-        $('#tabPiece_1').css({'display':'block'});
-        $('.tabControl').find('.tabTitle a').click(function() {
-            $('.tabControl').css({'display':'none'});
-            $($(this).attr('href')).css({'display':'block'});
-            $('.map .mapLink a:last-child').text($(this).text());
-        });
-	</script>
+	<script src="script/script.js"></script>
 </body>
 </html>

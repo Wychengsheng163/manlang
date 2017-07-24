@@ -8,7 +8,7 @@ dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在H
 blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */  
 blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/  
 input,select,textarea,button {vertical-align:middle}  /* 重置表单控件垂直居中*/  
-button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */  
+button {border:0 none;outline:none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */  
 html {font-size: 16px;}  /* 项目根字体大小 */  
 body {background:#fff}   /* 重置body 页面背景为白色 */  
 body,th,td,input,select,textarea,button {font-size:12px;line-height:1 ;font-family:"微软雅黑";color:#666} /* 重置页面文字属性 */  
@@ -33,6 +33,12 @@ a:active {star:expression(this.onFocus=this.blur());}
 .clearfix:after {
 	clear: both
 }
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
 /* 页面居中 */
 .wrap {
 	max-width: 1200px;
@@ -45,6 +51,9 @@ a:active {star:expression(this.onFocus=this.blur());}
 	margin: 0 auto;
 	box-shadow: 0 0 20px #ccc;
 	transition: all 300ms ease
+}
+.content {
+	padding-bottom: 80px;
 }
 .slideLeft {
 	transform: translate(-200px, 0)
@@ -162,17 +171,25 @@ header .banner {
 		float: right
 	}
 
-	header .pcHeader nav {
-		display: flex;
-		justify-content: flex-end;
+	header .pcHeader .logo {
+		float: left;
+		width: 266px;
 		height: 100px;
 		background: url(../images/logo.jpg) no-repeat left center
 	}
 
+	header .pcHeader nav {
+		display: flex;
+		justify-content: flex-end;
+		height: 100px;
+	}
+
 	header .pcHeader nav a {
+		display: block;
 		padding: 0 20px;
 		margin: 0 2px;
 		font-size: 16px;
+		height: 100px;
 		line-height: 100px;
 		transition: all 300ms ease
 	}
@@ -246,10 +263,18 @@ header .banner {
 		display: block
 	}
 
+	header .mbHeader .logo {
+		position: relative;
+		z-index: 10;
+		float: left;
+		width: 266px;
+		height: 80px;
+		background: url(../images/logo.jpg) no-repeat left center
+	}
+
 	header .mbHeader nav {
 		position: relative;
 		height: 80px;
-		background: url(../images/logo.jpg) no-repeat left center
 	}
 
 	header .mbHeader nav .navIcon {
@@ -295,7 +320,7 @@ header .banner {
 	}
 
 	header .mbHeader .indexBanner {
-		background-image: url(../images/ipad/aboutUs_banner.ipad.jpg)
+		background-image: url(../images/ipad/index_banner.ipad.jpg)
 	}
 
 	header .mbHeader .aboutUsBanner {
@@ -344,6 +369,9 @@ header .banner {
 
 /* 兼容手机 */
 @media screen and (max-width: 640px) {
+	header .mbHeader .logo {
+		height: 60px;
+	}
 	header .mbHeader nav {
 		height: 60px;
 		background: url(../images/logo_phone.jpg) no-repeat left center
