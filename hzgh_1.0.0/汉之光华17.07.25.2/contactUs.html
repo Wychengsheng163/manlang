@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>联系我们</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/merge.css">
+	<!-- 这段是百度地图引用的文件 -->
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=24748238d6579f384cf9811fd3b4ee19"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+	<!-- 这段是百度地图引用的文件 -->
+</head>
+<body>
+	<div class="container">
+		<!-- 移动端遮罩 -->
+		<div class="shadow"></div>
+		<!-- 公共头 -->
+		<header>
+			<div class="pcHeader">
+				<div class="top">
+					<div class="wrap">
+						欢迎访问汉之光华司法鉴定服务网！ 
+						<span>
+							<a href="contactUs.html">联系我们</a>
+							&nbsp;&nbsp;|&nbsp;&nbsp;
+							<a href="">加入收藏</a>
+						</span>
+					</div>
+				</div>
+				<div class="wrap">
+					<a class="logo" href="index.html"></a>
+					<nav>
+						<a href="index.html">首页</a>
+						<a href="aboutUs.html">关于我们</a>
+						<a href="case.html">服务案例</a>
+						<a href="team.html">司法鉴定团队</a>
+						<a href="evaluation.html">鉴定程序</a>
+						<a href="contactUs.html" class="active">联系我们</a>
+					</nav>
+				</div>
+				<div class="banner contactUsBanner"></div>
+			</div>
+			
+			<div class="mbHeader">
+				<a class="logo" href="index.html"></a>
+				<nav>
+					<span class="navIcon"><img src="images/menu.jpg"></span>
+					<div class="navMenu">
+						<a href="index.html">首页</a>
+						<a href="aboutUs.html">关于我们</a>
+						<a href="case.html">服务案例</a>
+						<a href="team.html">司法鉴定团队</a>
+						<a href="evaluation.html">鉴定程序</a>
+						<a href="contactUs.html" class="active">联系我们</a>
+					</div>
+				</nav>
+				<div class="banner contactUsBanner"></div>
+			</div>
+		</header>
+
+		
+		<div class="content contentUs">
+			<div class="wrap">
+				
+				<!-- 面包屑导航 -->
+				<div class="map clearfix">
+					<div class="mapLink mapIcon">
+						<a href="/">首页</a>
+						<b class="rArrow"></b>
+						<a href="aboutUs.html">关于我们</a>
+						<b class="rArrow"></b>
+						<a href="javascript:;">关于我们</a>
+					</div>
+				</div>
+				
+				<!-- 这段是网页主体部分，可以直接替换就行 -->
+				<div id="tabPiece_1" class="tabControl" style="display: block;">
+					<div class="clearfix">
+						<div class="tabTitle">
+							<a class="aTit tabSelect" href="#tabPiece_1">上海联系人</a>
+							<a class="aTit" href="#tabPiece_2">合肥联系人</a>
+							<a class="aTit" href="#tabPiece_3">重庆联系人</a>
+							<a class="aTit" href="#tabPiece_4">山东联系人</a>
+							<a class="aTit" href="#tabPiece_5">北京联系人</a>
+							<a class="aTit" href="#tabPiece_6">杭州联系人</a>
+						</div>
+						<div class="tabContent">
+							<h4 class="title phoneIcon">联系方式<b class="line"></b></h4>
+							<div class="contentus clearfix">
+								<img src="images/contentUs_1.jpg">
+								<div class="code">
+									<p>直线：021-52666106</p>
+									<p>外线 ：021-51096606 转 839</p>
+									<img src="images/code.jpg">
+									<span>汉之光华</span>
+								</div>
+							</div>
+							<h4 class="title peopleIcon">上海联系人<b class="line"></b></h4>
+							<div class="aboutMaps">
+								<p><span>地址：</span>上海市静安区南京西路580号仲益大厦32C</p>
+								<p><span>联系人：</span> 胡惠&nbsp;&nbsp;&nbsp;&nbsp;直线 021-52666106&nbsp;&nbsp;&nbsp;&nbsp;021-51096606-839&nbsp;&nbsp;&nbsp;&nbsp;15000113172&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email：huh@iprtop.com</p>
+	     						<p><span>交通路线：</span>地铁2号线南京西路站2号口；地铁12/13号线南京西路11号口；地铁8号线人民广场10号口。公交：20、37、934、109、330、921等可到</p>
+
+	     						<div id="shanghai_map" class="maps"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tabPiece_2" class="tabControl" style="display: none;">
+					<div class="clearfix">
+						<div class="tabTitle">
+							<a class="aTit" href="#tabPiece_1">上海联系人</a>
+							<a class="aTit tabSelect" href="#tabPiece_2">合肥联系人</a>
+							<a class="aTit" href="#tabPiece_3">重庆联系人</a>
+							<a class="aTit" href="#tabPiece_4">山东联系人</a>
+							<a class="aTit" href="#tabPiece_5">北京联系人</a>
+							<a class="aTit" href="#tabPiece_6">杭州联系人</a>
+						</div>
+						<div class="tabContent">
+							<h4 class="title phoneIcon">联系方式<b class="line"></b></h4>
+							<div class="contentus clearfix">
+								<img src="images/contentUs_1.jpg">
+								<div class="code">
+									<p>直线：0551-65528587(8002)&nbsp;&nbsp;&nbsp;&nbsp;18655181210</p>
+									<img src="images/code.jpg">
+									<span>汉之光华</span>
+								</div>
+							</div>
+							<h4 class="title peopleIcon">合肥联系人<b class="line"></b></h4>
+							<div class="aboutMaps">
+								<p><span>地址：</span>合肥市政务区南二环3818号天鹅湖万达广场8号楼1901室</p>
+								<p><span>联系人：</span>倪纯&nbsp;&nbsp;&nbsp;&nbsp;直线 0551-65528587(8002)&nbsp;&nbsp;&nbsp;&nbsp;18655181210&nbsp;&nbsp;&nbsp;&nbsp;Email：nic@iprtop.com</p>
+
+	     						<div id="hefei_map" class="maps"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tabPiece_3" class="tabControl" style="display: none;">
+					<div class="clearfix">
+						<div class="tabTitle">
+							<a class="aTit" href="#tabPiece_1">上海联系人</a>
+							<a class="aTit" href="#tabPiece_2">合肥联系人</a>
+							<a class="aTit tabSelect" href="#tabPiece_3">重庆联系人</a>
+							<a class="aTit" href="#tabPiece_4">山东联系人</a>
+							<a class="aTit" href="#tabPiece_5">北京联系人</a>
+							<a class="aTit" href="#tabPiece_6">杭州联系人</a>
+						</div>
+						<div class="tabContent">
+							<h4 class="title phoneIcon">联系方式<b class="line"></b></h4>
+							<div class="contentus clearfix">
+								<img src="images/contentUs_1.jpg">
+								<div class="code">
+									<p>直线：023-63054799&nbsp;&nbsp;&nbsp;&nbsp;18623554138</p>
+									<img src="images/code.jpg">
+									<span>汉之光华</span>
+								</div>
+							</div>
+							<h4 class="title peopleIcon">重庆联系人<b class="line"></b></h4>
+							<div class="aboutMaps">
+								<p><span>地址：</span>重庆市江北区建新北路一支路6号未来国际大厦24楼9号</p>
+								<p><span>联系人：</span>皮燕&nbsp;&nbsp;&nbsp;&nbsp;直线 023-63054799&nbsp;&nbsp;&nbsp;&nbsp;18623554138&nbsp;&nbsp;&nbsp;&nbsp;Email：chongqing@iprtop.com</p>
+
+	     						<div id="chongqing_map" class="maps"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tabPiece_4" class="tabControl" style="display: none;">
+					<div class="clearfix">
+						<div class="tabTitle">
+							<a class="aTit" href="#tabPiece_1">上海联系人</a>
+							<a class="aTit" href="#tabPiece_2">合肥联系人</a>
+							<a class="aTit" href="#tabPiece_3">重庆联系人</a>
+							<a class="aTit tabSelect" href="#tabPiece_4">山东联系人</a>
+							<a class="aTit" href="#tabPiece_5">北京联系人</a>
+							<a class="aTit" href="#tabPiece_6">杭州联系人</a>
+						</div>
+						<div class="tabContent">
+							<h4 class="title phoneIcon">联系方式<b class="line"></b></h4>
+							<div class="contentus clearfix">
+								<img src="images/contentUs_1.jpg">
+								<div class="code">
+									<p>直线：0531-87964350&nbsp;&nbsp;&nbsp;&nbsp;18560132701</p>
+									<img src="images/code.jpg">
+									<span>汉之光华</span>
+								</div>
+							</div>
+							<h4 class="title peopleIcon">山东联系人<b class="line"></b></h4>
+							<div class="aboutMaps">
+								<p><span>地址：</span>济南市槐荫区和谐广场银座中型2号楼3513室</p>
+								<p><span>联系人：</span>于璐&nbsp;&nbsp;&nbsp;&nbsp;直线 0531-87964350&nbsp;&nbsp;&nbsp;&nbsp;18560132701&nbsp;&nbsp;&nbsp;&nbsp;Email：yul@iprtop.com</p>
+
+	     						<div id="shandong_map" class="maps"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tabPiece_5" class="tabControl" style="display: none;">
+					<div class="clearfix">
+						<div class="tabTitle">
+							<a class="aTit" href="#tabPiece_1">上海联系人</a>
+							<a class="aTit" href="#tabPiece_2">合肥联系人</a>
+							<a class="aTit" href="#tabPiece_3">重庆联系人</a>
+							<a class="aTit" href="#tabPiece_4">山东联系人</a>
+							<a class="aTit tabSelect" href="#tabPiece_5">北京联系人</a>
+							<a class="aTit" href="#tabPiece_6">杭州联系人</a>
+						</div>
+						<div class="tabContent">
+							<h4 class="title phoneIcon">联系方式<b class="line"></b></h4>
+							<div class="contentus clearfix">
+								<img src="images/contentUs_1.jpg">
+								<div class="code">
+									<p>直线：010-62620991&nbsp;&nbsp;&nbsp;&nbsp;17801057185</p>
+									<img src="images/code.jpg">
+									<span>汉之光华</span>
+								</div>
+							</div>
+							<h4 class="title peopleIcon">北京联系人<b class="line"></b></h4>
+							<div class="aboutMaps">
+								<p><span>地址：</span>北京市海淀区知春里甲10号楼3层307室</p>
+								<p><span>联系人：</span>冯华&nbsp;&nbsp;&nbsp;&nbsp;直线 010-62620991&nbsp;&nbsp;&nbsp;&nbsp;17801057185&nbsp;&nbsp;&nbsp;&nbsp;Email：fengh@iprtop.com</p>
+				
+					     		<div id="beijing_map" class="maps"></div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="tabPiece_6" class="tabControl" style="display: none;">
+					<div class="clearfix">
+						<div class="tabTitle">
+							<a class="aTit" href="#tabPiece_1">上海联系人</a>
+							<a class="aTit" href="#tabPiece_2">合肥联系人</a>
+							<a class="aTit" href="#tabPiece_3">重庆联系人</a>
+							<a class="aTit" href="#tabPiece_4">山东联系人</a>
+							<a class="aTit" href="#tabPiece_5">北京联系人</a>
+							<a class="aTit tabSelect" href="#tabPiece_6">杭州联系人</a>
+						</div>
+						<div class="tabContent">
+							<h4 class="title phoneIcon">联系方式<b class="line"></b></h4>
+							<div class="contentus clearfix">
+								<img src="images/contentUs_1.jpg">
+								<div class="code">
+									<p>直线：0571-86020881&nbsp;&nbsp;&nbsp;&nbsp;18667130106</p>
+									<img src="images/code.jpg">
+									<span>汉之光华</span>
+								</div>
+							</div>
+							<h4 class="title peopleIcon">杭州联系人<b class="line"></b></h4>
+							<div class="aboutMaps">
+								<p><span>地址：</span>杭州市余杭区仓前街道景兴路999号11幢103室</p>
+								<p><span>联系人：</span>毛矛&nbsp;&nbsp;&nbsp;&nbsp;直线 0571-86020881&nbsp;&nbsp;&nbsp;&nbsp;18667130106&nbsp;&nbsp;&nbsp;&nbsp;Email：maom@iprtop.com</p>
+				
+					     		<div id="hangzhou_map" class="maps"></div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 这段是网页主体部分，可以直接替换就行 -->
+			</div>
+		</div>
+
+		<!-- 公共尾 -->
+		<footer>
+			<div class="pcFooter">
+				<div class="wrap clearfix">
+					<div class="copyright">
+						版权所有 Copyright © 2016 汉之光华 All Rights Reserved. 沪ICP备05053582号-5 技术支持：曼朗策划
+					</div>
+					<div class="fLink">
+						<p><span class="returnTop">返回顶部</span> | 服务时间：工作日 09:30-11:30 13:30-17:00</p>
+						<p>友情链接汉光网站：<a target="_blank" href="http://www.iprhg.com/">www.iprtop.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank"  href="http://www.iprhg.com/">www.iprtop.com</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<nav class="mbFooter">
+				<a href="aboutUs.html"><img src="images/m_aboutUs.jpg"></a>
+				<a href="case.html"><img src="images/m_case.jpg"></a>
+				<a href="index.html"><img src="images/m_index.jpg"></a>
+				<a href="team.html"><img src="images/m_team.jpg"></a>
+				<a href="contactUs.html"><img src="images/m_contentUs.jpg"></a>
+			</nav>
+		</footer>
+
+	</div>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="script/script.js"></script>
+</body>
+</html>

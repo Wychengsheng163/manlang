@@ -4,11 +4,14 @@
 	<meta charset="UTF-8">
 	<title>联系我们</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/merge.css">
+	<!-- 这段是百度地图引用的文件 -->
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=24748238d6579f384cf9811fd3b4ee19"></script>
 	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
 	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+	<!-- 这段是百度地图引用的文件 -->
 </head>
 <body>
 	<div class="container">
@@ -44,14 +47,14 @@
 			<div class="mbHeader">
 				<a class="logo" href="index.html"></a>
 				<nav>
-					<span class="navIcon"></span>
+					<span class="navIcon"><img src="images/menu.jpg"></span>
 					<div class="navMenu">
-						<a href="/">首页</a>
+						<a href="index.html">首页</a>
 						<a href="aboutUs.html">关于我们</a>
 						<a href="case.html">服务案例</a>
 						<a href="team.html">司法鉴定团队</a>
 						<a href="evaluation.html">鉴定程序</a>
-						<a href="contactUs.html">联系我们</a>
+						<a href="contactUs.html" class="active">联系我们</a>
 					</div>
 				</nav>
 				<div class="banner contactUsBanner"></div>
@@ -72,7 +75,8 @@
 						<a href="javascript:;">关于我们</a>
 					</div>
 				</div>
-
+				
+				<!-- 这段是网页主体部分，可以直接替换就行 -->
 				<div id="tabPiece_1" class="tabControl" style="display: block;">
 					<div class="clearfix">
 						<div class="tabTitle">
@@ -101,38 +105,6 @@
 	     						<p><span>交通路线：</span>地铁2号线南京西路站2号口；地铁12/13号线南京西路11号口；地铁8号线人民广场10号口。公交：20、37、934、109、330、921等可到</p>
 
 	     						<div id="shanghai_map" class="maps"></div>
-								<script type="text/javascript">
-									// 百度地图API功能
-								    var map = new BMap.Map('shanghai_map');
-								    var poi = new BMap.Point(121.472462,31.237777);
-								    map.centerAndZoom(poi, 16);
-								    map.enableScrollWheelZoom();
-
-								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-								                    '地址：上海市静安区南京西路580号仲益大厦32C<br/>电话：021-51096606<br/>简介：汉之光华，您身边的专利管家' +
-								                  '</div>';
-
-								    //创建检索信息窗口对象
-								    var searchInfoWindow = null;
-									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
-											title  : "上海汉光知识产权数据科技有限公司",      //标题
-											width  : 280,             //宽度
-											height : 60,              //高度
-											panel  : "panel",         //检索结果面板
-											enableAutoPan : true,     //自动平移
-											searchTypes   :[
-												BMAPLIB_TAB_SEARCH,   //周边检索
-												BMAPLIB_TAB_TO_HERE,  //到这里去
-												BMAPLIB_TAB_FROM_HERE //从这里出发
-											]
-										});
-								    var marker = new BMap.Marker(poi); //创建marker对象
-								    marker.enableDragging(); //marker可拖拽
-								    marker.addEventListener("click", function(e){
-									    searchInfoWindow.open(marker);
-								    })
-								    map.addOverlay(marker); //在地图中添加marker
-								</script>
 							</div>
 						</div>
 					</div>
@@ -162,41 +134,7 @@
 								<p><span>地址：</span>合肥市政务区南二环3818号天鹅湖万达广场8号楼1901室</p>
 								<p><span>联系人：</span>倪纯&nbsp;&nbsp;&nbsp;&nbsp;直线 0551-65528587(8002)&nbsp;&nbsp;&nbsp;&nbsp;18655181210&nbsp;&nbsp;&nbsp;&nbsp;Email：nic@iprtop.com</p>
 
-	     						<div id="hefei_map" class="maps">
-	     							
-	     						</div>
-	     						<script type="text/javascript">
-									// 百度地图API功能
-								    var map = new BMap.Map('hefei_map');
-								    var poi = new BMap.Point(117.228381,31.82718);
-								    map.centerAndZoom(poi, 16);
-								    map.enableScrollWheelZoom();
-
-								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-								                    '地址：合肥市政务区南二环3818号天鹅湖万达广场8号楼1901室<br/>电话：0551-65528587（8002）<br/>简介：汉之光华，您身边的专利管家' +
-								                  '</div>';
-
-								    //创建检索信息窗口对象
-								    var searchInfoWindow = null;
-									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
-											title  : "上海汉光知识产权数据科技有限公司",      //标题
-											width  : 280,             //宽度
-											height : 90,              //高度
-											panel  : "panel",         //检索结果面板
-											enableAutoPan : true,     //自动平移
-											searchTypes   :[
-												BMAPLIB_TAB_SEARCH,   //周边检索
-												BMAPLIB_TAB_TO_HERE,  //到这里去
-												BMAPLIB_TAB_FROM_HERE //从这里出发
-											]
-										});
-								    var marker = new BMap.Marker(poi); //创建marker对象
-								    marker.enableDragging(); //marker可拖拽
-								    marker.addEventListener("click", function(e){
-									    searchInfoWindow.open(marker);
-								    })
-								    map.addOverlay(marker); //在地图中添加marker
-								</script>
+	     						<div id="hefei_map" class="maps"></div>
 							</div>
 						</div>
 					</div>
@@ -227,38 +165,6 @@
 								<p><span>联系人：</span>皮燕&nbsp;&nbsp;&nbsp;&nbsp;直线 023-63054799&nbsp;&nbsp;&nbsp;&nbsp;18623554138&nbsp;&nbsp;&nbsp;&nbsp;Email：chongqing@iprtop.com</p>
 
 	     						<div id="chongqing_map" class="maps"></div>
-	     						<script type="text/javascript">
-									// 百度地图API功能
-								    var map = new BMap.Map('chongqing_map');
-								    var poi = new BMap.Point(106.539372,29.58045);
-								    map.centerAndZoom(poi, 16);
-								    map.enableScrollWheelZoom();
-
-								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-								                    '地址：重庆市江北区建新北路一支路6号未来国际大厦24楼9号<br/>电话：023-63054799      18623554138<br/>简介：汉之光华，您身边的专利管家' +
-								                  '</div>';
-
-								    //创建检索信息窗口对象
-								    var searchInfoWindow = null;
-									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
-											title  : "上海汉光知识产权数据科技有限公司",      //标题
-											width  : 280,             //宽度
-											height : 90,              //高度
-											panel  : "panel",         //检索结果面板
-											enableAutoPan : true,     //自动平移
-											searchTypes   :[
-												BMAPLIB_TAB_SEARCH,   //周边检索
-												BMAPLIB_TAB_TO_HERE,  //到这里去
-												BMAPLIB_TAB_FROM_HERE //从这里出发
-											]
-										});
-								    var marker = new BMap.Marker(poi); //创建marker对象
-								    marker.enableDragging(); //marker可拖拽
-								    marker.addEventListener("click", function(e){
-									    searchInfoWindow.open(marker);
-								    })
-								    map.addOverlay(marker); //在地图中添加marker
-								</script>
 							</div>
 						</div>
 					</div>
@@ -289,38 +195,6 @@
 								<p><span>联系人：</span>于璐&nbsp;&nbsp;&nbsp;&nbsp;直线 0531-87964350&nbsp;&nbsp;&nbsp;&nbsp;18560132701&nbsp;&nbsp;&nbsp;&nbsp;Email：yul@iprtop.com</p>
 
 	     						<div id="shandong_map" class="maps"></div>
-	     						<script type="text/javascript">
-									// 百度地图API功能
-								    var map = new BMap.Map('shandong_map');
-								    var poi = new BMap.Point(116.98544,36.655463);
-								    map.centerAndZoom(poi, 16);
-								    map.enableScrollWheelZoom();
-
-								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-								                    '地址：济南市槐荫区和谐广场银座中型2号楼3513室<br/>电话：0531-87964350      18560132701<br/>简介：汉之光华，您身边的专利管家' +
-								                  '</div>';
-
-								    //创建检索信息窗口对象
-								    var searchInfoWindow = null;
-									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
-											title  : "上海汉光知识产权数据科技有限公司",      //标题
-											width  : 280,             //宽度
-											height : 90,              //高度
-											panel  : "panel",         //检索结果面板
-											enableAutoPan : true,     //自动平移
-											searchTypes   :[
-												BMAPLIB_TAB_SEARCH,   //周边检索
-												BMAPLIB_TAB_TO_HERE,  //到这里去
-												BMAPLIB_TAB_FROM_HERE //从这里出发
-											]
-										});
-								    var marker = new BMap.Marker(poi); //创建marker对象
-								    marker.enableDragging(); //marker可拖拽
-								    marker.addEventListener("click", function(e){
-									    searchInfoWindow.open(marker);
-								    })
-								    map.addOverlay(marker); //在地图中添加marker
-								</script>
 							</div>
 						</div>
 					</div>
@@ -349,40 +223,8 @@
 							<div class="aboutMaps">
 								<p><span>地址：</span>北京市海淀区知春里甲10号楼3层307室</p>
 								<p><span>联系人：</span>冯华&nbsp;&nbsp;&nbsp;&nbsp;直线 010-62620991&nbsp;&nbsp;&nbsp;&nbsp;17801057185&nbsp;&nbsp;&nbsp;&nbsp;Email：fengh@iprtop.com</p>
-
-	     						<div id="beijing_map" class="maps"></div>
-	     						<script type="text/javascript">
-									// 百度地图API功能
-								    var map = new BMap.Map('beijing_map');
-								    var poi = new BMap.Point(116.327695,39.979454);
-								    map.centerAndZoom(poi, 16);
-								    map.enableScrollWheelZoom();
-
-								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-								                    '地址：北京市海淀区知春里甲10号楼3层307室<br/>电话：010-62620991     17801057185<br/>简介：汉之光华，您身边的专利管家' +
-								                  '</div>';
-
-								    //创建检索信息窗口对象
-								    var searchInfoWindow = null;
-									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
-											title  : "上海汉光知识产权数据科技有限公司",      //标题
-											width  : 280,             //宽度
-											height : 90,              //高度
-											panel  : "panel",         //检索结果面板
-											enableAutoPan : true,     //自动平移
-											searchTypes   :[
-												BMAPLIB_TAB_SEARCH,   //周边检索
-												BMAPLIB_TAB_TO_HERE,  //到这里去
-												BMAPLIB_TAB_FROM_HERE //从这里出发
-											]
-										});
-								    var marker = new BMap.Marker(poi); //创建marker对象
-								    marker.enableDragging(); //marker可拖拽
-								    marker.addEventListener("click", function(e){
-									    searchInfoWindow.open(marker);
-								    })
-								    map.addOverlay(marker); //在地图中添加marker
-								</script>
+				
+					     		<div id="beijing_map" class="maps"></div>	
 							</div>
 						</div>
 					</div>
@@ -411,45 +253,13 @@
 							<div class="aboutMaps">
 								<p><span>地址：</span>杭州市余杭区仓前街道景兴路999号11幢103室</p>
 								<p><span>联系人：</span>毛矛&nbsp;&nbsp;&nbsp;&nbsp;直线 0571-86020881&nbsp;&nbsp;&nbsp;&nbsp;18667130106&nbsp;&nbsp;&nbsp;&nbsp;Email：maom@iprtop.com</p>
-
-	     						<div id="hangzhou_map" class="maps"></div>
-	     						<script type="text/javascript">
-									// 百度地图API功能
-								    var map = new BMap.Map('hangzhou_map');
-								    var poi = new BMap.Point(120.006644,30.296625);
-								    map.centerAndZoom(poi, 16);
-								    map.enableScrollWheelZoom();
-
-								    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-								                    '地址：杭州市余杭区仓前街道景兴路999号11幢103室<br/>电话：0571-86020881 18667130106<br/>简介：汉之光华，您身边的专利管家' +
-								                  '</div>';
-
-								    //创建检索信息窗口对象
-								    var searchInfoWindow = null;
-									searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
-											title  : "上海汉光知识产权数据科技有限公司",      //标题
-											width  : 280,             //宽度
-											height : 90,              //高度
-											panel  : "panel",         //检索结果面板
-											enableAutoPan : true,     //自动平移
-											searchTypes   :[
-												BMAPLIB_TAB_SEARCH,   //周边检索
-												BMAPLIB_TAB_TO_HERE,  //到这里去
-												BMAPLIB_TAB_FROM_HERE //从这里出发
-											]
-										});
-								    var marker = new BMap.Marker(poi); //创建marker对象
-								    marker.enableDragging(); //marker可拖拽
-								    marker.addEventListener("click", function(e){
-									    searchInfoWindow.open(marker);
-								    })
-								    map.addOverlay(marker); //在地图中添加marker
-								</script>
+				
+					     		<div id="hangzhou_map" class="maps"></div>	
 							</div>
 						</div>
 					</div>
 				</div>
-
+				<!-- 这段是网页主体部分，可以直接替换就行 -->
 			</div>
 		</div>
 
@@ -461,23 +271,27 @@
 						版权所有 Copyright © 2016 汉之光华 All Rights Reserved. 沪ICP备05053582号-5 技术支持：曼朗策划
 					</div>
 					<div class="fLink">
-						<p>返回顶部 | 服务时间：工作日 09:30-11:30 13:30-17:00</p>
-						<p>友情链接汉光网站：www.iprhg.com      www.iprtop.com</p>
+						<p><span class="returnTop">返回顶部</span> | 服务时间：工作日 09:30-11:30 13:30-17:00</p>
+						<p>友情链接汉光网站：<a target="_blank" href="http://www.iprhg.com/">www.iprtop.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank"  href="http://www.iprhg.com/">www.iprtop.com</a></p>
 					</div>
 				</div>
 			</div>
-
+			
 			<nav class="mbFooter">
-				<a href="aboutUs.html">关于我们</a>
-				<a href="case.html">服务案例</a>
-				<a href="/">首页</a>
-				<a href="team.html">团队</a>
-				<a href="contactUs.html">联系我们</a>
+				<a href="aboutUs.html"><img src="images/m_aboutUs.jpg"></a>
+				<a href="case.html"><img src="images/m_case.jpg"></a>
+				<a href="index.html"><img src="images/m_index.jpg"></a>
+				<a href="team.html"><img src="images/m_team.jpg"></a>
+				<a href="contactUs.html"><img src="images/m_contentUs.jpg"></a>
 			</nav>
 		</footer>
 
 	</div>
 	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="script/script.js"></script>
+	<script>
+		var hash = window.location.hash;
+		fnMaps(hash ? $(hash).find('.maps').attr('id') : "shanghai_map");
+	</script>
 </body>
 </html>
