@@ -7,6 +7,19 @@
 	<meta content="telephone=no" name="format-detection">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/merge.css">
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		$(function(){
+			var Path = $("#banner").attr("src");
+
+			var replaceImg = (function() { 
+				$("#banner").attr("src", $(window).width() <= 1024 ? Path.replace(/.jpg$/,'.ipad.jpg') : Path);
+				return arguments.callee;
+			}());
+
+			$(window).resize(replaceImg);
+		});
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -36,7 +49,6 @@
 						<a href="contactUs.html">联系我们</a>
 					</nav>
 				</div>
-				<div class="banner indexBanner"></div>
 			</div>
 			
 			<div class="mbHeader">
@@ -52,8 +64,9 @@
 						<a href="contactUs.html">联系我们</a>
 					</div>
 				</nav>
-				<div class="banner indexBanner"></div>
 			</div>
+
+			<div><img id="banner" src="images/index_banner.jpg" alt=""></div>
 		</header>
 
 		
@@ -436,7 +449,7 @@
 		</footer>
 
 	</div>
-	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	
 	<script src="script/script.js"></script>
 
 	<!-- 这段是移动端首页的轮播图(只有首页有这段代码) -->
