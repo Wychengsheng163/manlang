@@ -228,7 +228,7 @@
 		line-height: 38px;
 		text-align: center;
 		background-color: #fff;
-		transition: all 600ms ease;
+		transition: all 300ms ease;
 		box-shadow: 0 0 10px #414141;
 	}
 	.CaseDetail .casemenu .conts p:first-child {
@@ -245,6 +245,7 @@
 /* 风格定制 ~ START */
 	.StyleDetail {
 		padding-top: 58px;
+		padding-bottom: 140px;
 	}
 	.StyleDetail .smore {
 		padding: 22px 0;
@@ -284,10 +285,57 @@
 		width: 890px;
 		height: 613px;
 	}
+	.StyleDetail .gallery-thumbs .swiper-slide:before {
+		display: block;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.4);
+		cursor: pointer;
+	}
+	.StyleDetail .gallery-thumbs .swiper-slide-active:before {
+		background: rgba(0,0,0,0);
+	}
 	.StyleDetail .gallery-thumbs {
 		position: relative;
 		width: 293px;
-		height: 653px;
+		height: 651px;
 		overflow: hidden;
+	}
+	.StyleDetail .detail {
+		position: absolute;
+		z-index: 10;
+		left: 86px;
+		bottom: 0;
+		width: 674px;
+		height: 80px;
+		color: #bcbcbc;
+		font-size: 14px;
+		padding: 12px 40px;
+		line-height: 28px;
+		box-sizing: border-box;
+		background-color: #414141;
+	}
+	.StyleDetail .detail a {
+		position: absolute;
+		right: -70px;
+		top: 21px;
+		width: 138px;
+		height: 38px;
+		color: #414141;
+		font-size: 16px;
+		line-height: 38px;
+		text-align: center;
+		background-color: #fff;
+		transition: all 300ms ease;
+		box-shadow: 0 0 10px #414141;
+	}
+	.StyleDetail .detail:hover a {
+		color: #fff;
+		background-color: #6d131e;
+	}
+	.StyleDetail .detail p:nth-child(1) {
+		font-size: 16px;
+		color: #fff;
 	}
 /* 风格定制 ~ END */

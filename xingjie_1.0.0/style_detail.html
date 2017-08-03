@@ -16,8 +16,8 @@
 			<div class="banner"><img src="images/case_banner.jpg"></div>
 			<div class="nav">
 				<nav class="boxes clearfix">
-					<a href="">定制案例</a>
-					<a href="" class="active">风格定制</a>
+					<a href="case_detail.html">定制案例</a>
+					<a href="javascript:;" class="active">风格定制</a>
 					<a href="">大师定制</a>
 					<a href="">软装定制</a>
 					<a href="">定制保障</a>
@@ -49,10 +49,9 @@
 					<div class="swiper-container gallery-top fl">
 					    <div class="swiper-wrapper">
 					       <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/case_3.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/case_4.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/case_5.jpg)"></div>
 					    </div>
 					</div>
 
@@ -62,32 +61,17 @@
 					        <div class="swiper-slide" style="background-image:url(images/small_style_2.jpg)"></div>
 					        <div class="swiper-slide" style="background-image:url(images/small_style_3.jpg)"></div>
 					        <div class="swiper-slide" style="background-image:url(images/small_style_4.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/small_style_1.jpg)"></div>
 					    </div>
 					</div>
 
 					<div class="detail">
-						
+						<p>西班牙—独特异域风情</p>
+						<p>举止得体，情感真挚，崇尚美感和才智，为人理性正直。</p>
+						<a href="">立即定制</a>
 					</div>
 
 				</div>
 				
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-
 			</div>
 		</div>
 
@@ -142,12 +126,16 @@
 	<script>
 	    var galleryTop = new Swiper('.gallery-top', {
 	        spaceBetween: 10,  
+	        loop:true,
+		    loopedSlides: 5,
 	    });
 	    var galleryThumbs = new Swiper('.gallery-thumbs', {
 	        direction : 'vertical',
-	        spaceBetween: 10,
+	        spaceBetween: 17,
 	        slidesPerView: 4,
 	        touchRatio: 0.2,
+	        loop:true,
+		    loopedSlides: 5,
 	        slideToClickedSlide: true
 	    });
 	    galleryTop.params.control = galleryThumbs;
