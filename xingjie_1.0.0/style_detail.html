@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>风格定制</title>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/select.css" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="topsite"></div>
+			<div class="banner"><img src="images/case_banner.jpg"></div>
+			<div class="nav">
+				<nav class="boxes clearfix">
+					<a href="">定制案例</a>
+					<a href="" class="active">风格定制</a>
+					<a href="">大师定制</a>
+					<a href="">软装定制</a>
+					<a href="">定制保障</a>
+					<a href="">定制流程</a>
+				</nav>
+			</div>
+		</header>
+
+
+		<div class="content StyleDetail">
+			<div class="boxes">
+				
+				<div class="smore">
+					<p class="fr">
+						<span>其它风格定制：</span>
+						<a href="" class="active">欧式</a>
+						<a href="">现代</a>
+						<a href="">新中式</a>
+						<a href="">简美</a>
+						<a href="">美式</a>
+						<a href="">新古典</a>
+						<a href="">简欧</a>
+					</p>
+				</div>
+
+				<div class="slideshowbox clearfix">
+
+					<!-- Swiper -->
+					<div class="swiper-container gallery-top fl">
+					    <div class="swiper-wrapper">
+					       <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
+					    </div>
+					</div>
+
+					<div class="swiper-container gallery-thumbs fr">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide" style="background-image:url(images/small_style_1.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/small_style_2.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/small_style_3.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/small_style_4.jpg)"></div>
+					        <div class="swiper-slide" style="background-image:url(images/small_style_1.jpg)"></div>
+					    </div>
+					</div>
+
+					<div class="detail">
+						
+					</div>
+
+				</div>
+				
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+
+			</div>
+		</div>
+
+
+		<footer>
+			<div class="boxes">
+				<button class="foldBtn base baseTA IsShowBtn"></button>
+				<button class="btn CustomBtn">预约定制</button>
+				<button class="baseClose CloseBtn" style="display: none;"></button>
+				<h4>BESPOKE CUSTOMIZATION</h4>
+				<p>追求极致最爱奢华，张扬不做作追求极致，最爱奢华张扬</p>
+				<div class="booking clearfix" style="display: none;">
+					<div class="form">
+						<form action="">
+							<h2>预约定制</h2>
+							<div><span>姓名：</span><input type="text"></div>
+							<div><span>电话：</span><input type="text"></div>
+							<div class="vertical">
+								<span class="tit">风格：</span>
+								<select id="mySelect">
+									<option value="1" selected="selected">欧式</option>
+									<option value="2">中式</option>
+									<option value="3">法式</option>
+									<option value="4">意大利式</option>
+									<option value="5">中欧</option>
+									<option value="6">中式</option>
+									<option value="7">法式</option>
+									<option value="8">意大利式</option>
+									<option value="9">中欧</option>
+								</select>
+							</div>
+							<div>
+								<p class="op">已有<span class="redColor"> 180 </span>名业主报名定制</p>
+								<button class="submit" type="submit">提交定制</button>
+							</div>
+						</form>
+					</div>
+					<div class="flow">
+						<h2>只需四步，享受专属定制</h2>
+						<img src="images/footer_1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="script/jquery.js"></script>
+	<script src="script/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="script/jquery.select.js"></script>
+	<script src="script/swiper.min.js"></script>
+	<script src="script/common.js"></script>
+	<script>
+	    var galleryTop = new Swiper('.gallery-top', {
+	        spaceBetween: 10,  
+	    });
+	    var galleryThumbs = new Swiper('.gallery-thumbs', {
+	        direction : 'vertical',
+	        spaceBetween: 10,
+	        slidesPerView: 4,
+	        touchRatio: 0.2,
+	        slideToClickedSlide: true
+	    });
+	    galleryTop.params.control = galleryThumbs;
+	    galleryThumbs.params.control = galleryTop;
+	</script>
+</body>
