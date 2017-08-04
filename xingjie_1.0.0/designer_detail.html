@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>风格定制</title>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/select.css" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="topsite"></div>
+			<div class="banner"><img src="images/case_banner.jpg"></div>
+			<div class="nav">
+				<nav class="boxes clearfix">
+					<a href="case_detail.html">定制案例</a>
+					<a href="style_detail">风格定制</a>
+					<a href="javascript:;" class="active">大师定制</a>
+					<a href="">软装定制</a>
+					<a href="">定制保障</a>
+					<a href="">定制流程</a>
+				</nav>
+			</div>
+		</header>
+
+
+		<div class="content designerDetail">
+			<div class="boxes">
+				
+				<div class="designer">
+					<div class="textLayer">
+						<h3>设计师介绍</h3>
+						<p class="label clearfix">
+							<span>擅长风格：</span>
+							<button>欧式</button>
+							<button>现代</button>
+							<button>新中式</button>
+							<button>美式</button>
+							<button>简美</button>
+							<button>新古典</button>
+							<button>简欧</button>
+							<button>简美</button>
+							<button>新古典</button>
+						</p>
+						<p class="honor">
+							<span>所获荣誉：</span>
+							2011年度上海市优秀室内设计师<br>
+							2012年第七届大金内装设计大赛上海别墅组金奖<br>
+							2012年中国国际空间环境艺术（筑巢奖）设计大赛优秀奖<br>
+							2013年第九届中国新疆喀什·中亚南亚风情设计大赛特等奖<br>
+							2013年中国国际空间环境艺术（筑巢奖）设计大赛优秀奖<br>
+							2015年第七届大金内装设计大赛上海别墅组银奖<br>
+						</p>
+					</div>
+					<div class="cardLayer">
+						<div class="imgbox"><img src="images/casedetail_head.jpg" alt=""></div>
+						<p class="name">马&nbsp;&nbsp;琳<span>Z.K.mark</span></p>
+						<p class="post">总监设计师</p>
+						<p class="tit">设计理念</p>
+						<p>设计是演绎、诠释与解读由点、线、面、体的重构与推敲</p>
+						<a href="">预约定制</a>
+					</div>
+				</div>
+
+				<div class="album">
+					<div class="swiper-container gallery-top">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide" style="background-image:url(images/designer_2.jpg)"></div>
+				            <div class="swiper-slide" style="background-image:url(images/designer_2.jpg)"></div>
+				            <div class="swiper-slide" style="background-image:url(images/designer_2.jpg)"></div>
+				            <div class="swiper-slide" style="background-image:url(images/designer_2.jpg)"></div>
+				        </div>
+				    </div>
+					<div class="textcard">
+						<p class="title">隐&nbsp;&nbsp;居<button>新中式</button></p>
+						<p>乐享自然，追求诗和远方的田野</p>
+						<a href="" class="more">了解他的更多案例</a>
+						<div class="swiper-button-next"></div>
+				        <div class="swiper-button-prev"></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+
+		<footer>
+			<div class="boxes">
+				<button class="foldBtn base baseTA IsShowBtn"></button>
+				<button class="btn CustomBtn">预约定制</button>
+				<button class="baseClose CloseBtn" style="display: none;"></button>
+				<h4>BESPOKE CUSTOMIZATION</h4>
+				<p>追求极致最爱奢华，张扬不做作追求极致，最爱奢华张扬</p>
+				<div class="booking clearfix" style="display: none;">
+					<div class="form">
+						<form action="">
+							<h2>预约定制</h2>
+							<div><span>姓名：</span><input type="text"></div>
+							<div><span>电话：</span><input type="text"></div>
+							<div class="vertical">
+								<span class="tit">风格：</span>
+								<select id="mySelect">
+									<option value="1" selected="selected">欧式</option>
+									<option value="2">中式</option>
+									<option value="3">法式</option>
+									<option value="4">意大利式</option>
+									<option value="5">中欧</option>
+									<option value="6">中式</option>
+									<option value="7">法式</option>
+									<option value="8">意大利式</option>
+									<option value="9">中欧</option>
+								</select>
+							</div>
+							<div>
+								<p class="op">已有<span class="redColor"> 180 </span>名业主报名定制</p>
+								<button class="submit" type="submit">提交定制</button>
+							</div>
+						</form>
+					</div>
+					<div class="flow">
+						<h2>只需四步，享受专属定制</h2>
+						<img src="images/footer_1.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="script/jquery.js"></script>
+	<script src="script/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="script/jquery.select.js"></script>
+	<script src="script/swiper.min.js"></script>
+	<script src="script/common.js"></script>
+	<script>
+		var galleryTop = new Swiper('.gallery-top', {
+		    nextButton: '.swiper-button-next',
+		    prevButton: '.swiper-button-prev',
+		    spaceBetween: 10,
+		});
+	</script>
+</body>

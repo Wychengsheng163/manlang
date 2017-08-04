@@ -2,33 +2,85 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>别墅生活家</title>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/select.css" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 	<div class="container">
 		<header>
-			<div class="banner"><img src=""></div>
 			<div class="topsite"></div>
+			<div class="banner"><img src="images/case_banner.jpg"></div>
 			<div class="nav">
-				<nav>
-					<a href="">定制案例</a>
-					<a href="">风格定制</a>
-					<a href="">大师定制</a>
-					<a href="">软装定制</a>
-					<a href="">定制保障</a>
-					<a href="">定制流程</a>
+				<nav class="boxes clearfix">
+					<a href="javascript:;" class="active">定制案例</a>
+					<a href="style_detail">风格定制</a>
+					<a href="designer_detail.html">大师定制</a>
+					<a href="javascript:;">软装定制</a>
+					<a href="javascript:;">定制保障</a>
+					<a href="javascript:;">定制流程</a>
 				</nav>
 			</div>
 		</header>
 
 
+		<div class="content designerDetail">
+			<div class="boxes">
+				
+				
+				
+			</div>
+		</div>
+
+
 		<footer>
-			<h4>BESPOKE CUSTOMIZATION</h4>
-			<p>追求极致最爱奢华，张扬不做作追求极致，最爱奢华张扬</p>
+			<div class="boxes">
+				<button class="foldBtn base baseTA IsShowBtn"></button>
+				<button class="btn CustomBtn">预约定制</button>
+				<button class="baseClose CloseBtn" style="display: none;"></button>
+				<h4>BESPOKE CUSTOMIZATION</h4>
+				<p>追求极致最爱奢华，张扬不做作追求极致，最爱奢华张扬</p>
+				<div class="booking clearfix" style="display: none;">
+					<div class="form">
+						<form action="">
+							<h2>预约定制</h2>
+							<div><span>姓名：</span><input type="text"></div>
+							<div><span>电话：</span><input type="text"></div>
+							<div class="vertical">
+								<span class="tit">风格：</span>
+								<select id="mySelect">
+									<option value="1" selected="selected">欧式</option>
+									<option value="2">中式</option>
+									<option value="3">法式</option>
+									<option value="4">意大利式</option>
+									<option value="5">中欧</option>
+									<option value="6">中式</option>
+									<option value="7">法式</option>
+									<option value="8">意大利式</option>
+									<option value="9">中欧</option>
+								</select>
+							</div>
+							<div>
+								<p class="op">已有<span class="redColor"> 180 </span>名业主报名定制</p>
+								<button class="submit" type="submit">提交定制</button>
+							</div>
+						</form>
+					</div>
+					<div class="flow">
+						<h2>只需四步，享受专属定制</h2>
+						<img src="images/footer_1.jpg" alt="">
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 
-	<script src="/script/superslide.js"></script>
-	<script src="/script/common.js"></script>
+	<script src="script/jquery.js"></script>
+	<script src="script/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="script/jquery.select.js"></script>
+	<script src="script/swiper.min.js"></script>
+	<script src="script/common.js"></script>
 </body>
-</html>

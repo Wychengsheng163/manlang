@@ -2,31 +2,31 @@
 
 
 /* 案例详情 ~ START */
-	.CaseDetail .casetab {
+	.caseDetail .casetab {
 		padding-top: 58px;
 	}
-	.CaseDetail .tabtitle {
+	.caseDetail .tabtitle {
 		font-size: 24px;
 		color: #414141;
 		line-height: 65px;
 	}
-	.CaseDetail .casetabbox {
+	.caseDetail .casetabbox {
 		position: relative;
 		height: 495px;
 		margin-bottom: 224px;
 	}
-	.CaseDetail .imgmenu {
+	.caseDetail .imgmenu {
 		position: relative;
 		width: 937px;
 		height: 495px;
 		overflow: hidden;
 	}
-	.CaseDetail .imgmenu img {
+	.caseDetail .imgmenu img {
 		position: absolute;
 		left: 0;
 		top: 0;
 	}
-	.CaseDetail .introduce {
+	.caseDetail .introduce {
 		position: absolute;
 		left: 25px;
 		bottom: -150px;
@@ -37,19 +37,19 @@
 		box-sizing: border-box;
 		background-color: #414141;
 	}
-	.CaseDetail .introduce .title {
+	.caseDetail .introduce .title {
 		font-size: 16px;
 		line-height: 40px;
 	}
-	.CaseDetail .introduce .title span {
+	.caseDetail .introduce .title span {
 		font-size: 24px;
 		color: #fff;
 		margin-right: 30px;
 	}
-	.CaseDetail .introduce .aBtns {
+	.caseDetail .introduce .aBtns {
 		padding: 16px 0;
 	}
-	.CaseDetail .introduce .aBtns a {
+	.caseDetail .introduce .aBtns a {
 		display: inline-block;
 		width: 96px;
 		height: 25px;
@@ -59,21 +59,21 @@
 		text-align: center;
 		border: 1px solid #f3f3f3;
 	}
-	.CaseDetail .introduce .aBtns .active {
+	.caseDetail .introduce .aBtns .active {
 		color: #fff;
 		border-color: #6d131e;
 		background-color: #6d131e;
 		box-shadow: 3px 5px 10px #2f2f2f;
 	}
-	.CaseDetail .introduce .subtitle {
+	.caseDetail .introduce .subtitle {
 		font-size: 16px;
 		line-height: 36px;
 	}
-	.CaseDetail .introduce .ops {
+	.caseDetail .introduce .ops {
 		font-size: 14px;
 		line-height: 25px;
 	}
-	.CaseDetail .information {
+	.caseDetail .information {
 		position: relative;
 		width: 238px;
 		height: 495px;
@@ -81,7 +81,7 @@
 		font-size: 16px;
 		background-color: #f3f3f3;
 	}
-	.CaseDetail .information a {
+	.caseDetail .information a {
 		position: absolute;
 		bottom: 0;
 		color: #fff;
@@ -91,32 +91,32 @@
 		text-align: center;
 		background-color: #6d131e;
 	}
-	.CaseDetail .information p {
+	.caseDetail .information p {
 		line-height: 32px;
 		padding-left: 88px;
 		padding-right: 8px;
 	}
-	.CaseDetail .information p span {
+	.caseDetail .information p span {
 		float: left;
 		width: 88px;
 		text-align: right;
 		margin-left: -88px;
 	}
-	.CaseDetail .information img {
+	.caseDetail .information img {
 		margin-bottom: 15px;
 	}
-	.CaseDetail .caseform {
+	.caseDetail .caseform {
 		padding: 28px 0;
 		height: 174px;
 		box-sizing: border-box;
 		background-color: #f3f3f3;
 	}
-	.CaseDetail .caseform .formbox {
+	.caseDetail .caseform .formbox {
 		position: relative;
 		height: 120px;
 		padding-left: 246px;
 	}
-	.CaseDetail .caseform .round {
+	.caseDetail .caseform .round {
 		float: left;
 		color: #fff;
 		width: 120px;
@@ -130,31 +130,31 @@
 		box-sizing: border-box;
 		background-color: #6d131e;
 	}
-	.CaseDetail .caseform .form {
+	.caseDetail .caseform .form {
 		padding-right: 265px;
 	}
-	.CaseDetail .caseform .form > p {
+	.caseDetail .caseform .form > p {
 		padding-top: 20px;
 		margin-bottom: 6px;
 	}
-	.CaseDetail .caseform .form p span {
+	.caseDetail .caseform .form p span {
 		display: inline-block;
 		width: 50%;
 	}
-	.CaseDetail .caseform .form p b {
+	.caseDetail .caseform .form p b {
 		color: #423f3a;
 		font-size: 20px;
 		font-weight: normal;
 		vertical-align: sub;
 	}
-	.CaseDetail .caseform .form input {
+	.caseDetail .caseform .form input {
 		font-size: 16px;
 		width: 218px;
 		height: 32px;
 		line-height: 32px;
 		border: 1px solid #bcbcbc;
 	}
-	.CaseDetail .caseform .submitbtn {
+	.caseDetail .caseform .submitbtn {
 		position: absolute;
 		top: 0;
 		right: 62px;
@@ -162,11 +162,11 @@
 		padding-top: 18px;
 		text-align: center;
 	}
-	.CaseDetail .caseform .submitbtn p {
+	.caseDetail .caseform .submitbtn p {
 		font-size: 14px;
 		line-height: 36px;
 	}
-	.CaseDetail .caseform .submitbtn button {
+	.caseDetail .caseform .submitbtn button {
 		color: #fff;
 		font-size: 16px;
 		width: 100%;
@@ -175,36 +175,36 @@
 		text-align: center;
 		background-color: #6d131e;
 	}
-	.CaseDetail .caseform .submitbtn strong {
+	.caseDetail .caseform .submitbtn strong {
 		font-weight: normal;
 	}
-	.CaseDetail .casemenu {
+	.caseDetail .casemenu {
 		padding-top: 54px;
 		padding-bottom: 106px;
 	}
-	.CaseDetail .casemenu .title {
+	.caseDetail .casemenu .title {
 		color: #414141;
 		text-align: center;
 		padding-bottom: 50px;
 	}
-	.CaseDetail .casemenu .title h3 {
+	.caseDetail .casemenu .title h3 {
 		font-size: 24px;
 		line-height: 36px;
 	}
-	.CaseDetail .casemenu .subtitle {
+	.caseDetail .casemenu .subtitle {
 		font-size: 14px;
 		line-height: 20px;
 	}
-	.CaseDetail .casemenu li {
+	.caseDetail .casemenu li {
 		float:left;
 		position: relative;
 		width: 560px;
 		margin-bottom: 86px;
 	}
-	.CaseDetail .casemenu li:nth-child(2n){
+	.caseDetail .casemenu li:nth-child(2n){
 		float:right;
 	}
-	.CaseDetail .casemenu .conts {
+	.caseDetail .casemenu .conts {
 		position: absolute;
 		left: 25px;
 		bottom: -40px;
@@ -217,7 +217,7 @@
 		box-sizing: border-box;
 		background-color: #414141;
 	}
-	.CaseDetail .casemenu .conts a {
+	.caseDetail .casemenu .conts a {
 		position: absolute;
 		right: -70px;
 		top: 20px;
@@ -231,11 +231,11 @@
 		transition: all 300ms ease;
 		box-shadow: 0 0 10px #414141;
 	}
-	.CaseDetail .casemenu .conts p:first-child {
+	.caseDetail .casemenu .conts p:first-child {
 		font-size: 16px;
 		color: #fff;
 	}
-	.CaseDetail .casemenu li:hover a {
+	.caseDetail .casemenu li:hover a {
 		color: #fff;
 		background-color: #6d131e;
 	}
@@ -243,25 +243,25 @@
 
 
 /* 风格定制 ~ START */
-	.StyleDetail {
+	.styleDetail {
 		padding-top: 58px;
 		padding-bottom: 140px;
 	}
-	.StyleDetail .smore {
+	.styleDetail .smore {
 		padding: 22px 0;
 		height: 24px;
 		line-height: 24px;
 		font-size: 16px;
 	}
-	.StyleDetail .smore p {
+	.styleDetail .smore p {
 		padding-left: 126px;
 	}
-	.StyleDetail .smore p span {
+	.styleDetail .smore p span {
 		float: left;
 		width: 126px;
 		margin-left: -126px;
 	}
-	.StyleDetail .smore a {
+	.styleDetail .smore a {
 		float: left;
 		padding: 0 15px;
 		color: #fff;
@@ -270,22 +270,22 @@
 		border-radius: 12px;
 		background-color: #414141;
 	}
-	.StyleDetail .smore a:last-child {
+	.styleDetail .smore a:last-child {
 		margin-right: 0;
 	}
-	.StyleDetail .smore .active {
+	.styleDetail .smore .active {
 		color: #fff;
 		background-color: #6d131e;
 	}
-	.StyleDetail .slideshowbox {
+	.styleDetail .slideshowbox {
 		position: relative;
 	}
-	.StyleDetail .gallery-top {
+	.styleDetail .gallery-top {
 		position: relative;
 		width: 890px;
 		height: 613px;
 	}
-	.StyleDetail .gallery-thumbs .swiper-slide:before {
+	.styleDetail .gallery-thumbs .swiper-slide:before {
 		display: block;
 		content: "";
 		width: 100%;
@@ -293,16 +293,16 @@
 		background: rgba(0,0,0,0.4);
 		cursor: pointer;
 	}
-	.StyleDetail .gallery-thumbs .swiper-slide-active:before {
+	.styleDetail .gallery-thumbs .swiper-slide-active:before {
 		background: rgba(0,0,0,0);
 	}
-	.StyleDetail .gallery-thumbs {
+	.styleDetail .gallery-thumbs {
 		position: relative;
 		width: 293px;
 		height: 651px;
 		overflow: hidden;
 	}
-	.StyleDetail .detail {
+	.styleDetail .detail {
 		position: absolute;
 		z-index: 10;
 		left: 86px;
@@ -316,7 +316,7 @@
 		box-sizing: border-box;
 		background-color: #414141;
 	}
-	.StyleDetail .detail a {
+	.styleDetail .detail a {
 		position: absolute;
 		right: -70px;
 		top: 21px;
@@ -330,12 +330,196 @@
 		transition: all 300ms ease;
 		box-shadow: 0 0 10px #414141;
 	}
-	.StyleDetail .detail:hover a {
+	.styleDetail .detail:hover a {
 		color: #fff;
 		background-color: #6d131e;
 	}
-	.StyleDetail .detail p:nth-child(1) {
+	.styleDetail .detail p:nth-child(1) {
 		font-size: 16px;
 		color: #fff;
 	}
 /* 风格定制 ~ END */
+
+
+/* 设计师详情 ~ START */
+	.designerDetail {
+		padding-top: 120px;
+	}
+	.designerDetail .designer {
+		position: relative;
+		color: #fff;
+		margin-bottom: 115px;
+	}
+	.designerDetail .textLayer {
+		height: 494px;
+		padding-left: 456px;
+		background: url(../images/designer_1.jpg) no-repeat center;
+	}
+	.designerDetail .textLayer h3 {
+		font-size: 24px;
+		line-height: 60px;
+		padding-top: 46px;
+		margin-bottom: 34px;
+	}
+	.designerDetail .textLayer p {
+		font-size: 14px;
+		line-height: 30px;
+		padding-left: 100px;
+		margin-bottom: 20px;
+	}
+	.designerDetail .textLayer p span {
+		float: left;
+		width: 100px;
+		font-size: 16px;
+		line-height: 26px;
+		margin-left: -100px;
+	}
+	.designerDetail .textLayer .label button {
+		float: left;
+		color: #414141;
+		height: 22px;
+		line-height: 22px;
+		padding: 0 15px;
+		font-size: 14px;
+		margin-top: 5px;
+		margin-bottom: 15px;
+		margin-right: 22px;
+		border-radius: 12px;
+		background-color: #fff;
+	}
+	.designerDetail .cardLayer {
+		position: absolute;
+		left: 58px;
+		top: -48px;
+		width: 352px;
+		min-height: 580px;
+		padding: 40px;
+		text-align: center;
+		box-sizing: border-box;
+		background-color: #414141;
+	}
+	.designerDetail .cardLayer p {
+		opacity: 0.9;
+		font-size: 16px;
+		line-height: 26px;
+		font-weight: 100;
+	}
+	.designerDetail .cardLayer a {
+		display: block;
+		width: 144px;
+		line-height: 36px;
+		color: #fff;
+		font-size: 16px;
+		margin: 40px auto 0;
+		text-align: center;
+		background-color: #6d131e;
+	}
+	.designerDetail .cardLayer .tit {
+		margin-bottom: 10px;
+	}
+	.designerDetail .cardLayer .name {
+		opacity: 1;
+		font-size: 24px;
+		line-height: 50px;
+		padding-top: 10px;
+		font-weight: normal;
+	}
+	.designerDetail .cardLayer .name span {
+		font-size: 20px;
+		margin-left: 20px;
+	}
+	.designerDetail .cardLayer .post {
+		font-size: 20px;
+		line-height: 45px;
+		margin-bottom: 22px;
+	}
+	.designerDetail .cardLayer .imgbox {
+		width: 214px;
+		height: 214px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	.designerDetail .album {
+		position: relative;
+		height: 505px;
+		padding-bottom: 140px;
+	}
+	.designerDetail .album .textcard {
+		position: absolute;
+		bottom: 96px;
+		left: 56px;
+		z-index: 10;
+		width: 1088px;
+		height: 82px;
+		padding: 8px 360px 8px 50px;
+		box-sizing: border-box;
+		background-color: #414141;
+	}
+	.designerDetail .album .textcard p {
+		color: #bcbcbc;
+		line-height: 32px;
+		font-size: 14px;
+	}
+	.designerDetail .album .textcard .more {
+		position: absolute;
+		right: 192px;
+		top: 50%;
+		width: 168px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		color: #fff;
+		margin-top: -20px;
+		text-align: center;
+		background-color: #6d131e;
+	}
+	.designerDetail .album .textcard .title {
+		font-size: 16px;
+		color: #fff;
+	}
+	.designerDetail .album .textcard .title button {
+		display: inline-block;
+		height: 22px;
+		color: #414141;
+		padding: 0 15px;
+		font-size: 14px;
+		margin-left: 30px;
+		border-radius: 12px;
+		background-color: #fff;
+	}
+	.designerDetail .swiper-container {
+		height: 100%;
+	}
+	.designerDetail .swiper-button-prev, .designerDetail .swiper-button-next {
+		width: 40px;
+		height: 40px;
+		background-color: #6d131e;
+		background-size: 11px 16px;
+		transition: all 300ms ease;
+	}
+	.designerDetail .swiper-button-prev {
+		left: auto;
+		right: 95px;
+		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAYAAADAvYV+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODMzMzQwMzI3OEUwMTFFN0IwRDdCMERBOTkzQjU1MUIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODMzMzQwMzE3OEUwMTFFN0IwRDdCMERBOTkzQjU1MUIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5ODYwQ0I1NzhFMDExRTc4REFBQTQ0MjQ1NzEyRTZFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU5ODYwQ0I2NzhFMDExRTc4REFBQTQ0MjQ1NzEyRTZFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+lIKkWwAAAHhJREFUeNpi+P//PwMenAvE04CYEcTHp7AAiP/9h4ApIA24FBb9xwRd2BSWYVH4FYjd0BVW4FDohO7mVhwKHWBqYArbsCj8DMR2yDaDiBYsCj8BsQ26f5gYGBj+MRALSHUGyR4kOehguJTYSCE5uklOSFiTKECAAQBkoDNbQpHnqAAAAABJRU5ErkJggg==");
+	}
+	.designerDetail .swiper-button-next {
+		right: 40px;
+		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAYAAADAvYV+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTk4NjBDQjY3OEUwMTFFNzhEQUFBNDQyNDU3MTJFNkUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTk4NjBDQjU3OEUwMTFFNzhEQUFBNDQyNDU3MTJFNkUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzA0MDVjLWI4ODgtMzQ0Mi04NDA5LWZjODk1MDQwMWU0NSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6kwkDmAAAAcklEQVR42mL4//8/AxAzAvE0IM6F8rFimMIp/yHgHxAX4FPc9R8TFOFS7AbEX7FoKMWmGISdcGiowKYYhB1waGjFphiE7YD4MxYNbdgUg7ANEH/CoqGJiYF4wES2M4j2INFBhytSyiiObpISEtFJFCDAAJHBMl0RGgCbAAAAAElFTkSuQmCC");
+	}
+	.designerDetail .swiper-button-next.swiper-button-disabled {
+		opacity: 1;
+		background-color: #fff;
+		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAYAAADAvYV+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjUxNTBCNEU3OEUwMTFFNzgxQUNBM0U0QUExNDNDNDIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjUxNTBCNEQ3OEUwMTFFNzgxQUNBM0U0QUExNDNDNDIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjEyQzU0QUNGNzhFMDExRTc5QjZFQzhBNzIzMUZDQUI0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjEyQzU0QUQwNzhFMDExRTc5QjZFQzhBNzIzMUZDQUI0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+p3q2cAAAANNJREFUeNpiLCgoYICCDCA2AeJUIP7PgAWwQOlsIJ4MxIxA/A+I07FpYIKaBFPIAOVPReKjKD4AxM/QxDOBeCK6BpDi20DsDMTP0TTkAnEfumIQuAnV8BJNA8j3veiKQeA6VMNrNA1FQNyBHBowcBWqYS8QiyKJlwPxHyYG4sF/dMXaWExlgDqjFlmxJg6FIA9WIntQHapQHE3hBCAuQQ4NVahCSTSFk6AhgRLODkAshaZwGjSM/6Mrng2NLZgEiJ+DLSHBwhmUcP5Ck2g6riQKEGAA/iMqZEkM9lAAAAAASUVORK5CYII=");
+	}
+	.designerDetail .swiper-button-prev.swiper-button-disabled {
+		opacity: 1;
+		background-color: #fff;
+		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAYAAADAvYV+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTk4NjBDQUU3OEUwMTFFNzhEQUFBNDQyNDU3MTJFNkUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTk4NjBDQUQ3OEUwMTFFNzhEQUFBNDQyNDU3MTJFNkUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzA0MDVjLWI4ODgtMzQ0Mi04NDA5LWZjODk1MDQwMWU0NSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/bX1yAAAAz0lEQVR42oySwQoBURSGZ8a8gsRekpdQ3oSkCBMbCzsLKU1TCHkW5QFsJdmTvIEN/6lzdfubK6e+xfn7Tt3TPX4URZ6jfLADR7CRIPwhbkED1EEGrEKHuARNq1+AV5AiJqBN+Q0cWI5Bj7I7qIGrLc8Bb/tQ8SKNkadgSOJTxbMJRJ6AkUM82WGgS/1VIo/BjPIs2IMKy54+I3YMlFn2dMGEBnI6UGJZaqC/ZVdeB4osv0EfrCkvgGqQsrQMdPTiTN+V3nV1IrT0md8T/QgwAL7VJ84Xif4BAAAAAElFTkSuQmCC");
+	}
+/* 设计师详情 ~ END */
+
+
+/* 首页 ~ START */
+	
+/* 首页 ~ END */
