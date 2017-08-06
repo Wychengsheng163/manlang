@@ -1,5 +1,20 @@
 @charset "utf-8"; 
 
+.hoverb {
+	color: #fff;
+	background-color: #383838;
+	transition: all 300ms ease;
+}
+.hoverb:hover {
+	color: #383838;
+	background-color: #f3f3f3;
+}
+.bookingbtn {
+	color: #fff;
+	transition: all 300ms ease;
+	background-color: #6d131e;
+}
+
 
 /* 案例详情 ~ START */
 	.caseDetail .casetab {
@@ -21,10 +36,15 @@
 		height: 495px;
 		overflow: hidden;
 	}
-	.caseDetail .imgmenu img {
+	.caseDetail .imgmenu .slide {
 		position: absolute;
 		left: 0;
 		top: 0;
+		opacity: 0;
+		transition: all 300ms ease;
+	}
+	.caseDetail .imgmenu .active {
+		opacity: 1;
 	}
 	.caseDetail .introduce {
 		position: absolute;
@@ -135,7 +155,7 @@
 	}
 	.caseDetail .caseform .form > p {
 		padding-top: 20px;
-		margin-bottom: 6px;
+		margin-bottom: 26px;
 	}
 	.caseDetail .caseform .form p span {
 		display: inline-block;
@@ -151,8 +171,31 @@
 		font-size: 16px;
 		width: 218px;
 		height: 32px;
+		padding: 0 10px;
 		line-height: 32px;
+		box-sizing: border-box;
 		border: 1px solid #bcbcbc;
+	}
+	.caseDetail .caseform .selectmenu .sel {
+		float: left;
+		width: 50%;
+	}
+	.caseDetail .caseform .selectmenu .vertical {
+		margin: 0;
+		padding-left: 60px;
+	}
+	.caseDetail .caseform .selectmenu .tit {
+		float: left;
+		width: 60px;
+		color: #423f3a;
+	    font-size: 20px;
+	    line-height: 30px;
+	    margin-left: -60px;
+	    vertical-align: sub;
+	}
+	.caseDetail .caseform .selectmenu .select_content {
+		height: 30px;
+		line-height: 30px;
 	}
 	.caseDetail .caseform .submitbtn {
 		position: absolute;
@@ -501,25 +544,949 @@
 	.designerDetail .swiper-button-prev {
 		left: auto;
 		right: 95px;
-		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAYAAADAvYV+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODMzMzQwMzI3OEUwMTFFN0IwRDdCMERBOTkzQjU1MUIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODMzMzQwMzE3OEUwMTFFN0IwRDdCMERBOTkzQjU1MUIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5ODYwQ0I1NzhFMDExRTc4REFBQTQ0MjQ1NzEyRTZFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU5ODYwQ0I2NzhFMDExRTc4REFBQTQ0MjQ1NzEyRTZFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+lIKkWwAAAHhJREFUeNpi+P//PwMenAvE04CYEcTHp7AAiP/9h4ApIA24FBb9xwRd2BSWYVH4FYjd0BVW4FDohO7mVhwKHWBqYArbsCj8DMR2yDaDiBYsCj8BsQ26f5gYGBj+MRALSHUGyR4kOehguJTYSCE5uklOSFiTKECAAQBkoDNbQpHnqAAAAABJRU5ErkJggg==");
 	}
 	.designerDetail .swiper-button-next {
 		right: 40px;
-		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAYAAADAvYV+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTk4NjBDQjY3OEUwMTFFNzhEQUFBNDQyNDU3MTJFNkUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTk4NjBDQjU3OEUwMTFFNzhEQUFBNDQyNDU3MTJFNkUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzA0MDVjLWI4ODgtMzQ0Mi04NDA5LWZjODk1MDQwMWU0NSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6kwkDmAAAAcklEQVR42mL4//8/AxAzAvE0IM6F8rFimMIp/yHgHxAX4FPc9R8TFOFS7AbEX7FoKMWmGISdcGiowKYYhB1waGjFphiE7YD4MxYNbdgUg7ANEH/CoqGJiYF4wES2M4j2INFBhytSyiiObpISEtFJFCDAAJHBMl0RGgCbAAAAAElFTkSuQmCC");
 	}
 	.designerDetail .swiper-button-next.swiper-button-disabled {
 		opacity: 1;
 		background-color: #fff;
-		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAYAAADAvYV+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2lpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjUxNTBCNEU3OEUwMTFFNzgxQUNBM0U0QUExNDNDNDIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjUxNTBCNEQ3OEUwMTFFNzgxQUNBM0U0QUExNDNDNDIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjEyQzU0QUNGNzhFMDExRTc5QjZFQzhBNzIzMUZDQUI0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjEyQzU0QUQwNzhFMDExRTc5QjZFQzhBNzIzMUZDQUI0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+p3q2cAAAANNJREFUeNpiLCgoYICCDCA2AeJUIP7PgAWwQOlsIJ4MxIxA/A+I07FpYIKaBFPIAOVPReKjKD4AxM/QxDOBeCK6BpDi20DsDMTP0TTkAnEfumIQuAnV8BJNA8j3veiKQeA6VMNrNA1FQNyBHBowcBWqYS8QiyKJlwPxHyYG4sF/dMXaWExlgDqjFlmxJg6FIA9WIntQHapQHE3hBCAuQQ4NVahCSTSFk6AhgRLODkAshaZwGjSM/6Mrng2NLZgEiJ+DLSHBwhmUcP5Ck2g6riQKEGAA/iMqZEkM9lAAAAAASUVORK5CYII=");
 	}
 	.designerDetail .swiper-button-prev.swiper-button-disabled {
 		opacity: 1;
 		background-color: #fff;
-		background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAQCAYAAADAvYV+AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTk4NjBDQUU3OEUwMTFFNzhEQUFBNDQyNDU3MTJFNkUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTk4NjBDQUQ3OEUwMTFFNzhEQUFBNDQyNDU3MTJFNkUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzA0MDVjLWI4ODgtMzQ0Mi04NDA5LWZjODk1MDQwMWU0NSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpiMGU1MmMxMy0zMjEyLTVmNDMtYTk0My0yYWFkOThlYzE1OWYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/bX1yAAAAz0lEQVR42oySwQoBURSGZ8a8gsRekpdQ3oSkCBMbCzsLKU1TCHkW5QFsJdmTvIEN/6lzdfubK6e+xfn7Tt3TPX4URZ6jfLADR7CRIPwhbkED1EEGrEKHuARNq1+AV5AiJqBN+Q0cWI5Bj7I7qIGrLc8Bb/tQ8SKNkadgSOJTxbMJRJ6AkUM82WGgS/1VIo/BjPIs2IMKy54+I3YMlFn2dMGEBnI6UGJZaqC/ZVdeB4osv0EfrCkvgGqQsrQMdPTiTN+V3nV1IrT0md8T/QgwAL7VJ84Xif4BAAAAAElFTkSuQmCC");
 	}
 /* 设计师详情 ~ END */
 
 
 /* 首页 ~ START */
-	
+	.activityMain .more {
+		display: block;
+		color: #3a3a3a;
+		width: 108px;
+		height: 40px;
+		font-size: 14px;
+		line-height: 40px;
+		margin: 0 auto;
+		text-align: center;
+		border: 1px solid #434343;
+	}
+	.activityMain .caseCard {
+		padding-top: 90px;
+		padding-bottom: 140px;
+	}
+	.activityMain .caseCard .more {
+		margin-top: 200px;
+	}
+	.activityMain .caseCard .case {
+		position: relative;
+		float: left;
+		text-align: right;
+		margin-bottom: 20px;
+	}
+	.activityMain .caseCard .case:nth-child(3n) {
+		float: right;
+	}
+	.activityMain .caseCard img {
+		max-width: 628px;
+	}
+	.activityMain .caseCard .hoverb {
+		position: absolute;
+		left: 0;
+		bottom: -135px;
+		width: 470px;
+		height: 176px;
+		padding: 20px 35px 16px 35px;
+		text-align: left;
+		box-sizing: border-box;
+	}
+	.activityMain .caseCard .hoverb:hover .bookingbtn {
+		opacity: 1;
+	}
+	.activityMain .caseCard .hoverb p {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.activityMain .caseCard .id {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.activityMain .caseCard .title {
+		font-size: 20px;
+		line-height: 40px;
+		font-weight: bold;
+	}
+	.activityMain .caseCard .tCont {
+		font-size: 16px;
+		line-height: 36px;
+		margin-bottom: 7px;
+	}
+	.activityMain .caseCard .rArrow {
+		font-size: 14px;
+		line-height: 34px;
+	}
+	.activityMain .caseCard .rArrow span {
+		font-size: 18px;
+	}
+	.activityMain .caseCard .bookingbtn {
+		float: right;
+		width: 102px;
+		opacity: 0;
+		text-align: center;
+	}
+	.activityMain .caseCard .caseOne {
+		width: 100%;
+	}
+	.activityMain .caseCard .caseOne img {
+		max-width: 995px;
+	}
+	.activityMain .caseCard .caseOne .hoverb {
+		top: 0;
+		bottom: auto;
+		width: 546px;
+		height: 362px;
+	}
+	.activityMain .caseCard .caseOne .id {
+		line-height: 40px;
+		margin-bottom: 54px;
+	}
+	.activityMain .caseCard .caseOne .title {
+		font-size: 24px;
+		line-height: 50px;
+		margin-bottom: 22px;
+	}
+	.activityMain .caseCard .caseOne .tCont {
+		font-size: 18px;
+		line-height: 40px;
+		margin-bottom: 54px;
+	}
+	.activityMain .caseCard .caseOne .column {
+		position: absolute;
+		right: 60px;
+		top: 0;
+		width: 40px;
+		height: 362px;
+		font-size: 24px;
+		line-height: 30px;
+		padding-top: 42px;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	.activityMain .caseCard .caseOne .line {
+		position: absolute;
+		top: -25px;
+		left: 50%;
+		width: 1px;
+		height: 50px;
+		background-color: #707070;
+	}
+	.activityMain .styleCard {
+		padding-top: 44px;
+		padding-bottom: 52px;
+		background-color: #f3f3f3;
+	}
+	.activityMain .styleCard .more {
+		margin-top: 170px;
+	}
+	.activityMain .styleCard .title {
+		text-align: center;
+	}
+	.activityMain .styleCard .title h3 {
+		color: #414141;
+		font-size: 24px;
+		line-height: 40px;
+		font-weight: 400;
+	}
+	.activityMain .styleCard .title p {
+		color: #5e5e5e;
+		font-size: 20px;
+		line-height: 34px;
+	}
+	.activityMain .styleCard .styleText {
+		text-align: right;
+		padding: 47px 38px 30px;
+	}
+	.activityMain .photoAlbum {
+		position: relative;
+	}
+	.activityMain .photoAlbum .grayb {
+		width: 1600px;
+		height: 390px;
+		margin-left: -320px;
+		background-color: #7d7d7d;
+	}
+	.activityMain .photoAlbum .swiper-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+	    width: 1780px;
+	    height: 597px;
+	    margin-left: -712px;
+	}
+	.activityMain .photoAlbum .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 680px;
+        height: 597px;
+    }
+    .activityMain .photoAlbum .swiper-box {
+    	position: absolute;
+    	top: -100px;
+    	left: 0;
+    	width: 1066px;
+    	height: 597px;
+    	overflow: hidden;
+    }
+	.activityMain .designerCard {
+		padding-top: 130px;
+		padding-bottom: 234px;
+	}
+	.activityMain .designerCard .textImg {
+		padding-left: 250px;
+	}
+	.activityMain .designerCard .boxs {
+		position: relative;
+		height: 620px;
+		margin-top: -25px;
+	}
+	.activityMain .designerCard .textcard {
+		position: relative;
+		float: left;
+		color: #414141;
+		width: 416px;
+		height: 100%;
+		font-size: 14px;
+		line-height: 24px;
+		box-sizing: border-box;
+	}
+	.activityMain .designerCard .textcard-a {
+		padding: 25px 45px;
+		background-color: #f3f3f3;
+	}
+	.activityMain .designerCard .textcard-b {
+		width: 864px;
+		background-color: none;
+	}
+	.activityMain .designerCard .lf {
+		font-size: 20px;
+		color: #5e5e5e;
+		line-height: 30px;
+		padding-top: 130px;
+	}
+	.activityMain .designerCard .rb {
+		position: absolute;
+		color: #414141;
+		right: 0;
+		bottom: 20px;
+		width: 605px;
+		font-size: 18px;
+		line-height: 32px;
+	}
+	.activityMain .designerCard .rb .swiper-button-prev {
+		left: auto;
+		right: 58px;
+	}
+	.activityMain .designerCard .rb .swiper-button-next {
+		right: 0;
+	}
+	.activityMain .designerCard .col {
+		float: left;
+		width: 40px;
+		color: #414141;
+		font-size: 24px;
+		text-align: center;
+		padding: 9px;
+		line-height: 27px;
+		margin-top: -88px;
+	}
+	.activityMain .designerCard .wrap {
+		position: relative;
+	}
+	.activityMain .designerCard .photo {
+		position: absolute;
+		width: 292px;
+		height: 388px;
+		overflow: hidden;
+	}
+	.activityMain .designerCard .photo-a {
+		left: 45px;
+		top: 250px;
+	}
+	.activityMain .designerCard .photo-b {
+		left: 360px;
+		top: 250px;
+	}
+	.activityMain .designerCard .photo-c {
+		left: 674px;
+		top: 178px;
+	}
+	.activityMain .designerCard .photo-d {
+		right: 0;
+		top: 178px;
+	}
+	.activityMain .designerCard .shadow {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		width: 100%;
+		color: #fff;
+		padding: 30px 16px;
+		box-sizing: border-box;
+		transition: all 300ms ease;
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+	}
+	.activityMain .designerCard .shadow p {
+		font-size: 14px;
+		line-height: 36px;
+	}
+	.activityMain .designerCard .shadow p:nth-child(1) {
+		font-size: 20px;
+		font-weight: bold;
+		letter-spacing: 4px;
+	}
+	.activityMain .designerCard .shadow p:nth-child(2) {
+		font-size: 16px;
+	}
+	.activityMain .designerCard .shadow .bookingbtn {
+		display: block;
+		color: #fff;
+		width: 88px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.activityMain .designerCard .swiper-slide:hover .shadow {
+		opacity: 1;
+	}
+	.activityMain .soft {
+		position: relative;
+	}
+	.activityMain .softCard {
+		padding-bottom: 74px;
+	}
+	.activityMain .softCard .soft {
+		padding-left: 148px;
+	}
+	.activityMain .softCard .coltext {
+		float: left;
+		width: 148px;
+		padding-top: 60px;
+		margin-left: -148px;
+	}
+	.activityMain .softCard .coltext img {
+		float: left;
+	}
+	.activityMain .softCard .coltext p {
+		position: relative;
+		float: left;
+		color: #414141;
+		width: 40px;
+		font-size: 24px;
+		line-height: 27px;
+		text-align: center;
+	}
+	.activityMain .softCard .coltext .line {
+		position: absolute;
+		left: 50%;
+		top: -86px;
+		width: 1px; 
+		height: 75px;
+		background-color: #bbb;
+	}
+	.activityMain .softCard .grayb {
+		position: absolute;
+		right: 0;
+		width: 786px;
+		height: 918px;
+		background-color: #f3f3f3;
+	}
+	.activityMain .softCard .softmenu {
+		position: relative;
+	}
+	.activityMain .softCard .softmenu .opp {
+		color: #5e5e5e;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.activityMain .softCard .softsmall {
+		float: left;
+		width: 400px;
+	}
+	.activityMain .softCard .softsmall li {
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 28px;
+	}
+	.activityMain .softCard .softbig {
+		float: right;
+		width: 528px;
+		margin-right: 110px;
+	}
+	.activityMain .softCard .softbig li {
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 46px;
+	}
+	.activityMain .softCard .shadowlayer {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		transition: all 300ms ease;
+		background: rgba(0,0,0,0);
+	}
+	.activityMain .softCard .linearlayer {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		margin-bottom: -60px; 
+		padding-top: 120px;
+		padding-bottom: 28px;
+		transition: all 300ms ease;
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3));
+	}
+	.activityMain .softCard li:hover .linearlayer {
+		margin-bottom: 0;
+	}
+	.activityMain .softCard li:hover .shadowlayer {
+		background: rgba(0,0,0,0.3);
+	}
+	.activityMain .softCard .linearlayer p {
+		color: #fff;
+		font-size: 14px;
+		line-height: 34px;
+		padding: 0 24px;
+	}
+	.activityMain .softCard .linearlayer .tit {
+		font-size: 18px;
+		margin-bottom: 4px;
+	}
+	.activityMain .softCard .linearlayer .bookingbtn {
+		float: right;
+		width: 102px;
+		text-align: center;
+	}
+	.activityMain .furnitureCard .furniture {
+		position: relative;
+		height: 322px;
+		padding-bottom: 168px;
+	}
+	.activityMain .furnitureCard .tit {
+		color: #414141;
+		font-size: 24px;
+		line-height: 44px;
+		font-weight: bold;
+	}
+	.activityMain .furnitureCard .diff {
+		color: #fff;
+		font-size: 18px;
+		padding-top: 42px;
+		margin-left: -20px;
+	}
+	.activityMain .furnitureCard .diff > span {
+		float: left;
+		width: 144px;
+		padding-top: 60px;
+		line-height: 62px;
+		text-align: center;
+		background-image: url(../images/furniture_icon.png);
+		background-repeat: no-repeat;
+	}
+	.activityMain .furnitureCard .diff > span:nth-child(2) {
+		background-position: -144px 0;
+	}
+	.activityMain .furnitureCard .diff > span:nth-child(3) {
+		background-position: -288px 0;
+	}
+	.activityMain .furnitureCard .diff > span:nth-child(4) {
+		background-position: -432px 0;
+	}
+	.activityMain .furnitureCard .diff > span:nth-child(5) {
+		background-position: -576px 0;
+	}
+	.activityMain .furnitureCard .tit:nth-child(2) {
+		color: #f3f3f3;
+	}
+	.activityMain .furnitureCard .rImg {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.activityMain .furnitureCard .textImg {
+		position: absolute;
+		top: 38px;
+		left: 416px;
+	}
+	.activityMain .furnitureCard .grayb {
+		position: absolute;
+		left: -320px;
+		bottom: 168px;
+		width: 1300px;
+		height: 250px;
+		z-index: -1;
+		background-color: #383838;
+	}
+	.activityMain .furnitureCard .textcont {
+		padding-top: 28px;
+		padding-right: 556px;
+	}
+	.activityMain .guaranteeCard {
+		position: relative;
+		padding-bottom: 165px;
+	}
+	.activityMain .guaranteeCard .grayb {
+		position: absolute;
+		right: 0;
+		z-index: -1;
+		bottom: 165px;
+		width: 1300px;
+		height: 372px;
+		background-color: #383838;
+	}
+	.activityMain .guarantee {
+		position: relative;
+		padding-left: 230px;
+	}
+	.activityMain .guaranteeCard .leftb {
+		position: absolute;
+		left: 0; 
+		top: 0;
+	}
+	.activityMain .guaranteeCard .title {
+		color: #737373;
+		font-size: 20px;
+		line-height: 30px;
+		padding-top: 5px;
+		letter-spacing: 11px;
+	}
+	.activityMain .guaranteeCard .title span {
+		float: left;
+		color: #414141;
+		width: 175px;
+		height: 60px;
+		font-size: 24px;
+		letter-spacing: 0;
+		line-height: 60px;
+	}
+	.activityMain .guaranteeCard .title span b {
+		display: inline-block;
+		width: 50px;
+		height: 1px;
+		margin-right: 12px;
+		vertical-align: middle;
+		background-color: #bbb;
+	}
+	.activityMain .guaranteeCard .card {
+		color: #3a3a3a;
+		width: 380px;
+		height: 462px;
+		font-size: 14px;
+		line-height: 22px;
+		padding: 80px 50px 100px;
+		box-sizing: border-box;
+		box-shadow: 0 0 15px #afa9a9;
+		background-color: #fff;
+	}
+	.activityMain .guaranteeCard .card span {
+		float: left;
+		width: 120px;
+		padding-top: 60px;
+		text-align: center;
+		margin-bottom: 58px;
+		background-image: url(../images/guarantee_icon.png);
+		background-repeat: no-repeat;
+	}
+	.activityMain .guaranteeCard .card span:nth-child(2) {
+		background-position: -120px 0;
+	}
+	.activityMain .guaranteeCard .card span:nth-child(3) {
+		background-position: -240px 0;
+	}
+	.activityMain .guaranteeCard .card span:nth-child(4) {
+		background-position: -360px 0;
+	}
+	.activityMain .guaranteeCard .card span:nth-child(2n) {
+		float: right;
+	}
+	.activityMain .guaranteeCard .bookingbtn {
+		display: block;
+		width: 122px;
+		font-size: 14px;
+		line-height: 40px;
+		margin-left: 65px;
+		margin-top: 20px;
+		text-align: center; 
+	}
+	.activityMain .guaranteeCard .rightb {
+		position: absolute;
+		margin-left: -4px;
+		z-index: -1;
+	}
+	.activityMain .assuredCard {
+		padding-bottom: 348px;
+	}
+	.activityMain .assuredCard .assuredLine1 {
+		color: #414141;
+		padding-left: 60px;
+	}
+	.activityMain .assuredCard .line {
+		float: left;
+		width: 50px;
+		height: 1px;
+		margin-top: 14px;
+		margin-left: -60px;
+		background-color: #ddd;
+	}
+	.activityMain .assuredCard .line1 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.activityMain .assuredCard .line2 {
+		color: #ddd;
+		font-size: 24px;
+		line-height: 40px;
+		text-indent: 12px;
+		margin-bottom: 10px;
+	}
+	.activityMain .assuredCard .line3 {
+		font-size: 18px;
+		line-height: 34px;
+		margin-bottom: 18px;
+	}
+	.activityMain .assuredCard .bookingbtn {
+		display: block;
+		width: 122px;
+		line-height: 40px;
+		text-align: center;
+	}
+	.activityMain .assuredCard .fr {
+		width: 712px;
+	}
+	.activityMain .assuredCard .fr span {
+		float: left;
+		color: #fff;
+		width: 340px;
+		font-size: 20px;
+		line-height: 52px;
+		text-align: center;
+		margin-right: 28px;
+		margin-bottom: 24px;
+		background-color: #383838;
+	}
+	.activityMain .assuredCard .fr span:nth-child(2n) {
+		margin-right: 0;
+	}
+	.activityMain .assuredLine2 li {
+		position: relative;
+		float: left;
+		margin-right: 12px;
+		margin-bottom: 12px;
+		overflow: hidden;
+	}
+	.activityMain .assuredLine2 li:nth-child(3),.activityMain .assuredLine2 li:last-child {
+		margin-right: 0;
+	}
+	.activityMain .assuredLine2 .shadowlayer {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		transition: all 300ms ease;
+		background: rgba(0,0,0,0);
+	}
+	.activityMain .assuredLine2 .linearlayer {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		margin-bottom: -146px; 
+		padding-top: 120px;
+		padding-bottom: 8px;
+		transition: all 300ms ease;
+		background: linear-gradient(rgba(0,0,0,0) 30%,rgba(0,0,0,0.3) 50%);
+	}
+	.activityMain .assuredLine2 .linearlayer .con {
+		height: 68px;
+		overflow: hidden;
+	}
+	.activityMain .assuredLine2 li:hover .linearlayer {
+		margin-bottom: 0;
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3));
+	}
+	.activityMain .assuredLine2 li:hover .shadowlayer {
+		background: rgba(0,0,0,0.3);
+	}
+	.activityMain .assuredLine2 .linearlayer p {
+		color: #fff;
+		font-size: 14px;
+		line-height: 34px;
+		padding: 0 24px;
+	}
+	.activityMain .assuredLine2 .linearlayer .tit {
+		font-size: 18px;
+		margin-bottom: 4px;
+	}
+	.activityMain .assuredLine2 .linearlayer .bookingbtn {
+		width: 102px;
+		margin-top: 30px;
+		margin-left: 24px;
+		text-align: center;
+	}
+	.activityMain .siteCard {
+		height: 536px;
+		background-color: #f3f3f3;
+	}
+	.activityMain .siteCard .wrap {
+		position: relative;
+	}
+	.activityMain .siteCard .site {
+		position: absolute;
+		top: -200px;
+	}
+	.activityMain .siteCard .boxs {
+		position: absolute;
+		top: 0;width: 100%;height: 100%;
+		padding: 35px 28px 35px 50px;
+		box-sizing: border-box;
+	}
+	.activityMain .siteCard .boxs h2 {
+		color: #fff;
+		padding-top: 20px;
+		font-size: 30px;
+		line-height: 50px;
+		margin-bottom: 40px;
+	}
+	.activityMain .siteCard .boxs h2 span {
+		font-size: 24px;
+		color: #e4e4e4;
+		margin-left: 25px;
+		font-weight: 100;
+		vertical-align: text-top;
+	}
+	.activityMain .siteCard .boxs li {
+		float: left;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+	.activityMain .siteCard .boxs li:nth-child(4n) {
+		margin-right: 0;
+	}
+	.activityMain .siteCard .boxs .fl {
+		width: 570px;
+	}
+	.activityMain .siteCard .boxs .fr {
+		width: 568px;
+		padding: 20px 30px;
+		box-sizing: border-box;
+		background-color: #fff;
+	}
+	.activityMain .siteCard .boxs .fr h2, .activityMain .siteCard .boxs .fr h2 span {
+		color: #383838;
+		padding-top: 0;
+	}
+	.activityMain .siteCard .boxs .fr h2 {
+		margin-bottom: 35px;
+	}
+	.activityMain .siteCard .boxs ol li {
+		border-top: 1px solid #737373;
+		line-height: 60px;
+		font-size: 18px;
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.activityMain .siteCard .boxs ol li a {
+		color: #383838;
+	}
+	.activityMain .siteCard .boxs ol li span {
+		float: left;
+		width: 33.3%;
+		text-align: center;
+	}
+	.activityMain .siteCard .boxs ol li span:first-child {
+		text-align: left;
+	}
+	.activityMain .siteCard .boxs ol li span:last-child {
+		text-align: right;
+	}
+
+	.activityMain .flowCard {
+		position: relative;
+		height: 596px;
+		padding-bottom: 110px;
+	}
+	.activityMain .flowCard .flowBg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 596px;
+		z-index: -1;
+		background: url("../images/flowCard_bg.jpg") no-repeat center;
+	}
+	.activityMain .flowCard .flow {
+		color: #fff;
+		text-align: center;
+	}
+	.activityMain .flowCard .title {
+		padding-top: 25px;
+		margin-bottom: 48px;
+	}
+	.activityMain .flowCard .title h3 {
+		font-size: 30px;
+		height: 56px;
+		line-height: 56px;
+	}
+	.activityMain .flowCard .title p {
+		font-size: 20px;
+		height: 45px;
+		line-height: 45px;
+	}
+	.activityMain .flowCard .flowmenu li {
+		float: left;
+		margin-right: 65px;
+	}
+	.activityMain .flowCard .flowmenu li:last-child {
+		margin-right: 0;
+	}
+	.activityMain .flowCard .flowmenu .icon {
+		display: block;
+		width: 127px;
+		height: 127px;
+		border-radius: 50%;
+	}
+	.activityMain .flowCard .flowmenu .text {
+		display: block;
+		font-size: 20px;
+		padding-top: 30px;
+		line-height: 30px;
+	}
+	.activityMain .flowCard .flowmenu li:nth-child(1) .icon { background: #fff url(../images/flow_1.png) no-repeat center; }
+	.activityMain .flowCard .flowmenu li:nth-child(2) .icon { background: #fff url(../images/flow_2.png) no-repeat center; }
+	.activityMain .flowCard .flowmenu li:nth-child(3) .icon { background: #fff url(../images/flow_3.png) no-repeat center; }
+	.activityMain .flowCard .flowmenu li:nth-child(4) .icon { background: #fff url(../images/flow_4.png) no-repeat center; }
+	.activityMain .flowCard .flowmenu li:nth-child(5) .icon { background: #fff url(../images/flow_5.png) no-repeat center; }
+	.activityMain .flowCard .flowmenu li:nth-child(6) .icon { background: #fff url(../images/flow_6.png) no-repeat center; }
+	.activityMain .flowCard .flowmenu li:nth-child(7) .icon { background: #fff url(../images/flow_7.png) no-repeat center; }
+	.activityMain .flowCard .ops {
+		font-size: 16px;
+		line-height: 25px;
+		padding-top: 40px;
+		padding-bottom: 28px;
+	}
+	.activityMain .flowCard .bookingbtn {
+		display: block;
+		margin: 0 auto;
+		width: 126px;
+		text-align: center;
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
+		letter-spacing: 2px;
+	}
+	.activityMain .storyCard {
+		padding-bottom: 160px;
+	}
+	.activityMain .storyCard .album {
+		width: 804px;
+		height: 539px;
+		margin: 0;
+		z-index: -1;
+	}
+	.activityMain .storyCard .story {
+		position: relative;
+	}
+	.activityMain .storyCard .msg {
+		position: absolute;
+		right: 0; top: 0;
+		width: 440px;
+	}
+	.activityMain .storyCard .title {
+		color: #414141;
+		font-size: 24px;
+		line-height: 34px;
+	}
+	.activityMain .storyCard .line {
+		position: absolute;
+		left: -60px;
+		top: 17px;
+		width: 50px;
+		height: 1px;
+		background-color: #ddd;
+	}
+	.activityMain .storyCard .P1 {
+		font-size: 20px;
+		color: #d1d1d1;
+		line-height: 20px;
+		text-indent: 10px;
+	}
+	.activityMain .storyCard .P2 {
+		font-size: 18px;
+		color: #383838;
+		line-height: 30px;
+		padding: 10px 0;
+	}
+	.activityMain .storyCard .card {
+		width: 575px;
+		height: 385px;
+		padding: 32px;
+		color: #818181;
+		font-size: 14px;
+		line-height: 25px;
+		margin-left: -135px;
+		box-sizing: border-box;
+		background-color: #f3f3f3;
+	}
+	.activityMain .storyCard .card img {
+		float: left;
+		margin-right: 30px;
+	}
+	.activityMain .storyCard .P3 {
+		color: #414141;
+		font-size: 20px;
+		line-height: 40px;
+		letter-spacing: 2px;
+		margin-bottom: 24px;
+	}
+	.activityMain .storyCard .P4 {
+		font-size: 16px;
+		line-height: 36px;
+	}
+	.activityMain .storyCard .P4 span {
+		display: inline-block;
+		width: 150px;
+	}
+	.activityMain .storyCard .th {
+		font-size: 16px;
+		color: #5a5a5a;
+		font-weight: normal;
+	}
+	.activityMain .storyCard .P5 {
+		padding-left: 85px;
+	}
+	.activityMain .storyCard .P5 .th {
+		float: left;
+		width: 85px;
+		margin-left: -85px;
+	}
+	.activityMain .storyCard .arrowbox {
+		height: 40px;
+		margin-top: 10px;
+	}
+	.activityMain .storyCard .swiper-button-prev {
+		top: auto;
+		bottom: 0;
+		left: 0;
+	}
+	.activityMain .storyCard .swiper-button-next {
+		right: auto;
+		top: auto;
+		bottom: 0;
+		left: 58px;
+	}
 /* 首页 ~ END */

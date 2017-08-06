@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/common.css" />
 	<link rel="stylesheet" href="css/select.css" />
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -33,8 +34,11 @@
 					<h5 class="tabtitle">精选生活定制案例</h5>
 					
 					<div class="casetabbox clearfix">
-						<div class="imgmenu fl">
-							<img src="images/casedetail_1.jpg" alt="">
+						<div class="imgmenu jsimgmenu fl">
+							<div class="slide active"><img src="images/casedetail_1.jpg" alt=""></div>
+							<div class="slide"><img src="images/casedetail_1.jpg" alt=""></div>
+							<div class="slide"><img src="images/casedetail_1.jpg" alt=""></div>
+							<div class="slide"><img src="images/casedetail_1.jpg" alt=""></div>
 						</div>
 
 						<div class="information fr">
@@ -43,16 +47,16 @@
 							<p><span>风格：</span>西班牙风格</p>
 							<p><span>面积：</span>650㎡</p>
 							<p><span>房型：</span>复式</p>
-							<a href="">预约定制</a>
+							<a href="javascript:;" class="bookingbtn">预约定制</a>
 						</div>
 
 						<div class="introduce">
 							<p class="title"><span>度假生活</span>面朝大海心自在，我爱自由生活</p>
-							<p class="aBtns">
-								<a href="javascript:;">客厅</a>
+							<p class="aBtns jsbtns">
+								<a href="javascript:;" class="active">客厅</a>
 								<a href="javascript:;">卧室</a>
 								<a href="javascript:;">婴儿房</a>
-								<a href="javascript:;" class="active">泳池</a>
+								<a href="javascript:;">泳池</a>
 							</p>
 							<p class="subtitle">适用人群：崇尚美感和才智，为人理性正直</p>
 							<p class="ops">本案采用现代简约风格，遵循LESS IS MORE的设计理念，用简洁优雅的设计缓解人们繁忙的生活节奏，以人性化的细节设计关怀业主的品味需求。地下娱乐空间设计为多功能综合场所，满足朋友聚会，家人同娱的需求，造型上突出时尚有趣。一楼的餐厅和客厅相连，厨房设计为西式的开敞布局，迎合业主国外生活习惯。</p>
@@ -68,7 +72,36 @@
 						<div class="round">开始<br>定制</div>
 						<form action="" class="form">
 							<p><span><b>姓名：</b><input type="text"></span><span><b>电话：</b><input type="text"></span></p>
-							<p><span><b>面积：</b><input type="text"></span><span><b>风格：</b><input type="text"></span></p>
+							<div class="selectmenu clearfix">
+								<div class="sel">
+									<div class="vertical">
+										<span class="tit">面积：</span>
+										<select id="mySelect-a">
+											<option value="1" selected="selected">100㎡</option>
+											<option value="2">100㎡</option>
+											<option value="3">200㎡</option>
+											<option value="4">300㎡</option>
+											<option value="5">400㎡</option>
+										</select>
+									</div>
+								</div>
+								<div class="sel">
+									<div class="vertical">
+										<span class="tit">风格：</span>
+										<select id="mySelect-b">
+											<option value="1" selected="selected">欧式</option>
+											<option value="2">中式</option>
+											<option value="3">法式</option>
+											<option value="4">意大利式</option>
+											<option value="5">中欧</option>
+											<option value="6">中式</option>
+											<option value="7">法式</option>
+											<option value="8">意大利式</option>
+											<option value="9">中欧</option>
+										</select>
+									</div>
+								</div>
+							</div>
 							<div class="submitbtn"><p>已有 <strong class="redColor">180</strong> 名业主报名定制</p><button type="submit">提交定制</button></div>
 						</form>
 					</div>
@@ -169,6 +202,44 @@
 	<script src="script/jquery.js"></script>
 	<script src="script/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="script/jquery.select.js"></script>
+	<script src="script/swiper.min.js"></script>
 	<script src="script/common.js"></script>
+	<script type="text/javascript">
+	    $(".jsbtns").on("click","a",function(){
+	    	var _index = $(this).index();
+	    	$(this).addClass("active").siblings().removeClass("active");
+	    	$(".jsimgmenu .slide").eq(_index).addClass('active').siblings().removeClass("active");
+	    });
+
+	    $("#mySelect-a").select({
+			width: "218px",
+			themeColor: "#bcbcbc",
+			rowHoverColor: "#6d131e",
+			fontFamily: "微软雅黑",
+			listMaxHeight: "120px",
+			mainContent: "请选择",
+		});
+		$("#mySelect-b").select({
+			width: "218px",
+			themeColor: "#bcbcbc",
+			rowHoverColor: "#6d131e",
+			fontFamily: "微软雅黑",
+			listMaxHeight: "120px",
+			mainContent: "请选择",
+		});
+		//可选参数,不填就是默认值
+		//width: "180px",            //生成的select框宽度
+		//listMaxHeight:"200px",     //生成的下拉列表最大高度
+		//themeColor: "#00bb9c",     //主题颜色
+		//fontColor: "#000",         //字体颜色
+		//fontFamily: "'Helvetica Neue', arial, sans-serif",    //字体种类
+		//fontSize:"15px",           //字体大小
+		//showSearch: false,         //是否启用搜索框
+		//rowColor:"#fff",           //行原本的颜色
+		//rowHoverColor: "#0faf03",  //移动选择时，每一行的hover底色
+		//fontHoverColor: "#fff",    //移动选择时，每一行的字体hover颜色
+		//mainContent: "请选择",     //选择显示框的默认文字
+		//searchContent: "关键词搜索"   //搜索框的默认提示文字  
+	</script>
 </body>
 </html>

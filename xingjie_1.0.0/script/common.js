@@ -68,4 +68,9 @@
 
 }());
 
+$(".bookingbtn").click(function(){
+	$(".CustomBtn").trigger("click");
+	$('html,body').animate({scrollTop: document.body.scrollHeight },300);
+});
+
 	
