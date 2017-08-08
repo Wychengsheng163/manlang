@@ -323,6 +323,11 @@
 	.styleDetail .slideshowbox {
 		position: relative;
 	}
+	.styleDetail .slideshowbox .swiper-box {
+		position: relative;
+		width: 100%;
+		height: 651px;
+	}
 	.styleDetail .gallery-top {
 		position: relative;
 		width: 890px;
@@ -630,6 +635,8 @@
 		font-size: 18px;
 	}
 	.activityMain .caseCard .bookingbtn {
+		position: relative;
+		z-index: 10;
 		float: right;
 		width: 102px;
 		opacity: 0;
@@ -738,12 +745,38 @@
     	height: 597px;
     	overflow: hidden;
     }
+    .activityMain .swiper-slide .shadow {
+		position: absolute;
+		bottom: -20px; left: 0;
+		width: 100%; color: #fff;
+		font-size: 20px;
+		opacity: 0;
+		line-height: 34px;
+		padding: 40px 30px 16px;
+		box-sizing: border-box;
+		transition: all 300ms;
+		background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+    }
+    .activityMain .swiper-slide .shadow a {
+    	float: right;
+    	width: 102px;
+    	height: 34px;
+    	font-size: 14px;
+    	text-align: center;
+    }
+    .activityMain .swiper-slide-active .shadow {
+		opacity: 1;
+		bottom: 0;
+    }
     .activityMain .swiper-container-3d .swiper-slide-shadow-right {
     	background-image: linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,0));
     }
 	.activityMain .designerCard {
 		padding-top: 130px;
-		padding-bottom: 234px;
+		padding-bottom: 126px;
+	}
+	.activityMain .designerCard .more {
+		margin-top: 66px;
 	}
 	.activityMain .designerCard .textImg {
 		padding-left: 250px;
@@ -786,11 +819,11 @@
 		font-size: 18px;
 		line-height: 32px;
 	}
-	.activityMain .designerCard .rb .swiper-button-prev {
+	.activityMain .designerCard .rb .designer-prev {
 		left: auto;
 		right: 58px;
 	}
-	.activityMain .designerCard .rb .swiper-button-next {
+	.activityMain .designerCard .rb .designer-next {
 		right: 0;
 	}
 	.activityMain .designerCard .col {
@@ -1296,6 +1329,18 @@
 	.activityMain .siteCard .boxs .fr h2 {
 		margin-bottom: 35px;
 	}
+	.activityMain .siteCard .overbox {
+		position: relative;
+		width: 508px;
+		height: 427px;
+		overflow: hidden;
+	}
+	.activityMain .siteCard .overbox ol {
+		position: absolute;
+		left: 0; top: 0;
+		width: 100%;
+		/* transition: top 300ms; */
+	}
 	.activityMain .siteCard .boxs ol li {
 		border-top: 1px solid #737373;
 		line-height: 60px;
@@ -1477,19 +1522,15 @@
 		width: 85px;
 		margin-left: -85px;
 	}
-	.activityMain .storyCard .arrowbox {
-		height: 40px;
-		margin-top: 10px;
-	}
-	.activityMain .storyCard .swiper-button-prev {
+	.activityMain .storyCard .story-prev {
 		top: auto;
 		bottom: 0;
-		left: 0;
+		left: auto;
+		right: 409px;
 	}
-	.activityMain .storyCard .swiper-button-next {
-		right: auto;
+	.activityMain .storyCard .story-next {
+		right: 354px;
 		top: auto;
 		bottom: 0;
-		left: 58px;
 	}
 /* 首页 ~ END */

@@ -6,9 +6,9 @@
 
 	var fnmain = function(str1,str2) {
 
-		str1 == "down" ? booking.stop().slideDown(300) : booking.stop().slideUp(300);
+		str1 == "down" ? (booking.stop().slideDown(300) && fnScrollButtom()) : booking.stop().slideUp(300);
 
-		str2 == "out" ? CloseBtn.stop().fadeOut() : CloseBtn.stop().fadeIn();
+		str2 == "out" ? CloseBtn.stop().slideUp(300) : CloseBtn.stop().slideDown(300);
 
 		IsShowBtn.toggleClass("baseBA","baseTA");
 
@@ -66,11 +66,27 @@
 
 	});
 
+
 }());
 
-$(".bookingbtn").click(function(){
-	$(".CustomBtn").trigger("click");
+
+
+
+
+
+function fnScrollButtom(){ 
 	$('html,body').animate({scrollTop: document.body.scrollHeight },300);
-});
+}
+
+function fnBtnClick(obj) 
+{
+	obj.click(function(){
+		$(".CustomBtn").trigger("click");
+		fnScrollButtom();
+	});
+}
+
+fnBtnClick($(".bookingbtn"));
+
 
 	

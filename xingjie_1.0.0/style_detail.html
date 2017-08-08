@@ -16,12 +16,12 @@
 			<div class="banner"><img src="images/case_banner.jpg"></div>
 			<div class="nav">
 				<nav class="boxes clearfix">
-					<a href="case_detail.html">定制案例</a>
-					<a href="javascript:;" class="active">风格定制</a>
-					<a href="">大师定制</a>
-					<a href="">软装定制</a>
-					<a href="">定制保障</a>
-					<a href="">定制流程</a>
+					<a href="index.html">定制案例</a>
+					<a href="index.html" class="active">风格定制</a>
+					<a href="index.html">大师定制</a>
+					<a href="index.html">软装定制</a>
+					<a href="index.html">定制保障</a>
+					<a href="index.html">定制流程</a>
 				</nav>
 			</div>
 		</header>
@@ -33,42 +33,73 @@
 				<div class="smore">
 					<p class="fr">
 						<span>其它风格定制：</span>
-						<a href="" class="active">欧式</a>
-						<a href="">现代</a>
-						<a href="">新中式</a>
-						<a href="">简美</a>
-						<a href="">美式</a>
-						<a href="">新古典</a>
-						<a href="">简欧</a>
+						<a href="javascript:;" class="active">欧式</a>
+						<a href="javascript:;">现代</a>
+						<a href="javascript:;">新中式</a>
+						<a href="javascript:;">简美</a>
+						<a href="javascript:;">美式</a>
+						<a href="javascript:;">新古典</a>
+						<a href="javascript:;">简欧</a>
 					</p>
 				</div>
 
 				<div class="slideshowbox clearfix">
 
-					<!-- Swiper -->
-					<div class="swiper-container gallery-top fl">
-					    <div class="swiper-wrapper">
-					       <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/case_3.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/case_4.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/case_5.jpg)"></div>
-					    </div>
+					<div class="swiper-box">
+						<div class="swiper-container gallery-top gallery-top-a fl">
+						    <div class="swiper-wrapper">
+						       <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/case_3.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/case_4.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/case_5.jpg)"></div>
+						    </div>
+						</div>
+
+						<div class="swiper-container gallery-thumbs gallery-thumbs-a fr">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide" style="background-image:url(images/small_style_1.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/small_style_2.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/small_style_3.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/small_style_4.jpg)"></div>
+						    </div>
+						</div>
+
+						<div class="detail">
+							<p>西班牙—独特异域风情</p>
+							<p>举止得体，情感真挚，崇尚美感和才智，为人理性正直。</p>
+							<a href="">立即定制</a>
+						</div>
 					</div>
 
-					<div class="swiper-container gallery-thumbs fr">
-					    <div class="swiper-wrapper">
-					        <div class="swiper-slide" style="background-image:url(images/small_style_1.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/small_style_2.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/small_style_3.jpg)"></div>
-					        <div class="swiper-slide" style="background-image:url(images/small_style_4.jpg)"></div>
-					    </div>
+
+					<div class="swiper-box">
+						<div class="swiper-container gallery-top gallery-top-b fl">
+						    <div class="swiper-wrapper">
+						       <div class="swiper-slide" style="background-image:url(images/big_style_1.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/case_3.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/case_4.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/case_5.jpg)"></div>
+						    </div>
+						</div>
+
+						<div class="swiper-container gallery-thumbs gallery-thumbs-b fr">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide" style="background-image:url(images/small_style_1.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/small_style_2.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/small_style_3.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/small_style_4.jpg)"></div>
+						    </div>
+						</div>
+
+						<div class="detail">
+							<p>西班牙—独特异域风情</p>
+							<p>举止得体，情感真挚，崇尚美感和才智，为人理性正直。</p>
+							<a href="">立即定制</a>
+						</div>
 					</div>
 
-					<div class="detail">
-						<p>西班牙—独特异域风情</p>
-						<p>举止得体，情感真挚，崇尚美感和才智，为人理性正直。</p>
-						<a href="">立即定制</a>
-					</div>
+					
+
 
 				</div>
 				
@@ -124,12 +155,12 @@
 	<script src="script/swiper.min.js"></script>
 	<script src="script/common.js"></script>
 	<script>
-	    var galleryTop = new Swiper('.gallery-top', {
+	    var galleryTopA = new Swiper('.gallery-top-a', {
 	        spaceBetween: 10,  
 	        loop:true,
 		    loopedSlides: 5,
 	    });
-	    var galleryThumbs = new Swiper('.gallery-thumbs', {
+	    var galleryThumbsA = new Swiper('.gallery-thumbs-a', {
 	        direction : 'vertical',
 	        spaceBetween: 17,
 	        slidesPerView: 4,
@@ -138,7 +169,24 @@
 		    loopedSlides: 5,
 	        slideToClickedSlide: true
 	    });
-	    galleryTop.params.control = galleryThumbs;
-	    galleryThumbs.params.control = galleryTop;
+	    galleryTopA.params.control = galleryThumbsA;
+	    galleryThumbsA.params.control = galleryTopA;
+
+	    var galleryTopB = new Swiper('.gallery-top-b', {
+	        spaceBetween: 10,  
+	        loop:true,
+		    loopedSlides: 5,
+	    });
+	    var galleryThumbsB = new Swiper('.gallery-thumbs-b', {
+	        direction : 'vertical',
+	        spaceBetween: 17,
+	        slidesPerView: 4,
+	        touchRatio: 0.2,
+	        loop:true,
+		    loopedSlides: 5,
+	        slideToClickedSlide: true
+	    });
+	    galleryTopB.params.control = galleryThumbsB;
+	    galleryThumbsB.params.control = galleryTopB;
 	</script>
 </body>

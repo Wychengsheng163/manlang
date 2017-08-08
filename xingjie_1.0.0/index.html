@@ -11,25 +11,34 @@
 </head>
 <body>
 	<div class="container">
+		<!-- 修改部分 - START -->
 		<header>
 			<div class="topsite"></div>
-			<div class="banner"><img src="images/case_banner.jpg"></div>
-			<div class="nav">
+			<div class="banner jsbanner"><img src="images/case_banner.jpg"></div>
+			<div class="nav jsnav">
 				<nav class="boxes clearfix">
-					<a href="javascript:;" class="active">定制案例</a>
-					<a href="style_detail">风格定制</a>
-					<a href="designer_detail.html">大师定制</a>
-					<a href="javascript:;">软装定制</a>
-					<a href="javascript:;">定制保障</a>
-					<a href="javascript:;">定制流程</a>
+					<a href="javascript:;" class="jsCaseCard">定制案例</a>
+					<a href="javascript:;" class="jsStyleCard">风格定制</a>
+					<a href="javascript:;" class="jsDesignerCard">大师定制</a>
+					<a href="javascript:;" class="jsSoftCard">软装定制</a>
+					<a href="javascript:;" class="jsGuaranteeCard">定制保障</a>
+					<a href="javascript:;" class="jsFlowCard">定制流程</a>
 				</nav>
 			</div>
 		</header>
-
+		<div class="Slide jsnav">
+			<a href="javascript:;" class="jsCaseCard">定制案例</a>
+			<a href="javascript:;" class="jsStyleCard">风格定制</a>
+			<a href="javascript:;" class="jsDesignerCard">大师定制</a>
+			<a href="javascript:;" class="jsSoftCard">软装定制</a>
+			<a href="javascript:;" class="jsPhone">定制热线</a>
+			<a href="javascript:;" class="jsScrollTop">返回顶部</a>
+		</div>
+		<!-- 修改部分 - END -->
 
 		<div class="content activityMain">
 			
-			<div class="caseCard">
+			<div id="jsCaseCard" class="caseCard">
 				<div class="wrap">
 
 					<div class="clearfix">
@@ -67,13 +76,13 @@
 
 					</div>
 
-					<a href="javascript:;" class="more">MORE</a>
+					<a href="case_detail.html" class="more">MORE</a>
 
 				</div>
 			</div>
 
 
-			<div class="styleCard">
+			<div id="jsStyleCard" class="styleCard">
 				<div class="wrap">
 
 					<div class="title">
@@ -86,37 +95,57 @@
 					<div class="photoAlbum">
 						
 						<div class="grayb"></div>
+						
+
+						<!-- 修改部分 - START -->
 
 						<div class="swiper-box">
 							<div class="swiper-container swiper-container-a">
 							    <div class="swiper-wrapper">
 							        <div class="swiper-slide">
 							        	<img src="images/soft_small_1.jpg" style="width: 680px!important;height: 597px!important;">
+							        	<p class="shadow">
+							        		简欧—优雅闲适，轻奢低调<a href="javascript:;" class="bookingbtn" >预约定制</a>
+							        	</p>
 							        </div>
 							        <div class="swiper-slide">
 							        	<img src="images/soft_small_2.jpg" style="width: 680px!important;height: 597px!important;">
+							        	<p class="shadow">
+							        		简欧—优雅闲适，轻奢低调<a href="javascript:;" class="bookingbtn" >预约定制</a>
+							        	</p>
 							        </div>
 							        <div class="swiper-slide">
 							        	<img src="images/soft_small_3.jpg" style="width: 680px!important;height: 597px!important;">
+							        	<p class="shadow">
+							        		简欧—优雅闲适，轻奢低调<a href="javascript:;" class="bookingbtn" >预约定制</a>
+							        	</p>
 							        </div>
 							        <div class="swiper-slide">
 							        	<img src="images/soft_small_1.jpg" style="width: 680px!important;height: 597px!important;">
+							        	<p class="shadow">
+							        		简欧—优雅闲适，轻奢低调<a href="javascript:;" class="bookingbtn" >预约定制</a>
+							        	</p>
 							        </div>
 							        <div class="swiper-slide">
 							        	<img src="images/soft_small_2.jpg" style="width: 680px!important;height: 597px!important;">
+							        	<p class="shadow">
+							        		简欧—优雅闲适，轻奢低调<a href="javascript:;" class="bookingbtn" >预约定制</a>
+							        	</p>
 							        </div>
 							    </div>
 							</div>
 						</div>
 
-						<a href="javascript:;" class="more">MORE</a>
+						<!-- 修改部分 - END -->
+
+						<a href="style_detail.html" class="more">MORE</a>
 					</div>
 
 				</div>
 			</div>	
 
 
-			<div class="designerCard">
+			<div id="jsDesignerCard" class="designerCard">
 				<div class="wrap">
 					<div class="textImg"><img src="images/designer_text_img.png"></div>
 
@@ -138,8 +167,8 @@
 							<div class="rb">
 								<p>他们个性鲜明&nbsp;&nbsp;<span class="redColor">善于了解呈现您的私人需求</span></p>
 								<p>他们经验丰富&nbsp;&nbsp;<span class="redColor">没有谁比他们更了解您的独特户型</span></p>
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev designer-prev"></div>
+								<div class="swiper-button-next designer-next"></div>
 							</div>
 						</div>
 					</div>
@@ -328,11 +357,12 @@
 
 					</div>
 
+					<a href="designer_detail.html" class="more">MORE</a>
 				</div>
 			</div>
 			
 
-			<div class="softCard">
+			<div id="jsSoftCard" class="softCard">
 				<div class="wrap">
 					<div class="soft clearfix">
 						
@@ -421,7 +451,7 @@
 			</div>
 
 
-			<div class="guaranteeCard">
+			<div id="jsGuaranteeCard"  class="guaranteeCard">
 				<div class="wrap">
 
 					<div class="grayb"></div>
@@ -564,57 +594,69 @@
 							</div>
 							<div class="fr">
 								<h2>预约参观工地<span>VISIT THE SITE</span></h2>
-								<ol>
-									<li>
-										<a href="javascript:;" class="bookingbtn">
-											<span>远洋鸿郡</span>
-											<span>宝山区</span>
-											<span>立即预约</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:;" class="bookingbtn">
-											<span>远洋鸿郡</span>
-											<span>宝山区</span>
-											<span>立即预约</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:;" class="bookingbtn">
-											<span>远洋鸿郡</span>
-											<span>宝山区</span>
-											<span>立即预约</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:;" class="bookingbtn">
-											<span>远洋鸿郡</span>
-											<span>宝山区</span>
-											<span>立即预约</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:;" class="bookingbtn">
-											<span>远洋鸿郡</span>
-											<span>宝山区</span>
-											<span>立即预约</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:;" class="bookingbtn">
-											<span>远洋鸿郡</span>
-											<span>宝山区</span>
-											<span>立即预约</span>
-										</a>
-									</li>
-									<li>
-										<a href="javascript:;" class="bookingbtn">
-											<span>远洋鸿郡</span>
-											<span>宝山区</span>
-											<span>立即预约</span>
-										</a>
-									</li>
-								</ol>
+
+								<!-- 修改部分 - START -->
+								<div class="overbox jslamp">
+									<ol class="clearfix">
+										<li>
+											<a href="javascript:;" class="bookingbtn">
+												<span>远洋鸿郡1</span>
+												<span>宝山区</span>
+												<span>立即预约</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="bookingbtn">
+												<span>远洋鸿郡2</span>
+												<span>宝山区</span>
+												<span>立即预约</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="bookingbtn">
+												<span>远洋鸿郡3</span>
+												<span>宝山区</span>
+												<span>立即预约</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="bookingbtn">
+												<span>远洋鸿郡4</span>
+												<span>宝山区</span>
+												<span>立即预约</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="bookingbtn">
+												<span>远洋鸿郡5</span>
+												<span>宝山区</span>
+												<span>立即预约</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="bookingbtn">
+												<span>远洋鸿郡6</span>
+												<span>宝山区</span>
+												<span>立即预约</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="bookingbtn">
+												<span>远洋鸿郡7</span>
+												<span>宝山区</span>
+												<span>立即预约</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="bookingbtn">
+												<span>远洋鸿郡8</span>
+												<span>宝山区</span>
+												<span>立即预约</span>
+											</a>
+										</li>
+									</ol>
+								</div>
+								<!-- 修改部分 - END -->
 							</div>
 						</div>
 
@@ -623,7 +665,7 @@
 			</div>
 
 
-			<div class="flowCard">
+			<div id="jsFlowCard" class="flowCard">
 				<div class="flowBg"></div>
 
 				<div class="wrap flow">
@@ -673,34 +715,77 @@
 			
 			<div class="storyCard">
 				<div class="wrap story">
-					<div class="swiper-container swiper-container-c album">
+					
+					<!-- 修改部分 - START -->
+					<div class="swiper-container swiper-container-c">
 					    <div class="swiper-wrapper">
-					        <div class="swiper-slide"><img src="images/album.jpg"></div>
-					        <div class="swiper-slide"><img src="images/album.jpg"></div>
-					        <div class="swiper-slide"><img src="images/album.jpg"></div>
+					        <div class="swiper-slide">
+					        	<div class="album"><img src="images/album.jpg"></div>
+								
+								<div class="msg">
+									<span class="line"></span>
+									<p class="title">定制业主故事</p>
+									<p class="P1">CUSTOM OWNER STORY</p>
+									<p class="P2">已为<span class="redColor">360位</span>业主实现别墅装修私人订制</p>
+									<div class="card">
+										<img src="images/figure.jpg">
+										<p class="P3">龙湖景岛别墅</p>
+										<p class="P4"><span><b class="th">风格：</b>欧式风格</span><span><b class="th">户型：</b>别墅</span></p>
+										<p class="P4"><span><b class="th">面积：</b>550㎡</span><span><b class="th">造价：</b>300万</span></p>
+										<br>
+										<p class="P5"><span class="th">定制理念：</span>业主是位年轻的成功人士，是某服装品牌的市场策划老大，喜欢流行与时尚，准备结婚的新房。</p>
+										<br>
+										<p class="P5"><span class="th">业主评价：</span>这是我们的婚房，希望它是一个年轻时尚又不失浪漫温馨的家设计师能第一时间就了解我们的想法，能充分贯彻到空间中在施工过程中也很专业，不用我们时刻盯着，很省心。</p>
+									</div>
+								</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="album"><img src="images/album.jpg"></div>
+								
+								<div class="msg">
+									<span class="line"></span>
+									<p class="title">定制业主故事</p>
+									<p class="P1">CUSTOM OWNER STORY</p>
+									<p class="P2">已为<span class="redColor">360位</span>业主实现别墅装修私人订制</p>
+									<div class="card">
+										<img src="images/figure.jpg">
+										<p class="P3">龙湖景岛别墅</p>
+										<p class="P4"><span><b class="th">风格：</b>欧式风格</span><span><b class="th">户型：</b>别墅</span></p>
+										<p class="P4"><span><b class="th">面积：</b>550㎡</span><span><b class="th">造价：</b>300万</span></p>
+										<br>
+										<p class="P5"><span class="th">定制理念：</span>业主是位年轻的成功人士，是某服装品牌的市场策划老大，喜欢流行与时尚，准备结婚的新房。</p>
+										<br>
+										<p class="P5"><span class="th">业主评价：</span>这是我们的婚房，希望它是一个年轻时尚又不失浪漫温馨的家设计师能第一时间就了解我们的想法，能充分贯彻到空间中在施工过程中也很专业，不用我们时刻盯着，很省心。</p>
+									</div>
+								</div>
+					        </div>
+					        <div class="swiper-slide">
+					        	<div class="album"><img src="images/album.jpg"></div>
+								
+								<div class="msg">
+									<span class="line"></span>
+									<p class="title">定制业主故事</p>
+									<p class="P1">CUSTOM OWNER STORY</p>
+									<p class="P2">已为<span class="redColor">360位</span>业主实现别墅装修私人订制</p>
+									<div class="card">
+										<img src="images/figure.jpg">
+										<p class="P3">龙湖景岛别墅</p>
+										<p class="P4"><span><b class="th">风格：</b>欧式风格</span><span><b class="th">户型：</b>别墅</span></p>
+										<p class="P4"><span><b class="th">面积：</b>550㎡</span><span><b class="th">造价：</b>300万</span></p>
+										<br>
+										<p class="P5"><span class="th">定制理念：</span>业主是位年轻的成功人士，是某服装品牌的市场策划老大，喜欢流行与时尚，准备结婚的新房。</p>
+										<br>
+										<p class="P5"><span class="th">业主评价：</span>这是我们的婚房，希望它是一个年轻时尚又不失浪漫温馨的家设计师能第一时间就了解我们的想法，能充分贯彻到空间中在施工过程中也很专业，不用我们时刻盯着，很省心。</p>
+									</div>
+								</div>
+					        </div>
 					    </div>
 					</div>
 
-					<div class="msg">
-						<span class="line"></span>
-						<p class="title">定制业主故事</p>
-						<p class="P1">CUSTOM OWNER STORY</p>
-						<p class="P2">已为<span class="redColor">360位</span>业主实现别墅装修私人订制</p>
-						<div class="card">
-							<img src="images/figure.jpg">
-							<p class="P3">龙湖景岛别墅</p>
-							<p class="P4"><span><b class="th">风格：</b>欧式风格</span><span><b class="th">户型：</b>别墅</span></p>
-							<p class="P4"><span><b class="th">面积：</b>550㎡</span><span><b class="th">造价：</b>300万</span></p>
-							<br>
-							<p class="P5"><span class="th">定制理念：</span>业主是位年轻的成功人士，是某服装品牌的市场策划老大，喜欢流行与时尚，准备结婚的新房。</p>
-							<br>
-							<p class="P5"><span class="th">业主评价：</span>这是我们的婚房，希望它是一个年轻时尚又不失浪漫温馨的家设计师能第一时间就了解我们的想法，能充分贯彻到空间中在施工过程中也很专业，不用我们时刻盯着，很省心。</p>
-						</div>
-						<div class="arrowbox">
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-						</div>
-					</div>
+					<div class="swiper-button-prev story-prev"></div>
+					<div class="swiper-button-next story-next"></div>
+					<!-- 修改部分 - END -->
+
 				</div>
 			</div>
 
@@ -754,33 +839,136 @@
 	<script src="script/jquery.select.js"></script>
 	<script src="script/swiper.min.js"></script>
 	<script src="script/common.js"></script>
+
+	<!-- 修改部分 - START -->
     <script>
-    var SwiperA = new Swiper('.swiper-container-a', {
-    	loop: true,
-    	effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        slideToClickedSlide:true,
-	 	coverflow: {
-	 		rotate: 0,
-	 		stretch: 429,
-	 		depth: 100,
-	 		modifier: 1,
-	 		slideShadows: true,
-	 	}
-    });
+    	var sca = $(".swiper-container-a");
+	    var SwiperA = new Swiper('.swiper-container-a', {
+	    	loop: true,
+	    	effect: 'coverflow',
+	        grabCursor: true,
+	        centeredSlides: true,
+	        slidesPerView: 'auto',
+	        //loopedSlides: 5,
+	        slideToClickedSlide:true,
+		 	coverflow: {
+		 		rotate: 0,
+		 		stretch: 429,
+		 		depth: 100,
+		 		modifier: 1,
+		 		slideShadows: true,
+		 	},
+		 	onSlideChangeEnd: function(swiper){
 
-    var SwiperB = new Swiper ('.swiper-container-b', {
-	    nextButton: '.swiper-button-next',
-	    prevButton: '.swiper-button-prev',
-	});
+		 		var btn = sca.find(".swiper-slide").eq(swiper.activeIndex).find(".bookingbtn");
 
-    var SwiperC = new Swiper ('.swiper-container-c', {
-	    nextButton: '.swiper-button-next',
-	    prevButton: '.swiper-button-prev',
-	});
+		 		fnBtnClick(btn);
+		    }
+	    });
 
-     
+	    var SwiperB = new Swiper ('.swiper-container-b', {
+		    nextButton: '.designer-next',
+		    prevButton: '.designer-prev',
+		});
+
+	    var SwiperC = new Swiper ('.swiper-container-c', {
+		    nextButton: '.story-next',
+		    prevButton: '.story-prev',
+		});
+
+
+	    /*工地滚动*/
+	    var fnRunLamp = (function(){
+
+	    	var lamp = $(".jslamp ol");
+	    	var timer = null;
+
+	    	lamp.mouseover(function(){ clearInterval(timer) });
+	    	lamp.mouseout(autoplay);
+
+	    	function autoplay() {
+
+	    		timer = setInterval(function(){
+
+		    		lamp.animate({top: -61},300,function(){
+		    			lamp.append(lamp.find("li:first-child"));
+		    			lamp.css('top','0');
+		    		});
+
+		    	},2000);
+	    	}
+
+	    	autoplay();
+	    }()); 
+
+
+	    var arr = ["#jsCaseCard","#jsStyleCard","#jsDesignerCard","#jsSoftCard","#jsGuaranteeCard","#jsFlowCard"];
+		var pos = [];
+
+		for ( var i = 0; i < arr.length; i++ ) { pos.push( $(arr[i]).offset().top - 150 ) }
+
+
+	    /*导航锚点*/
+		var fnAnchor = (function(){
+
+			$(".jsnav").on("click","a",function(){
+
+				var cls = $(this).attr("class").replace(/active$/,'').trim();
+
+				if ( cls != "jsScrollTop" && cls != "jsPhone" ) {
+
+					var oh = $("#" + cls).offset().top - 100;
+
+					$("." + cls).addClass("active").siblings().removeClass("active");
+
+					$('html,body').animate({scrollTop: oh},300);
+				}
+
+				cls == "jsScrollTop" && $('html,body').animate({scrollTop: 0},300);;
+			});
+
+			return arguments.callee;
+		}());
+
+
+		/*导航定位*/
+		var fnNav = (function(){
+
+			var nav = $(".jsnav");
+			var banner = $(".jsbanner");
+			var th = banner.height() - nav.height();
+			var wtop = $(window).scrollTop();
+
+			wtop > th ? nav.addClass("fxnav") : nav.removeClass("fxnav");
+
+			switch(true) 
+			{
+				case wtop <= pos[1] :
+					nav.find(arr[0].replace(/#/,'.')).addClass("active").siblings().removeClass("active");
+					break;
+				case wtop > pos[1] && wtop <= pos[2] :
+					nav.find(arr[1].replace(/#/,'.')).addClass("active").siblings().removeClass("active");
+					break;
+				case wtop > pos[2] && wtop <= pos[3] :
+					nav.find(arr[2].replace(/#/,'.')).addClass("active").siblings().removeClass("active");
+					break;
+				case wtop > pos[3] && wtop <= pos[4] :
+					nav.find(arr[3].replace(/#/,'.')).addClass("active").siblings().removeClass("active");
+					break;
+				case wtop > pos[4] && wtop <= pos[5] :
+					nav.find(arr[4].replace(/#/,'.')).addClass("active").siblings().removeClass("active");
+					break;
+				case wtop > pos[5] :
+					nav.find(arr[5].replace(/#/,'.')).addClass("active").siblings().removeClass("active");
+					break;
+			}
+
+			return arguments.callee;
+		}());
+
+
+		$(window).scroll(fnNav);
+		
     </script>
+    <!-- 修改部分 - START -->
 </body>
