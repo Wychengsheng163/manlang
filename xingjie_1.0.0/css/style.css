@@ -322,11 +322,20 @@
 	}
 	.styleDetail .slideshowbox {
 		position: relative;
+		height: 651px;
+		overflow: hidden;
 	}
 	.styleDetail .slideshowbox .swiper-box {
-		position: relative;
+		position: absolute;
+		left: 0;
+		top: 0;
+		opacity: 0;
 		width: 100%;
 		height: 651px;
+		transition: all 300ms ease;
+	}
+	.styleDetail .slideshowbox .active {
+		opacity: 1;
 	}
 	.styleDetail .gallery-top {
 		position: relative;
@@ -575,6 +584,12 @@
 		margin: 0 auto;
 		text-align: center;
 		border: 1px solid #434343;
+		transition: all 300ms;
+	}
+	.activityMain .more:hover {
+		color: #fff;
+		border-color: #6d131e;
+		background-color: #6d131e;
 	}
 	.activityMain .caseCard {
 		padding-top: 90px;

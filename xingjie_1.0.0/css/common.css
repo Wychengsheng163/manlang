@@ -80,7 +80,7 @@ html,body { height: 100%; }
 .hover:hover {background-color: #6d131e;}
 
 /* 侧边栏 */
-.Slide {position: fixed;z-index: 100;width: 71px;right: 0;top: 500px;}
+.Slide {position: fixed;z-index: 100;width: 71px;right: 0;bottom: 0;}
 .Slide a {
 	display: block;
 	margin-bottom: 2px;
