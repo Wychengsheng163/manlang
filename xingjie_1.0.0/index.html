@@ -908,6 +908,7 @@
 		for ( var i = 0; i < arr.length; i++ ) { pos.push( $(arr[i]).offset().top - 150 ) }
 
 
+
 	    /*导航锚点*/
 		var fnAnchor = (function(){
 
@@ -968,6 +969,8 @@
 
 
 		$(window).scroll(fnNav);
+
+		$("." + location.search.replace(/\?/,'')).trigger('click');
 
     </script>
     <!-- 修改部分 - START -->
