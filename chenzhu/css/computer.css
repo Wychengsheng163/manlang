@@ -3,6 +3,10 @@
 ---------------------------*/
 
 
+.mb_header, .mb_footer {display:none}
+
+
+
 /* header */
 .pc_header {
 	height: 90px;
@@ -11,6 +15,7 @@
 .pc_header .logo {
 	width: 198px;
 	height: 90px; 
+	background: url(../images/common/pc_logo.png) no-repeat left center;
 }
 .pc_header .sec {
 	float: right; 

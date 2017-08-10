@@ -13,44 +13,112 @@
 </head>
 <body>
 	<div class="container">
-		<div class="header">
-			<!-- PC端导航 -->
-			<div class="pc_header">
-				<div class="wrap clearfix">
-					<a href="index.html" class="logo fl" style="background: url(images/common/pc_logo.png) no-repeat left center;"></a>
-					<div class="fr">
-						<div class="sec hotline"></div>
-						<div class="sec search" id="headsearch"><input id="searchInput" type="text"><button class="js_searchbtn"></button></div>
-						<div class="sec nav" id="headnav">
-							<button class="js_navbtn"></button>
-							<div id="navboxes">
-								<a href="javascript:;" class="active"><b>CASE</b>工程案例</a>
-								<a href="javascript:;"><b>SERVICE</b>至尊服务</a>
-								<a href="javascript:;"><b>CONSTRUCTION</b>品质施工</a>
-								<a href="javascript:;"><b>KNOWLEDGE</b>装修知识</a>
-								<a href="javascript:;"><b>ABOUT US</b>关于我们</a>
+		
+		<div id="viewboxes" class="viewboxes" style="margin-left: 0;">
+			
+			<div class="header">
+				<!-- PC端导航 -->
+				<div class="pc_header">
+					<div class="wrap clearfix">
+						<a href="index.html" class="logo fl"></a>
+						<div class="fr">
+							<div class="sec hotline"></div>
+							<div class="sec search" id="headsearch"><input id="searchInput" type="text"><button class="js_searchbtn"></button></div>
+							<div class="sec nav" id="headnav">
+								<button class="js_navbtn"></button>
+								<div id="navboxes">
+									<a href="javascript:;" class="active"><b>CASE</b>工程案例</a>
+									<a href="javascript:;"><b>SERVICE</b>至尊服务</a>
+									<a href="javascript:;"><b>CONSTRUCTION</b>品质施工</a>
+									<a href="javascript:;"><b>KNOWLEDGE</b>装修知识</a>
+									<a href="javascript:;"><b>ABOUT US</b>关于我们</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<!-- 移动端导航 -->
+				<div class="mb_header">
+					
+					<div id="fixtop" class="top">
+						<button id="navbtn-a" class="navbtn navbtn-layer-1"></button>
+						<a class="logo" href="index.html"></a>
+					</div>
+
+					<div id="headboxes" class="boxes">
+
+						<button id="navbtn-b" class="navbtn navbtn-layer-2"></button>
+
+						<div id="masklayer" class="masklayer"></div>
+
+						<div class="slidemenu">
+							<ul id="sMenu" class="menu_1">
+								<li><a href="javascript:;">首页<span>HOME</span></a></li>
+								<li>
+									<a href="javascript:;">工程案例<span>CASE</span></a>
+									<ul class="menu_2">
+										<li><a href="javascript:;">行业分类</a></li>
+										<li><a href="javascript:;">装修区域</a></li>
+										<li><a href="javascript:;">装修面积</a></li>
+										<li><a href="javascript:;">装修材料</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;">至尊服务<span>SERVICE</span></a>
+									<ul class="menu_2">
+										<li><a href="javascript:;">行业分类</a></li>
+										<li><a href="javascript:;">装修区域</a></li>
+										<li><a href="javascript:;">装修面积</a></li>
+										<li><a href="javascript:;">装修材料</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:;">品质施工<span>CONSTRUCTION</span></a>
+									<ul class="menu_2">
+										<li><a href="javascript:;">行业分类</a></li>
+										<li><a href="javascript:;">装修区域</a></li>
+										<li><a href="javascript:;">装修面积</a></li>
+										<li><a href="javascript:;">装修材料</a></li>
+									</ul>
+								</li>
+								<li><a href="javascript:;">装修知识<span>KNOWLEDGE</span></a></li>
+								<li><a href="javascript:;">关于我们<span>ABOUT US</span></a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>	
+		
+			<div class="main">
+				<br><br><br><br><br><br><br>
+				<button onclick="alert()" style="font-size: 20px;">点我点我点我</button>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</div>
+		
+			<div class="footer">
+				
+				<!-- 移动端底部 -->
+				<div id="mfooter" class="mb_footer">
+					<a href="index.html">首页</a>
+					<a href="javascript:;">案例</a>
+					<a href="tel:+8618716273719">电话</a>
+					<a href="javascript:;">咨询</a>
+				</div>
 			</div>
 
-			<!-- 移动端导航 -->
-			<div class="mb_header"></div>
-		</div>	
-	
-		<div class="main">
-			
-		</div>
-	
-		<div class="footer">
-			
 		</div>
 	</div>
 
 	<script src="script/jquery.js"></script>
 	<script src="script/swiper.min.js"></script>
 	<script src="script/common.js"></script>
-	<script></script>
+	<script>
+		
+
+
+
+	</script>
 </body>
 </html>
