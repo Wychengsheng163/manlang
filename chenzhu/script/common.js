@@ -8,6 +8,35 @@ function testAnim(obj,x,callback) //animate效果切换
 }
 
 
+function AddFavorite(sURL, sTitle) //加入收藏
+{ 
+    sURL = encodeURI(sURL);
+
+    try 
+    {
+        window.external.addFavorite(sURL, sTitle);
+    } 
+    catch (e) 
+    {
+
+	    try 
+	    {
+	        window.sidebar.addPanel(sTitle, sURL, "");
+	    } 
+	    catch (e) 
+	    {
+	        alert("加入收藏失败,请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+        }
+    }
+}
+
+
+function returntop() /* 返回顶部按钮 */
+{
+	$('html,body').animate({scrollTop: 0},300); 
+}
+
+
 (function(){ /* PC端导航&搜索框效果 */
 
 	var headsearch 	= $("#headsearch");
