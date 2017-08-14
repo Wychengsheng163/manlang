@@ -120,17 +120,31 @@
 	.mb_footer {
 		position: fixed;
 		left: 0; bottom: 0;
+		z-index: 999;
 		display: flex;
-		width: 100%; height: 80px;
-		background-color: #ccc;
+		padding: 10px 0;
+		width: 100%;
+		background-color: #ab2537;
 		transition: all 300ms;
 	}
 	.mb_footer a {
 		width: 25%;
-		color: #000;
-		padding-top: 50px;
+		color: #fff;
+		font-size: 16px;
+		line-height: 30px;
 		text-align: center;
 	}
+	.mb_footer a b {
+		display: block;
+		height: 30px;
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.mb_footer a:nth-child(1) b { background-image: url(../images/common/ficon_1.png) }
+	.mb_footer a:nth-child(2) b { background-image: url(../images/common/ficon_2.png) }
+	.mb_footer a:nth-child(3) b { background-image: url(../images/common/ficon_3.png) }
+	.mb_footer a:nth-child(4) b { background-image: url(../images/common/ficon_4.png) }
 
 /* footer - end */
 

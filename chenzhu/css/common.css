@@ -32,8 +32,373 @@ html,body { height: 100%; }
 .fl{float: left}.fr{float: right}
 .rColor{color: #AC2536}
 
+.footer, .header {display: none}
+
+body {background-color: #999;}
 
 
+@media screen and (min-width: 1025px) 
+{
+	/* header - start */
+		.cheader {
+			display: block;
+			position: fixed;
+			left: 0; top: 0; z-index: 10;
+			width: 100%; height: 90px;
+			background: rgba(255,255,255,0.7); 
+		}
+		.cheader .logo {
+			width: 198px;
+			height: 90px; 
+			background: url(../images/common/pc_logo.png) no-repeat left center;
+		}
+		.cheader .sec {
+			float: right; 
+		}
+		.cheader .nav {
+			width: 65px;
+			overflow: hidden;
+			transition: all 300ms;
+		}
+		.cheader .nav.nav_on {
+			width: auto;
+		}
+		.cheader .nav button {
+			float: left;
+			width: 65px;
+			height: 90px;
+			background-size: 35px;
+			background-image: url(../images/common/pc_menu.png);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.cheader .search {
+			position: relative;
+			height: 50px;
+			margin-top: 20px;
+			margin-right: 30px;
+			border-radius: 25px;
+			padding-right: 50px;
+			transition: all 600ms ease;
+			background-color: transparent;
+		}
+		.cheader .search input {
+			width: 0;
+			height: 40px;
+			border: none;
+			font-size: 18px;
+			margin-top: 5px;
+			margin-left: 0;
+			transition: all 300ms ease;
+			background-color: transparent;
+		}
+		.cheader .search button {
+			position: absolute;
+			right: 0; top: 0;
+			width: 50px;
+			height: 50px;
+			background-size: 32px;
+			background-image: url(../images/common/pc_search.png);
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.cheader .search_on {
+			background-color: #fff;
+		}
+		.cheader .search_on input {
+			width: 200px;
+			margin-left: 20px;
+		}
+		.cheader .hotline {
+			width: 215px;
+			height: 90px;
+			box-shadow: 0 0 10px #353535;
+			background: url(../images/common/pc_hotline.jpg) no-repeat right center;
+		} 
+		#navboxes {
+			display: flex;
+			flex-flow: row warp;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+		#navboxes a {
+			width: 110px;
+			height: 90px;
+			color: #303030;
+			font-size: 16px;
+			line-height: 26px;
+			margin-right: 2px;
+			overflow: hidden;
+			transition: all 300ms;
+		}
+		#navboxes b {
+			display: block;
+			color: #6c6c6b;
+			font-size: 10px;
+			line-height: 16px;
+			font-weight: normal;
+			margin-top: 24px;
+			transition: all 300ms;
+		}
+		#navboxes .active, #navboxes a:hover {
+			color: #fff;
+			background-color: #ab2537;
+		}
+		#navboxes .active b, #navboxes a:hover b {
+			color: #fff;
+		}
+	/* header - end */
+
+
+    /* footer - start */
+		.cfooter {
+			display: block;
+			position: relative;
+			padding-top: 73px;
+			background-color: #222;
+		}
+		.cfooter .icons {
+			position: absolute;
+			padding-right: 185px;
+		}
+		.cfooter .logo {
+			display: block;
+			width: 192px;
+			height: 52px;
+			background: url(../images/common/pc_logo_foot.png) no-repeat center;
+		}
+		.cfooter .sharing {
+			display: block;
+			margin-top: 10px;
+		}
+		.cfooter .phone {
+			display: block;
+			width: 191px; height: 26px;
+			margin-top: 10px;
+			background: url(../images/common/phone.png) no-repeat center;
+		}
+		.cfooter .code {
+			position: absolute;
+			right: 0; top: 4px;
+			width: 139px; height: 139px;
+			background: url(../images/common/code.jpg) no-repeat center;
+		}
+		.cfooter .nav {
+			padding-bottom: 20px;
+		}
+		.cfooter .navmenu li {
+			float: left;
+			width: 100px;
+			font-size: 14px;
+			line-height: 48px;
+		}
+		.cfooter .navmenu li a {
+			display: block;
+			color: #fff;
+		}
+		.cfooter .navmenu li:last-child {
+			width: 60px;
+			text-align: right;
+		}
+		.cfooter .navmenu li a:first-child {
+			line-height: 38px;
+		}
+		.cfooter .link {
+			color: #a9a9a9;
+			font-size: 14px;
+			line-height: 51px;
+			border-top: 1px solid #393939;
+		}
+		.cfooter .link a {
+			color: #757575;
+			margin-left: 30px;
+		}
+		.cfooter .address {
+			color: #cfcfcf;
+			line-height: 45px;
+			background-color: #121212;
+		}
+		.cfooter .address a {
+			color: #cfcfcf;
+			margin-right: 35px;
+		}
+		.cfooter .floating {
+			position: absolute;
+			left: 50%; top: -25px;
+			width: 52px;
+			height: 48px;
+			cursor: pointer;
+			transition: all 300ms;
+			background: url(../images/common/arrowtop.jpg) no-repeat center;
+		}
+		.cfooter .floating:hover {
+			top: -35px;
+		}
+		.cfooter .bdshare-button-style0-32 a {
+			margin-right: 50px;
+			background-size: 32px;
+			background-repeat: no-repeat;
+			background-position: 0;
+		}
+		.cfooter a.bds_tsina {
+			background-image: url(../images/common/xinlang.png);
+		}
+		.cfooter a.bds_weixin {
+			background-image: url(../images/common/weixin.png);
+		}
+		.cfooter a.bds_sqq {
+			margin-right: 0;
+			background-image: url(../images/common/qq.png);
+		}
+    /* footer - end */
+}
+
+@media screen and (max-width: 1024px) 
+{
+	/* header - start */
+		.mheader {
+			display: block;
+		}
+		.mheader .boxes {
+			position: fixed;
+			top: 0; left: -300px;
+			width: 100%; height: 100%;
+			z-index: -1;
+			padding-left: 300px;
+			transition: all 300ms;
+		}
+		.mheader .top {
+			position: fixed;
+			z-index: 3;
+			top: 0; left: 0;
+			width: 100%; height: 90px;
+			transition: all 300ms;
+			background: rgba(255,255,255,0.5); 
+		}
+		.mheader .logo {
+			display: block;
+			width: 60%;
+			height: 100%;
+			margin: 0 auto;
+			background: url(../images/common/pc_logo.png) no-repeat center;
+		}
+		.mheader .navbtn {
+			position: absolute; top: 0;
+			width: 90px; height: 90px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.mheader .navbtn-layer-1 {
+			left: 0;
+			background-image: url(../images/common/pc_menu.png);
+		}
+		.mheader .navbtn-layer-2 {
+			display: none;
+			left: 300px; z-index: 1;
+			background: yellow;
+		}
+
+		.mheader .navbtn.on {
+			background-color: #999;
+		}
+		.mheader .slidemenu {
+			position: absolute;
+			left: 0; top: 0;
+			width: 300px; height: 100%;
+			overflow: auto;
+		}
+		.mheader .masklayer {
+			position: absolute;
+			left: 300px;top: 0;
+			width: 100%;height: 100%;
+			transition: all 300ms;
+		}
+		.mheader .masklayer.on {
+			background: rgba(0,0,0,0.5);
+		}
+
+		.mheader .menu_1 {
+			min-height: 100%;
+			padding-top: 90px; 
+			background: #eee;
+			box-sizing: border-box;
+		}
+		.mheader .menu_1 > li {
+			font-size: 16px;
+			line-height: 40px;
+			padding-left: 30px;
+		}
+		.mheader .menu_1 > li > a {
+			display: block;
+			color: #000;
+			letter-spacing: 3px;
+			border-bottom: 1px solid #ccc;
+		}
+		.mheader .menu_1 > li > a span {
+			color: #999;
+			font-size: 10px;
+			margin-left: 10px;
+			vertical-align: middle;
+			letter-spacing: 0;
+		}
+		.mheader .menu_2 {
+			padding-left: 30px;
+			margin-left: -30px;
+			margin-top: -1px;
+			background-color: #ccc;
+			transition: all 300ms;
+			overflow: hidden;
+		}
+		.mheader .menu_2 a {
+			display: block;
+			color: #999;
+			font-size: 14px;
+			height: 0;
+			line-height: 36px;
+			transition: all 300ms;
+		}
+		.mheader .menu_on {
+			padding: 10px 0 10px 30px;
+		}
+		.mheader .menu_on a {
+			height: 36px;
+		}
+	/* header - end */
+
+
+	/* footer - start */
+		.mfooter {
+			display: block;
+			position: fixed;
+			left: 0; bottom: 0;
+			z-index: 999;
+			display: flex;
+			padding: 12px 0 8px;
+			width: 100%;
+			background-color: #ab2537;
+			transition: all 300ms;
+		}
+		.mfooter a {
+			width: 25%;
+			color: #fff;
+			font-size: 16px;
+			line-height: 30px;
+			text-align: center;
+		}
+		.mfooter b {
+			display: block;
+			height: 30px;
+			background-size: 30px;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.mfooter a:nth-child(1) b { background-image: url(../images/common/ficon_1.png) }
+		.mfooter a:nth-child(2) b { background-image: url(../images/common/ficon_2.png) }
+		.mfooter a:nth-child(3) b { background-image: url(../images/common/ficon_3.png) }
+		.mfooter a:nth-child(4) b { background-image: url(../images/common/ficon_4.png) }
+	/* footer - end */
+}
 
 
 
