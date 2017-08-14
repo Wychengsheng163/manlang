@@ -27,12 +27,13 @@ html,body { height: 100%; }
 .viewboxes {width: 100%;transition: all 300ms;}
 .clearfix:before,.clearfix:after {content: '';display: table}
 .clearfix:after {clear: both}
+.inwrap {max-width: 1280px;margin: 0 auto}/* 主页面居中 */
 .wrap {max-width: 1200px;margin: 0 auto}/* 页面居中 */
 .fl{float: left}.fr{float: right}
 .rColor{color: #AC2536}
 
 
-body {background-color: #999}
+
 
 
 
