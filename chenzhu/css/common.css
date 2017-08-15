@@ -272,15 +272,14 @@ html,body { height: 100%; }
 		}
 		.mheader .boxes {
 			position: fixed;
-			top: 0; left: -300px;
-			width: 100%; height: 100%;
+			top: 0; left: 0;
 			z-index: -1;
-			padding-left: 300px;
+			width: 100%; height: 100%;
 			transition: all 300ms;
 		}
 		.mheader .top {
 			position: fixed;
-			z-index: 10;
+			z-index: 12;
 			top: 0; left: 0;
 			width: 100%; height: 5rem;
 			transition: all 300ms;
@@ -309,8 +308,8 @@ html,body { height: 100%; }
 		}
 		.mheader .navbtn-layer-2 {
 			display: none;
-			left: 18.75rem; z-index: 1;
-			background-image: url(../images/common/pc_menu.png);
+			left: 0; z-index: 1;
+			background-image: url(../images/common/mb_menu.png);
 		}
 
 		.mheader .navbtn.on {
@@ -318,30 +317,30 @@ html,body { height: 100%; }
 		}
 		.mheader .slidemenu {
 			position: absolute;
-			left: 0; top: 0;
-			width: 18.75rem; height: 100%;
+			left: -80%; top: 0;
+			width: 80%; height: 100%;
 			overflow: auto;
 		}
 		.mheader .masklayer {
 			position: absolute;
-			left: 18.75rem;top: 0;
+			left: 0;top: 0;
 			width: 100%;height: 100%;
 			transition: all 300ms;
 		}
 		.mheader .masklayer.on {
-			background: rgba(0,0,0,0.5);
+			background: rgba(0,0,0,0.8);
 		}
 
 		.mheader .menu_1 {
 			min-height: 100%;
 			padding-top: 5rem; 
-			background: #eee;
+			background: #fff;
 			box-sizing: border-box;
 		}
 		.mheader .menu_1 > li {
-			font-size: 1.375rem;
-			line-height: 3.75rem;
-			padding-left: 1.875rem;
+			font-size: 1.625rem;
+			line-height: 5rem;
+			padding-left: 3rem;
 		}
 		.mheader .menu_1 > li > a {
 			display: block;
@@ -351,14 +350,14 @@ html,body { height: 100%; }
 		}
 		.mheader .menu_1 > li > a span {
 			color: #999;
-			font-size: 1rem;
+			font-size: 1.25rem;
 			margin-left: .625rem;
 			vertical-align: middle;
 			letter-spacing: 0;
 		}
 		.mheader .menu_2 {
-			padding-left: 1.875rem;
-			margin-left: -1.875rem;
+			padding-left: 3rem;
+			margin-left: -3rem;
 			margin-top: -1px;
 			background-color: #ccc;
 			transition: all 300ms;
@@ -366,17 +365,17 @@ html,body { height: 100%; }
 		}
 		.mheader .menu_2 a {
 			display: block;
-			color: #999;
-			font-size: 1.125rem;
+			color: #535353;
+			font-size: 1.5rem;
 			height: 0;
-			line-height: 3rem;
+			line-height: 4rem;
 			transition: all 300ms;
 		}
 		.mheader .menu_on {
-			padding: .625rem 0 .625rem 1.875rem;
+			padding: .625rem 0 .625rem 3rem;
 		}
 		.mheader .menu_on a {
-			height: 3rem;
+			height: 4rem;
 		}
 	/* header - end */
 
