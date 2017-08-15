@@ -31,19 +31,20 @@ html,body { height: 100%; }
 .wrap {max-width: 1200px;margin: 0 auto}/* 页面居中 */
 .fl{float: left}.fr{float: right}
 .rColor{color: #AC2536}
-
 .footer, .header {display: none}
 
-body {background-color: #999;}
 
 
 @media screen and (min-width: 1025px) 
 {
+	.mhomeBanner, .mhomeNav, .mhomeCase, .mhomeAdvantage, .mhomeTeam, .mhomeCustomer {display: none}
+	
+
 	/* header - start */
 		.cheader {
 			display: block;
 			position: fixed;
-			left: 0; top: 0; z-index: 10;
+			left: 0; top: 0; z-index: 8;
 			width: 100%; height: 90px;
 			background: rgba(255,255,255,0.7); 
 		}
@@ -252,10 +253,19 @@ body {background-color: #999;}
 			background-image: url(../images/common/qq.png);
 		}
     /* footer - end */
+
+	@media screen and (min-width: 1025px) and (max-width: 1280px) {
+		#navboxes a { width: 100px; }
+		.inwrap { padding: 0 15px; }
+		.homeAdvantage div.advbg { right: 15px; }
+		.homeTeam div.bg { width: 55%; }
+	}
 }
 
 @media screen and (max-width: 1024px) 
 {
+	.homeBanner, .homeNav, .homeCase, .homeAdvantage, .homeTeam, .homeCustomer, .homeNews {display: none}
+
 	/* header - start */
 		.mheader {
 			display: block;
@@ -270,9 +280,9 @@ body {background-color: #999;}
 		}
 		.mheader .top {
 			position: fixed;
-			z-index: 3;
+			z-index: 10;
 			top: 0; left: 0;
-			width: 100%; height: 90px;
+			width: 100%; height: 5rem;
 			transition: all 300ms;
 			background: rgba(255,255,255,0.5); 
 		}
@@ -281,11 +291,15 @@ body {background-color: #999;}
 			width: 60%;
 			height: 100%;
 			margin: 0 auto;
-			background: url(../images/common/pc_logo.png) no-repeat center;
+			background-size: 12.375rem;
+			background-image: url(../images/common/pc_logo.png);
+			background-repeat: no-repeat;
+			background-position: center;
 		}
 		.mheader .navbtn {
 			position: absolute; top: 0;
-			width: 90px; height: 90px;
+			width: 5rem; height: 5rem;
+			background-size: 2.5rem;
 			background-repeat: no-repeat;
 			background-position: center;
 		}
@@ -295,8 +309,8 @@ body {background-color: #999;}
 		}
 		.mheader .navbtn-layer-2 {
 			display: none;
-			left: 300px; z-index: 1;
-			background: yellow;
+			left: 18.75rem; z-index: 1;
+			background-image: url(../images/common/pc_menu.png);
 		}
 
 		.mheader .navbtn.on {
@@ -305,12 +319,12 @@ body {background-color: #999;}
 		.mheader .slidemenu {
 			position: absolute;
 			left: 0; top: 0;
-			width: 300px; height: 100%;
+			width: 18.75rem; height: 100%;
 			overflow: auto;
 		}
 		.mheader .masklayer {
 			position: absolute;
-			left: 300px;top: 0;
+			left: 18.75rem;top: 0;
 			width: 100%;height: 100%;
 			transition: all 300ms;
 		}
@@ -320,14 +334,14 @@ body {background-color: #999;}
 
 		.mheader .menu_1 {
 			min-height: 100%;
-			padding-top: 90px; 
+			padding-top: 5rem; 
 			background: #eee;
 			box-sizing: border-box;
 		}
 		.mheader .menu_1 > li {
-			font-size: 16px;
-			line-height: 40px;
-			padding-left: 30px;
+			font-size: 1.375rem;
+			line-height: 3.75rem;
+			padding-left: 1.875rem;
 		}
 		.mheader .menu_1 > li > a {
 			display: block;
@@ -337,14 +351,14 @@ body {background-color: #999;}
 		}
 		.mheader .menu_1 > li > a span {
 			color: #999;
-			font-size: 10px;
-			margin-left: 10px;
+			font-size: 1rem;
+			margin-left: .625rem;
 			vertical-align: middle;
 			letter-spacing: 0;
 		}
 		.mheader .menu_2 {
-			padding-left: 30px;
-			margin-left: -30px;
+			padding-left: 1.875rem;
+			margin-left: -1.875rem;
 			margin-top: -1px;
 			background-color: #ccc;
 			transition: all 300ms;
@@ -353,16 +367,16 @@ body {background-color: #999;}
 		.mheader .menu_2 a {
 			display: block;
 			color: #999;
-			font-size: 14px;
+			font-size: 1.125rem;
 			height: 0;
-			line-height: 36px;
+			line-height: 3rem;
 			transition: all 300ms;
 		}
 		.mheader .menu_on {
-			padding: 10px 0 10px 30px;
+			padding: .625rem 0 .625rem 1.875rem;
 		}
 		.mheader .menu_on a {
-			height: 36px;
+			height: 3rem;
 		}
 	/* header - end */
 
@@ -372,9 +386,9 @@ body {background-color: #999;}
 			display: block;
 			position: fixed;
 			left: 0; bottom: 0;
-			z-index: 999;
+			z-index: 8;
 			display: flex;
-			padding: 12px 0 8px;
+			padding: .75rem 0 .5rem;
 			width: 100%;
 			background-color: #ab2537;
 			transition: all 300ms;
@@ -382,14 +396,14 @@ body {background-color: #999;}
 		.mfooter a {
 			width: 25%;
 			color: #fff;
-			font-size: 16px;
-			line-height: 30px;
+			font-size: 1rem;
+			line-height: 1.875rem;
 			text-align: center;
 		}
 		.mfooter b {
 			display: block;
-			height: 30px;
-			background-size: 30px;
+			height: 1.875rem;
+			background-size: 1.875rem;
 			background-repeat: no-repeat;
 			background-position: center;
 		}

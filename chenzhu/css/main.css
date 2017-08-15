@@ -1,0 +1,776 @@
+
+
+/* 首页样式表 & START */
+
+	.mhomeNav {display: none}	
+
+	/* 公共部分 & START */
+		.homepage .more {
+			display: block;
+			width: 115px;
+			height: 34px;
+			color: #fff;
+			font-size: 16px;
+			line-height: 34px;
+			text-align: center;
+			border-radius: 17px;
+			box-shadow: 2px 2px 4px #888;
+			background-color: #ab2537;
+		}
+		.homepage .inTitle {
+			position: relative;
+		}
+		.homepage .inTitle .watermark {
+			position: absolute;
+			left: 0; z-index: -1;
+			font-size: 108px;
+			color: #f0f0f0;
+			opacity: 0.6;
+		}
+		.homepage .inTitle .bighead {
+			color: #343434;
+			font-size: 14px;
+			line-height: 22px;
+			margin-bottom: 10px;
+		}
+		.homepage .inTitle .bighead b {
+			font-size: 50px;
+			line-height: 50px;
+			font-weight: normal;
+			margin-right: 20px;
+		}
+		.homepage .inTitle .smalltext {
+			color: #999;
+			font-size: 12px;
+			line-height: 18px;
+		}
+	/* 公共部分 & END */
+
+
+	/* BANNER部分 & START */
+		.mindexing {display: none}
+		.homeBanner {
+			position: relative;
+			width: 100%;
+			margin-bottom: 35px;
+		}
+		.homeBanner .indexing {
+			position: absolute; z-index: 5;
+			left: 0; bottom: -35px;
+			width: 100%; height: 97px; 
+		}
+		.homeBanner .graybg {
+			position: absolute;
+			width: 83.64%; height: 97px; 
+			left: 16.66%;
+			background-color: #676767;
+		}
+		.homeBanner .consult {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 250px;
+			height: 62px;
+			margin-top: 134px;
+			margin-left: -146px;
+		}
+		.homeBanner .indexing .swiper-pagination {
+			font-size: 0;
+			width: 100%; 
+			top: 50%;
+			margin-top: -10px;
+			vertical-align: middle;
+		}
+		.homeBanner .indexing .numberpage {
+			color: #fff;
+			font-size: 14px;
+			text-align: right;
+			margin-top: -22px;
+			padding-right: 18.75%;
+			box-sizing: border-box;
+		}
+		.homeBanner .indexing .numberpage span {
+			width: 48px;
+			text-align: center;
+			margin-right: 0;
+			border: none;
+			background: none;
+		}
+		.homeBanner .numberpage .swiper-pagination-bullet-active {
+			font-size: 36px;
+		}
+		.homeBanner .swiper-slide {
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		
+		.homeBanner .indexing .swiper-pagination-bullet {
+			width: 18px; height: 18px;
+			margin-right: 14px; opacity: 1;
+			border: 1px solid #fff;
+			background: transparent;
+		}
+		.homeBanner .swiper-container-a {
+		    width: 100%;
+		}  
+		.homeBanner .indexing .swiper-pagination-bullet-active {
+			background: #fff;
+		}
+	/* BANNER部分 & END */
+
+
+	/* 热装案例 & START */
+		.homeCase .inTitle { padding: 30px 0; }
+		.homeCase .inTitle .watermark { top: 25px; }
+		.homeCase .inTitle .bighead { padding-top: 12px; }
+		.homeCase .inTitle .bighead b {
+			float: left;
+			margin-top: -12px;
+		}
+		.homeCase .case {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 62px;
+		}
+		.homeCase .case li { width: 32.34375%; }
+		.homeCase .blk {
+			position: relative;
+			font-size: 14px;
+			line-height: 24px;
+			margin-bottom: 18px;
+			height: 270px;
+			overflow: hidden;
+		}
+		.homeCase .blk.first { height: 186px; }
+		.homeCase .blk:hover .shadow { top: 0; opacity: 1; }
+		.homeCase .aImg {
+			display: block;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.homeCase .shadow {
+			position: absolute;
+			left: 0; top: 100px;
+			display: flex; align-items:center;
+			justify-content:center;
+			width: 100%; height: 100%;
+			color: #fff; opacity: 0;
+			text-align: center;
+			transition: all 300ms;
+			background: rgba(0,0,0,0.5);
+		} 
+		.homeCase .shadow > div { max-width: 300px; }
+		.homeCase .shadow button {
+			display: block;
+			width: 22px; height: 22px;
+			border-radius: 50%;
+			color: #fff; font-size: 27px; 
+			line-height: 0; 
+			padding: 0 0 4px 1px;
+			margin: 20px auto 0;
+			font-weight: 100;
+			box-sizing: border-box;
+			background-color: #8b0214;
+		}
+		.homeCase .head {
+			font-size: 16px;
+			margin-bottom: 12px;
+		}
+	/* 热装案例 & END */
+	
+	
+	/* 臣筑优势 & START */
+		.homeAdvantage .content {
+			position: relative;
+			height: 761px;
+			margin-bottom: 100px;
+		}
+		.homeAdvantage .inTitle .watermark {
+			top: -14px;
+		}
+		.homeAdvantage .inTitle .bighead {
+			padding-left: 4px;
+			line-height: 26px;
+			margin-bottom: 0;
+		}
+		.homeAdvantage .inTitle .bighead b {
+			display: block;
+			margin-left: -5px;
+			margin-bottom: 8px;
+		}
+		.homeAdvantage .inTitle .smalltext {
+			padding-left: 4px;
+		}
+		.homeAdvantage .advbg {
+			position: absolute;
+			top: 0; right: 1px;
+			width: 761px; height: 761px;
+			z-index: -2;
+		}
+		.homeAdvantage .material {
+			color: #696969;
+			margin-top: 60px;
+			margin-bottom: 50px;
+		}
+		.homeAdvantage .material h3 {
+			position: relative;
+			font-size: 26px;
+			line-height: 40px;
+			margin-bottom: 20px;
+			padding-bottom: 12px;
+			font-weight: normal;
+		}
+		.homeAdvantage .material p {
+			font-size: 14px;
+			line-height: 22px;
+			margin-bottom: 50px;
+		}
+		.homeAdvantage .material .line {
+			position: absolute;
+			bottom: 0; left: 0;
+			width: 80px;
+			height: 1px;
+			background-color: #696969;
+		}
+		.homeAdvantage .material .more {
+			margin-bottom: 50px;
+		}
+		.homeAdvantage .icons {
+			display: flex;
+			justify-content: space-between;
+		}
+		.homeAdvantage .icons li {
+			width: 22.8125%;
+			height: 190px;
+			color: #7d7c7b;
+			text-align: center;
+			line-height: 28px;
+			box-shadow: 0 0 6px #bdbdbd;
+			background-color: #fff;
+			transition: all 300ms;
+		}
+		.homeAdvantage .icons li:hover {
+			color: #fff;
+			background-color: #ab2537;
+		}
+		.homeAdvantage .icons li:hover b {
+			margin-top: -56px;
+		} 
+		.homeAdvantage .icons .ico {
+			display: block;
+			height: 56px;
+			margin-top: 38px;
+			margin-bottom: 28px;
+			overflow: hidden;
+		}
+		.homeAdvantage .icons .ico b {
+			display: block;
+			height: 112px;
+			transition: all 300ms;
+			background-repeat: no-repeat;
+			background-position: center top;
+		}
+		.homeAdvantage .icons li:nth-child(1) .ico b { background-image: url(../images/index/icon_1.png) }
+		.homeAdvantage .icons li:nth-child(2) .ico b { background-image: url(../images/index/icon_2.png) }
+		.homeAdvantage .icons li:nth-child(3) .ico b { background-image: url(../images/index/icon_3.png) }
+		.homeAdvantage .icons li:nth-child(4) .ico b { background-image: url(../images/index/icon_4.png) }
+	/* 臣筑优势 & END */
+	
+
+	/* 精英团队 & START */
+		.homeTeam .inTitle {
+			margin-bottom: 50px;
+		}
+		.homeTeam .inTitle .watermark {
+			top: -10px;
+		}
+		.homeTeam .inTitle .bighead {
+			line-height: 26px;
+			margin-bottom: 5px;
+		}
+		.homeTeam .content {
+			position: relative;
+			height: 596px;
+			margin-bottom: 132px;
+		}
+		.homeTeam .bg {
+			position: absolute;
+			left: 0; top: 0;
+			z-index: 1;
+			width: 64.0625%;
+		}
+		.homeTeam .text {
+			position: absolute;
+			right: 0; bottom: 0;
+			width: 1212px;
+			height: 522px;
+			background-color: #d2d2d2;
+		}
+		.homeTeam .txtab {
+			position: absolute;
+			right: 0; top: 112px;
+			padding-right: 28px;
+			width: 390px;
+			color: #454545;
+			line-height: 30px;
+		}
+		.homeTeam .txtab .th {
+			margin-bottom: 38px;
+			font-size: 20px;
+		}
+		.homeTeam .txtab .th > div {
+			display: inline-block;
+			width: 116px;
+			cursor: pointer;
+		}
+		.homeTeam .txtab .th .swiper-button-disabled {
+			font-weight: bold;
+			color: #ab2537;
+		}
+		.homeTeam .txtab .more {
+			margin-top: 50px;
+		}
+	/* 精英团队 & END */
+	
+
+	/* 合作客户 & START */
+		.homeCustomer {
+			position: relative;
+			margin-bottom: 95px;
+		}
+		.homeCustomer .client {
+			position: absolute;
+			left: 0; top: 0;
+			width: 100%; height: 100%;
+		}
+		.homeCustomer li {
+			height: 25%;
+			text-align: right;
+			font-size: 0;
+			box-sizing: border-box;
+		}
+		.homeCustomer li>span {
+			position: relative;
+			display: inline-block;
+			font-size: 16px;
+			width: 12.3958%; height: 100%;
+			border-top: 1px solid #c9cacb;
+			border-left: 1px solid #c9cacb;
+			background: rgba(255,255,255,0.8);
+			box-sizing: border-box;
+			transition: all 150ms;
+		}
+		.homeCustomer li>span:hover {
+			border: none;
+			z-index: 2;
+			transform: scale(1.05);
+			box-shadow: 0 0 10px #878787;
+			background: rgba(255,255,255,1);
+		}
+		.homeCustomer li>span:hover b {
+			width: 90%; height: 90%;
+			top: 5%; left: 5%;
+		}
+		.homeCustomer li:last-child span {
+			border-bottom: 1px solid #c9cacb;
+		}
+		.homeCustomer li>span b {
+			position: absolute;
+			width: 70%; height: 70%;
+			top: 15%; left: 15%;
+			transition: all 300ms;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+	/* 合作客户 & END */
+
+	
+	/* 新闻资讯 & START */
+		.homeNews {
+			padding-bottom: 178px;
+		}
+		.homeNews .inTitle {
+			margin-bottom: 50px;
+		}
+		.homeNews .inTitle .watermark {
+			top: -14px;
+		}
+		.homeNews .inTitle .bighead {
+			line-height: 24px;
+			padding-top: 8px;
+			margin-bottom: 0;
+		}
+		.homeNews .inTitle .bighead b {
+			margin-top: -8px;
+		}
+		.homeNews .bg {
+			width: 53.28125%; height: 554px;
+			background: url(../images/index/news_bg.jpg) no-repeat center;
+		}
+		.homeNews .tabcont {
+			width: 42.03125%;
+			height: 554px;
+			overflow: hidden;
+		}
+		.homeNews .hd {
+			height: 30px;
+			line-height: 30px;
+			margin-bottom: 46px;
+		}
+		.homeNews .hd > div {
+			float: left; 
+			width: 120px;
+			color: #636363;
+			font-size: 20px;
+			cursor: pointer;
+			text-align: center;
+		}
+		.homeNews .hd .swiper-button-disabled {
+			color: #ab2537;
+			font-weight: bold;
+		}
+		.homeNews .bd {
+			width: 100%;
+		}
+		.homeNews .newsp {
+			color: #8c8c8c;
+			padding-left: 16px;
+			margin-bottom: 40px;
+		}
+		.homeNews .newsp:hover .title {
+			border-left-color: #ab2537;
+		}
+		.homeNews .newsp:hover .more {
+			color: #fff;
+			background-color: #ab2537;
+		} 
+		.homeNews .title {
+			font-size: 16px;
+			line-height: 18px;
+			padding-left: 14px;
+			padding-right: 85px;
+			margin-left: -16px;
+			margin-bottom: 8px;
+			border-left: 2px solid #afafaf;
+		}
+		.homeNews .title span {
+			float: right;
+			width: 85px;
+			margin-right: -85px;
+		}
+		.homeNews .text {
+			color: #888;
+			font-size: 14px;
+			line-height: 30px;
+			margin-bottom: 13px;
+		}
+		.homeNews .more {
+			width: 100px;
+			height: 30px;
+			color: #afafaf;
+			line-height: 30px;
+			border: 1px solid #afafaf;
+			background-color: #fff;
+			transition: all 300ms;
+		}
+	/* 新闻资讯 & END */
+
+
+/* 首页样式表 - END */
+
+
+@media screen and (max-width: 1024px) {
+
+	/* 首页样式表 & START */
+
+		body {background-color: #f4f4f4;}
+
+		.container {padding-bottom: 5rem;}
+
+		.mtitle { text-align: center; }
+		.mtitle h2 {
+			font-size: 1.875rem;
+			line-height: 3.25rem;
+			font-weight: normal;
+		}
+		.mtitle p { position: relative; }
+		.mtitle p b {
+			position: absolute;
+			left: 50%; top: 50%; 
+			width: 25rem; height: 1px;
+			margin-left: -12.5rem;
+			background-color: #848484;
+		}
+		.mtitle p span {
+			position: relative;
+			z-index: 1;
+			display: block;
+			width: 16rem;
+			color: #b8b8b8;
+			font-size: 1.25rem;
+			margin: 0 auto;
+			line-height: 2.5rem;
+			background-color: #fff;
+		}
+
+
+
+		/* BANNER部分 & START */
+			.mhomeBanner {
+				position: relative;
+			}
+			.mhomeBanner .mhomeBanner-page {
+				bottom: 12px;
+				width: 100%;
+			}
+			.mhomeBanner .swiper-pagination-bullet {
+				width: 10px;
+				height: 10px;
+				margin: 0 5px;
+				background-color: #676767;
+			}
+			.mhomeBanner .swiper-pagination-bullet-active {
+				background-color: #ab2537;
+			}
+		/* BANNER部分 & END */
+		
+
+		/* 移动端页面导航 & START */
+			.mhomeNav {
+				position: relative;
+				z-index: 6;
+				display: flex;
+				margin-bottom: .875rem;
+				background-color: #fff;
+			}
+			.mhomeNav a {
+				width: 25%;
+				color: #676767;
+				font-size: 1.25rem;
+				line-height: 2.5rem;
+				padding-top: 1.625rem;
+				padding-bottom: 1.625rem;
+				text-align: center;
+			}
+			.mhomeNav b {
+				display: block;
+				width: 4.125rem;
+				height: 4.125rem;
+				margin: 0 auto .625rem;
+				border-radius: 50%;
+				box-shadow: 0 0 0.625rem #cecece;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.mhomeNav a:nth-child(1) b { background-image: url(../images/index/mhome_icon_1.jpg) }
+			.mhomeNav a:nth-child(2) b { background-image: url(../images/index/mhome_icon_2.jpg) }
+			.mhomeNav a:nth-child(3) b { background-image: url(../images/index/mhome_icon_3.jpg) }
+			.mhomeNav a:nth-child(4) b { background-image: url(../images/index/mhome_icon_4.jpg) }
+		/* 移动端页面导航 & END */
+		
+
+		/* 移动端工程案例 & START */
+			.mhomeCase {
+				text-align: center;
+				padding: 1rem 1.5rem;
+				margin-bottom: .875rem;
+				background-color: #fff;
+			}
+			
+			.mhomeCase .links {
+				display: flex;
+				justify-content: space-between;
+				padding: 1.25rem 0;
+			}
+			.mhomeCase .links a {
+				width: 31.054%;
+				border-radius: .625rem;
+				max-width: 218px;
+			}
+			.mhomeCase .swiper-slide a {
+				display: block;
+				padding-bottom: 3.75rem;
+			}
+			.mhomeCase .swiper-slide a img {
+				border-radius: 12px;
+			}
+			.mhomeCase .swiper-slide a p {
+				text-align: left;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.mhomeCase .swiper-slide .tl {
+				font-size: 1.5rem;
+				line-height: 2.5rem;
+				margin-top: .5rem;
+			}
+			.mhomeCase .swiper-slide .tc {
+				font-size: 1.375rem;
+				line-height: 2.125rem;
+			}
+			.mhomeCase .swiper-pagination-bullet {
+				width: 10px;
+				height: 10px;
+				background-color: #676767;
+			}
+			.mhomeCase .swiper-pagination-bullet-active {
+				background-color: #ab2537;
+			}
+		/* 移动端工程案例 & END */
+		
+		
+		/* 移动端臣筑优势 & START */
+			.mhomeAdvantage {
+				padding: 1rem 1.5rem;
+				margin-bottom: .875rem;
+				background-color: #fff;
+			}
+			.mhomeAdvantage .swiper-container {
+				padding-bottom: 4rem;
+			}
+			.mhomeAdvantage .swiper-slide {
+				display: flex;
+			}
+			.mhomeAdvantage .swiper-slide span {
+				display: block;
+				width: 33.3%;
+				font-size: 1.25rem;
+				line-height: 1.875rem;
+				padding-top: 2.5rem;
+				text-align: center;
+			}
+			.mhomeAdvantage .swiper-slide span>b {
+				display: block;
+			    width: 4.125rem;
+			    height: 4.125rem;
+			    margin: 0 auto 1.5rem;
+			    border-radius: 50%;
+			    box-shadow: 0 0 0.625rem #cecece;
+			    background-size: 2.5rem;
+			    background-repeat: no-repeat;
+			    background-position: center;
+			}
+			.mhomeAdvantage .swiper-pagination-bullet {
+				width: 10px;
+				height: 10px;
+				background-color: #676767;
+			}
+			.mhomeAdvantage .swiper-pagination-bullet-active {
+				background-color: #ab2537;
+			}
+			.mhomeAdvantage .icons_1 b { background-image: url(../images/index/mAdvantage_1.png) }
+			.mhomeAdvantage .icons_2 b { background-image: url(../images/index/mAdvantage_2.png) }
+			.mhomeAdvantage .icons_3 b { background-image: url(../images/index/mAdvantage_3.png) }
+			.mhomeAdvantage .icons_4 b { background-image: url(../images/index/mAdvantage_4.png) }
+			.mhomeAdvantage .icons_5 b { background-image: url(../images/index/mAdvantage_5.png) }
+			.mhomeAdvantage .icons_6 b { background-image: url(../images/index/mAdvantage_6.png) }
+		/* 移动端臣筑优势 & END */
+
+		
+		/* 移动端精英团队 & START */
+			.mhomeTeam {
+				padding: 1rem 1.5rem 1.75rem;
+				margin-bottom: .875rem;
+				background-color: #fff;
+			}
+			.mhomeTeam .tabhead {
+				display: flex;
+				justify-content: center;
+				padding-top: 2.75rem;
+				padding-bottom: 1.375rem;
+			}
+			.mhomeTeam .tabhead > div {
+				width: 40%;
+				font-size: 1.375rem;
+				text-align: center;
+				line-height: 2.5rem;
+			}
+			.mhomeTeam .swiper-container {
+				border-radius: 12px;
+				overflow: hidden;
+			}
+			.mhomeTeam .swiper-slide {
+				text-align: center;
+			}
+			.mhomeTeam .swiper-slide img {
+				border-radius: 12px;
+			}
+			.mhomeTeam .swiper-slide p {
+				text-align: left;
+				font-size: 1.25rem;
+				line-height: 1.875rem;
+				margin-top: 1.375rem;
+				margin-bottom: 2.5rem;
+				overflow : hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+			}
+			.mhomeTeam .swiper-button-disabled {
+				color: #ab2537;
+			}
+			.mhomeTeam .more {
+				margin: 0 auto;
+				box-shadow: none;
+			}
+		/* 移动端精英团队 & END */
+		
+
+		/* 移动端合作客户 & START */
+			.mhomeCustomer {
+				padding: 1rem 1.5rem 1.5rem;
+				margin-bottom: .875rem;
+				background-color: #fff;
+			}
+			.mhomeCustomer .mtitle {
+				margin-bottom: 1.625rem;
+			}
+			.mhomeCustomer .swiper-slide {
+				display: flex;
+				padding-top: 1.125rem;
+				flex-flow: row wrap;
+				justify-content: space-around;
+			}
+			.mhomeCustomer .swiper-slide > span {
+				width: 31.339%;
+				height: 8.5rem;
+				text-align: center;
+				border-radius: .625rem;
+				margin-bottom: 1.125rem;
+				box-shadow: 0 0 0.625rem #cecece;
+				background-size: 90%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.mhomeCustomer .swiper-container {
+				padding-bottom: 2.625rem;
+			}
+			.mhomeCustomer .swiper-pagination-bullet {
+				width: 10px;
+				height: 10px;
+				background-color: #676767;
+			}
+			.mhomeCustomer .swiper-pagination-bullet-active {
+				background-color: #ab2537;
+			}
+		/* 移动端合作客户 & END */
+
+	/* 首页样式表 - END */
+	
+
+	@media screen and (max-width: 640px) { 
+
+		html {font-size: 12px;}
+
+		.mhomeNav b { background-size: 2.166rem; }
+
+	}
+	
+
+}
+
+

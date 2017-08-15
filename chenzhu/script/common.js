@@ -134,19 +134,19 @@ function returntop() /* 返回顶部按钮 */
 	{
 		var bool = event.data.bool;
 		
-		mfooter.css("left",bool ? "0" : "300px");//底部导航
+		mfooter.css("left",bool ? "0" : "18.75rem");//底部导航
 
-		headboxes.css({"z-index": bool ? "-1" : "10",  "left": bool ? "-300px" : "0"});//侧边栏
+		headboxes.css({"z-index": bool ? "-1" : "10",  "left": bool ? "-18.75rem" : "0"});//侧边栏
 
-		fixtop.css("left",bool ? "0" : "300px");//头部导航
+		fixtop.css("left",bool ? "0" : "18.75rem");//头部导航
 
-		viewboxes.css("margin-left", bool ? "0" : "300px");//正文区域
+		viewboxes.css("margin-left", bool ? "0" : "18.75rem");//正文区域
 
 		body.css("overflow", bool ? "auto" : "hidden");//菜单滑出禁止页面滚动
 
 		//侧边栏导航、与头部导航切换 ↓↓
 
-		bool ? (navbtnA.fadeIn(300) && navbtnB.fadeOut(300)) : (navbtnB.fadeIn(300) && navbtnA.fadeOut(300));
+		bool ? (navbtnA.fadeIn() && navbtnB.fadeOut()) : (navbtnB.fadeIn() && navbtnA.fadeOut());
 
 		bool ? masklayer.removeClass("on") : masklayer.addClass("on");
 	}
