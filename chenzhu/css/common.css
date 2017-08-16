@@ -229,6 +229,7 @@ html,body { height: 100%; }
 			left: 50%; top: -25px;
 			width: 52px;
 			height: 48px;
+			margin-left: -26px;
 			cursor: pointer;
 			transition: all 300ms;
 			background: url(../images/common/arrowtop.jpg) no-repeat center;

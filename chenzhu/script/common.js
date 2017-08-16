@@ -154,5 +154,18 @@ function returntop() /* 返回顶部按钮 */
 }());
 
 
+(function(){ /*版块选项卡*/
 
+	var tabslide = $('.commontabs .tabslide');
+
+	tabslide.hide();
+
+	location.hash ? $(location.hash).show() : tabslide.eq(0).show();
+
+    tabslide.find('.tabhead a').click(function() {
+        tabslide.hide();
+        $($(this).attr('href')).show();
+    });
+
+}());
 
