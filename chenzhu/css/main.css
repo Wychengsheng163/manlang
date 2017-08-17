@@ -47,6 +47,9 @@
 		background-repeat: no-repeat;
 		background-position: left center;
 	}
+	.commontabs {
+		min-height: 1000px;
+	}
 	.commontabs .tabtn {
 		float: left;
 		width: 130px;
@@ -556,9 +559,6 @@
 
 
 /* 关于我们 & START */
-	.aboutuspage .tabslide {
-
-	}
 	.aboutuspage .advantage {
 		padding-top: 76px;
 		padding-bottom: 112px;
@@ -753,12 +753,12 @@
 		position: absolute;
 		left: 0; top: 0;
 		z-index: 1;
-		width: 70%;
+		width: 66%;
 	}
 	.aboutuspage .eliteteam .text {
 		position: absolute;
 		right: 0; bottom: 0;
-		width: 1070px;
+		width: 89%;
 		height: 486px;
 		background-color: #d2d2d2;
 	}
@@ -818,6 +818,39 @@
 		margin: 14px auto 0;
 		line-height: 36px;
 	}
+	.aboutuspage .eliteteam .layui-form {
+		padding: 22px;
+	}
+	.aboutuspage .eliteteam .column {
+		float: left;
+		width: 40%;
+		box-sizing: border-box;
+	}
+	.aboutuspage .eliteteam .layui-form-item {
+		margin-bottom: 5px;
+	}
+	.aboutuspage .eliteteam .layui-textarea {
+		height: 123px;
+		resize:none;
+	}
+	.aboutuspage .eliteteam .more {
+		margin: 44px auto;
+		background-color: #fff;
+	}
+	.aboutuspage .eliteteam .more:hover {
+		opacity: 1;
+		color: #fff;
+		background-color: #ab2537;
+	}
+	.aboutuspage .eliteteam .column-3 {
+		width: 20%;
+	}
+	.aboutuspage .eliteteam .column-3 .layui-input-block {
+		margin-left: 0;
+	}
+
+
+
 	.aboutuspage .eliteteam .form > div {
 		float: left;
 	}
@@ -969,43 +1002,67 @@
 		background-color: #f8f8f8;
 	}
 	.aboutuspage .contact .phones {
-		width: 26%;
-		color: #7d7d7d;
 		font-size: 14px;
 		line-height: 48px;
+		margin-top: -5px;
 	}
 	.aboutuspage .contact .phones p {
+		color: #7d7d7d;
 		padding-left: 130px;
 	}
+	.aboutuspage .contact .phones p:hover {
+		color: #ab2537;
+	}
+
 	.aboutuspage .contact .phones span {
 		float: left;
 		font-size: 16px;
 		width: 120px;
-		line-height: 44px;
+		height: 48px;
+		line-height: 48px;
 		margin-left: -130px;
 		text-align: right;
-		vertical-align: middle;
+		transition: all 300ms;
+		overflow: hidden;
+		background-repeat: no-repeat;
+		background-position: left top;
 	}
 	.aboutuspage .contact .phones p:nth-child(1) span {
-		background: url(../images/aboutus/aboutus_map_1.png) no-repeat left center;
+		background-image: url(../images/aboutus/aboutus_map_1.png);
 	}
 	.aboutuspage .contact .phones p:nth-child(2) span {
-		background: url(../images/aboutus/aboutus_map_2.png) no-repeat left center;
+		background-image: url(../images/aboutus/aboutus_map_2.png);
 	}
 	.aboutuspage .contact .phones p:nth-child(3) span {
-		background: url(../images/aboutus/aboutus_map_3.png) no-repeat left center;
+		background-image: url(../images/aboutus/aboutus_map_3.png);
 	}
 	.aboutuspage .contact .phones p:nth-child(4) span {
-		background: url(../images/aboutus/aboutus_map_4.png) no-repeat left center;
+		background-image: url(../images/aboutus/aboutus_map_4.png);
 	}
 	.aboutuspage .contact .phones p:nth-child(5) span {
-		background: url(../images/aboutus/aboutus_map_5.png) no-repeat left center;
+		background-image: url(../images/aboutus/aboutus_map_5.png);
 	}
 	.aboutuspage .contact .phones p:nth-child(6) span {
-		background: url(../images/aboutus/aboutus_map_6.png) no-repeat left center;
+		background-image: url(../images/aboutus/aboutus_map_6.png);
 	}
-	.aboutuspage .contact .form {
+	.aboutuspage .contact .phones p:hover span {
+		background-position: left -48px;
+	}
+	.aboutuspage .contact .forms {
 		width: 52.5%;
+	}
+	.aboutuspage .contact .layui-input-block {
+		margin-left: 0;
+	}
+	.aboutuspage .contact .contact-input {
+		width: 48%;
+	}
+	.aboutuspage .contact .layui-textarea {
+		min-height: 150px;
+	}
+	.aboutuspage .contact .more {
+		color: #fff;
+		background-color: #ab2537;
 	}
 /* 关于我们 & END */
 
@@ -1311,9 +1368,20 @@
 
 
 	/* 关于我们 & START */
-		.aboutuspage .customer, .aboutuspage .new { width: 96%;margin: 0 2%; }
+		.aboutuspage .customer, .aboutuspage .new, .aboutuspage .eliteteam { width: 96%;margin: 0 2%; }
 		.aboutuspage .customer li { width: 25%; }
 		.aboutuspage .customer li:hover .cusico { width: 100%;height: 100%;left: 0;top: 0;z-index: 0;background-size: 80%;}
+		.aboutuspage .eliteteam .formbox {height: auto;padding-left: 0;}
+		.aboutuspage .eliteteam .yuybtn {position: relative;width: 100%; height: 40px;line-height: 40px;text-align: center;}
+		.aboutuspage .eliteteam .yuybtn span {display: inline;}
+		.aboutuspage .eliteteam .column {width: 100%;}
+		.aboutuspage .eliteteam .bg {position: relative;}
+		.aboutuspage .eliteteam .text {width: 100%;}
+		.aboutuspage .eliteteam .txtab {position: relative;width: 94%; margin: 3%;top: auto;bottom: 0;padding-right: 0;text-align: center;}
+		.aboutuspage .eliteteam .yybtn {margin: 50px auto 0;}
+		.aboutuspage .eliteteam .teambox {height: auto;}
+		.aboutuspage .eliteteam .bg {position: relative;}
+		.aboutuspage .eliteteam .text {position: relative;width: 100%;height: auto;background: none;}
 	/* 关于我们 & END */
 
 	
@@ -1326,6 +1394,10 @@
 			.aboutuspage .customer li { width: 33.3333%; }
 			.aboutuspage .brand .m-swiper-brand { width: 96%; margin: 0 2%;}
 			.aboutuspage .new .morenews > ul {width: 100%;}
+			.aboutuspage .contact .forms {width: 100%;}
+			.aboutuspage .contact .formbox {padding: 4%;}
+			.aboutuspage .contact .more {margin: 0 auto;}
+			.aboutuspage .eliteteam .bg {width: 100%;}
 		/* 关于我们 & END */
 
 	}
@@ -1347,6 +1419,9 @@
 		.aboutuspage .new .imgbox {width: 100%;}
 		.aboutuspage .new .txtmain {width: 100%;}
 		.aboutuspage .new .more {margin: 0 auto;}
+		.aboutuspage .contact .maps {height: 250px;}
+		.aboutuspage .eliteteam .layui-form-label {width: auto;}
+		.aboutuspage .eliteteam .layui-input-block {margin-left: 80px;}
 	}
 
 

@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="layui/css/layui.css">
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=24748238d6579f384cf9811fd3b4ee19"></script>
 	<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
 	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
@@ -271,11 +272,11 @@
 												    <div class="swiper-wrapper">
 												        <div class="swiper-slide">
 												        	<p>100名海内外资深设计师，汇集全球最顶尖的设计元素，10年以上豪宅设计自理，提供原创、可传承的全案设计。我们根据不同区域不同公司，量身制定不同的设计方案和施工方案，制定最优化的办公室解决方案，让客户花最少的成本和精力，达好最满意的效果。</p>
-												        	<a class="yybtn" href="javascript:;">预约设计</a>
+												        	<a class="yybtn designbtn" href="javascript:;">预约设计</a>
 												        </div>
 												        <div class="swiper-slide">
 												        	<p>200名海内外资深设计师，汇集全球最顶尖的设计元素，10年以上豪宅设计自理，提供原创、可传承的全案设计。我们根据不同区域不同公司，量身制定不同的设计方案和施工方案，制定最优化的办公室解决方案，让客户花最少的成本和精力，达好最满意的效果。</p>
-												        	<a class="yybtn" href="javascript:;">预约设计</a>
+												        	<a class="yybtn designbtn" href="javascript:;">预约设计</a>
 												        </div>
 												    </div>
 												</div>
@@ -285,18 +286,41 @@
 
 									<div class="formbox">
 										<div class="yuybtn"><span>预约设计</span></div>
-										<form class="form clearfix" action="#" method="post">
-											<div>
-												<p><span>*姓名</span><input type="text" name="name"></p>
-												<p><span>*电话</span><input type="text" name="tel"></p>
-												<p><span>*面积</span><input type="text" name="area"></p>
+										<form class="layui-form clearfix" action="">
+											<div class="column column-1">
+												<div class="layui-form-item">
+												    <label class="layui-form-label"><span class="rColor">*</span>姓名</label>
+												    <div class="layui-input-block">
+												        <input type="text" name="title" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+												    </div>
+												</div>
+												<div class="layui-form-item">
+												    <label class="layui-form-label"><span class="rColor">*</span>电话</label>
+												    <div class="layui-input-block">
+												        <input type="text" name="title" required  lay-verify="phone" placeholder="请输入电话" autocomplete="off" class="layui-input">
+												    </div>
+												</div>
+											    <div class="layui-form-item">
+												    <label class="layui-form-label"><span class="rColor">*</span>面积</label>
+												    <div class="layui-input-block">
+												        <input type="text" name="title" required  lay-verify="number" placeholder="请输入面积" autocomplete="off" class="layui-input">
+												    </div>
+											    </div>
+										  	</div>
+										  	<div class="column column-2">
+											    <div class="layui-form-item layui-form-text">
+											    	<label class="layui-form-label"><span class="rColor">*</span>需求</label>
+											    	<div class="layui-input-block">
+											        	<textarea name="desc" required  lay-verify="required" placeholder="请输入您的需求" class="layui-textarea"></textarea>
+											    	</div>
+											    </div>
 											</div>
-											<div>
-												<span>*需求</span>
-												<textarea name="demand" id="" cols="30" rows="10"></textarea>
-											</div>
-											<div>
-												<input type="submit" value="提交">
+											<div class="column column-3">
+											    <div class="layui-form-item">
+												    <div class="layui-input-block">
+												        <button class="layui-btn more" lay-submit lay-filter="formTeam">提 交</button>
+												    </div>
+											    </div>
 											</div>
 										</form>
 									</div>
@@ -459,7 +483,26 @@
 											<p><span>QQ 交谈 :</span> 1551302338</p>
 											<p><span>电子邮箱 :</span> jacdren@163.com</p>
 										</div>
-										<div class="form fr"></div>
+										<div class="forms fr">
+											<form class="layui-form" action="">
+											  <div class="layui-form-item">
+											    <div class="layui-input-block">
+											      <input type="text" name="title" required  lay-verify="required" placeholder="姓名：" autocomplete="off" class="layui-input contact-input fl">
+											      <input type="text" name="title" required  lay-verify="phone" placeholder="电话：" autocomplete="off" class="layui-input contact-input fr">
+											    </div>
+											  </div>
+											  <div class="layui-form-item layui-form-text">
+											    <div class="layui-input-block">
+											      <textarea name="desc" required  lay-verify="required" placeholder="需求：" class="layui-textarea"></textarea>
+											    </div>
+											  </div>
+											  <div class="layui-form-item">
+											    <div class="layui-input-block">
+											      <button class="layui-btn more" lay-submit lay-filter="formContact">提交</button>
+											    </div>
+											  </div>
+											</form>
+										</div>
 									</div>
 									
 								</div>
@@ -585,88 +628,142 @@
 	<script src="script/jquery.js"></script>
 	<script src="script/swiper.min.js"></script>
 	<script src="script/common.js"></script>
+	<script src="layui/layui.js"></script>
 	<script>
 
-		/* 品牌介绍轮播图 & START */
-	        var fnAboutus = (function(){
-	        	var swiperbrand  = $(".swiper-brand");
-	        	var mswiperbrand = $(".m-swiper-brand");
+		(function(){ /*版块选项卡*/
 
-	        	if ( $(window).width() > 1024 ) {
-	        		mswiperbrand.hide();
-	        		swiperbrand.show();
-	        		var swiperbrand = new Swiper('.swiper-brand', {
-	        			loop: true,
-	        			nextButton: '.brand-next',
-	        			prevButton: '.brand-prev',
-	        	        effect: 'coverflow',
-	        	        grabCursor: true,
-	        	        centeredSlides: true,
-	        	        slidesPerView: 'auto',
-	        	        coverflow: {
-	        	            rotate: 0,
-	        	            stretch: 0,
-	        	            depth: 300,
-	        	            modifier: 1.3,
-	        	            slideShadows : true
-	        	        }
-	        		})
-	        	} 
-	        	else {
-	        		swiperbrand.hide();
-	        		mswiperbrand.show();
-	        		var mswiperbrand = new Swiper ('.m-swiper-brand', {
-	        		    pagination: '.swiper-pagination',
-	        		});        
-	        	}
+			var tabslide = $('.commontabs .tabslide');
 
-	        	return arguments.callee;
-	        }());
+			tabslide.hide();
 
-	        $(window).resize(fnAboutus);
-		/* 品牌介绍轮播图 & END */
+			location.hash ? $(location.hash).show() : tabslide.eq(0).show();
+
+		    tabslide.find('.tabhead a').click(function() {
+
+		    	var hash = $(this).attr('href');
+
+		        tabslide.hide();
+
+		        $('html,body').animate({scrollTop: $(hash).offset().top }, 100,function(){
+
+		        	$(hash).show();
+
+		        	hash == "#brand" && fnBrand();
+
+			        hash == "#eliteteam" && fnTeam();
+
+			        hash == "#contact" && fnMaps();
+		        });
+		    });
+
+		}());
 
 
-		/* 精英团队轮播图 & START */
-			var swipereliteteam = new Swiper ('.swiper-eliteteam', {
+        var fnBrand = (function() { //品牌介绍轮播图
+
+        	var swiperbrand  = $(".swiper-brand");
+        	var mswiperbrand = $(".m-swiper-brand");
+
+        	if ( $(window).width() > 1024 ) {
+        		mswiperbrand.hide();
+        		swiperbrand.show();
+        		var swiperbrand = new Swiper('.swiper-brand', {
+        			loop: true,
+        			nextButton: '.brand-next',
+        			prevButton: '.brand-prev',
+        	        effect: 'coverflow',
+        	        grabCursor: true,
+        	        centeredSlides: true,
+        	        slidesPerView: 'auto',
+        	        coverflow: {
+        	            rotate: 0,
+        	            stretch: 0,
+        	            depth: 300,
+        	            modifier: 1.3,
+        	            slideShadows : true
+        	        }
+        		})
+        	} 
+        	else {
+        		swiperbrand.hide();
+        		mswiperbrand.show();
+        		var mswiperbrand = new Swiper ('.m-swiper-brand', {
+        		    pagination: '.swiper-pagination',
+        		});        
+        	}
+
+        	return arguments.callee;
+        }());
+
+
+        var fnTeam = (function() { // 精英团队轮播图
+
+			new Swiper ('.swiper-eliteteam', {
 			    nextButton: '.eliteteam-next',
 			    prevButton: '.eliteteam-prev',
+			    simulateTouch: false,
 			    grabCursor : true,
+			})
+
+			$(".designbtn").click(function(){ //预约设计按钮
+				$('html,body').animate({scrollTop: document.body.scrollHeight},300); 
 			});
-		/* 精英团队轮播图 & END */
 
-	</script>
-	<script type="text/javascript">
-		// 百度地图API功能
-	    var map = new BMap.Map('allmap');
-	    var poi = new BMap.Point(121.517916,31.194941);
-	    map.centerAndZoom(poi, 20);
-	    map.enableScrollWheelZoom();
+			return arguments.callee;
+		}());
 
-	    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
-	                    '地址：上海浦东新区东方路539号东方尚博创意园3207室<br/>电话：(021)50901508<br/>'+
-	                  '</div>';
 
-	    //创建检索信息窗口对象
-	    var searchInfoWindow = null;
-		searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
-				title  : "辰筑装饰",      //标题
-				width  : 290,             //宽度
-				height : 60,              //高度
-				panel  : "panel",         //检索结果面板
-				enableAutoPan : true,     //自动平移
-				searchTypes   :[
-					BMAPLIB_TAB_SEARCH,   //周边检索
-					BMAPLIB_TAB_TO_HERE,  //到这里去
-					BMAPLIB_TAB_FROM_HERE //从这里出发
-				]
-			});
-	    var marker = new BMap.Marker(poi); //创建marker对象
-	    marker.enableDragging(); //marker可拖拽
-	    marker.addEventListener("click", function(e){
+		var fnMaps = (function() { // 百度地图API功能
+
+		    var map = new BMap.Map('allmap');
+		    var poi = new BMap.Point(121.517916,31.194941);
+		    map.centerAndZoom(poi, 20);
+		    map.enableScrollWheelZoom();
+
+		    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+		                    '地址：上海浦东新区东方路539号东方尚博创意园3207室<br/>电话：(021)50901508<br/>'+
+		                  '</div>';
+
+		    //创建检索信息窗口对象
+		    var searchInfoWindow = null;
+			searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+					title  : "辰筑装饰",      //标题
+					width  : 290,             //宽度
+					height : 60,              //高度
+					panel  : "panel",         //检索结果面板
+					enableAutoPan : true,     //自动平移
+					searchTypes   :[
+						BMAPLIB_TAB_SEARCH,   //周边检索
+						BMAPLIB_TAB_TO_HERE,  //到这里去
+						BMAPLIB_TAB_FROM_HERE //从这里出发
+					]
+				});
+		    var marker = new BMap.Marker(poi); //创建marker对象
+		    marker.enableDragging(); //marker可拖拽
+		    marker.addEventListener("click", function(e){
+			    searchInfoWindow.open(marker);
+		    })
+		    map.addOverlay(marker); //在地图中添加marker
 		    searchInfoWindow.open(marker);
-	    })
-	    map.addOverlay(marker); //在地图中添加marker
+
+		    return arguments.callee;
+		}());
+
+
+        $(window).resize(fnBrand);
+
+
+		layui.use('form', function() { //表单验证
+
+			var form = layui.form();
+			  
+			form.on('submit(formDemo)', function(data){ //监听提交
+			    layer.msg("提交成功");
+			    return false;
+			})
+		});
+
 	</script>
 </body>
 </html>
