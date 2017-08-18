@@ -65,6 +65,9 @@
 		display: block;
 		font-size: 12px;
 		line-height: 20px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 	.commontabs .tabtn.on, .commontabs .tabtn:hover {
 		color: #fff;
@@ -552,8 +555,6 @@
 			transition: all 300ms;
 		}
 	/* 新闻资讯 & END */
-
-
 /* 首页样式表 & END */
 
 
@@ -1067,6 +1068,231 @@
 /* 关于我们 & END */
 
 
+/* 至尊服务 & START */
+	.servicepage .customerservice {
+		padding-top: 74px;
+		padding-bottom: 60px;
+	}
+	.servicepage .cntext {
+		font-size: 14px;
+		color: #666;
+		line-height: 26px;
+	}
+	.servicepage .entext {
+		font-size: 12px;
+		color: #adadad;
+		line-height: 22px;
+	}
+	.servicepage .customerservice .iconmain {
+		display: flex;
+		justify-content: space-between;
+		padding: 65px 0;
+	}
+	.servicepage .customerservice li {
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.servicepage .customerservice img {
+		border-radius: 50%;
+		box-shadow: 0 0 30px #b7b7b7;
+	}
+	.servicepage .customization {
+		padding-top: 74px;
+		padding-bottom: 115px;
+	}
+	.servicepage .customization .custommain {
+		margin-top: 55px;
+	}
+	.servicepage .customization li {
+		float: left;
+		width: 31.6666%;
+		height: 272px;
+		font-size: 14px;
+		line-height: 30px;
+		text-align: center;
+		margin-right: 2.5%;
+		margin-bottom: 55px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px #dadada;
+		transition: all 300ms;
+		cursor: pointer;
+		overflow: hidden;
+	}
+	.servicepage .customization .boxs {
+		display: table;
+		color: #7d7c7b;
+		width: 100%; height: 100%;
+		transition: all 300ms;
+	}
+	.servicepage .customization .boxs > div {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.servicepage .customization .icon {
+		display: block;
+	    height: 120px;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	}
+	.servicepage .customization .CNTitle {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	.servicepage .customization .ENTitle {
+		color: #b8b7b7;
+	}
+	.servicepage .customization button {
+		display: block;
+		width: 100px;
+		height: 30px;
+		color: #fff;
+		margin: 20px auto 0;
+		border-radius: 15px;
+		border: 1px solid #fff;
+	}
+	.servicepage .customization li:hover {
+		color: #fff;
+		background-color: #ab2537;
+	}
+	.servicepage .customization li:hover .boxs {
+		margin-top: -150px;
+	}
+	.servicepage .customization li:nth-child(3n) {margin-right: 0;}
+	.servicepage .customization li:hover .CNTitle, .servicepage .customization li:hover .ENTitle {color: #fff;}
+ 	.servicepage .customization li:nth-child(1) .icon { background-image: url(../images/service/customization_1.png) }
+	.servicepage .customization li:nth-child(2) .icon { background-image: url(../images/service/customization_2.png) }
+	.servicepage .customization li:nth-child(3) .icon { background-image: url(../images/service/customization_3.png) }
+	.servicepage .customization li:nth-child(4) .icon { background-image: url(../images/service/customization_4.png) }
+	.servicepage .customization li:nth-child(5) .icon { background-image: url(../images/service/customization_5.png) }
+	.servicepage .customization li:nth-child(6) .icon { background-image: url(../images/service/customization_6.png) }
+	.servicepage .customization li:nth-child(7) .icon { background-image: url(../images/service/customization_7.png) }
+	.servicepage .customization li:nth-child(8) .icon { background-image: url(../images/service/customization_8.png) }
+	.servicepage .customization li:nth-child(9) .icon { background-image: url(../images/service/customization_9.png) }
+	.servicepage .serviceflow {
+		position: relative;
+		padding-top: 74px;
+		margin-bottom: 130px;
+	}
+	.servicepage .serviceflow .custommain {
+		margin-top: 75px;
+	}
+	.servicepage .serviceflow li {
+		position: relative;
+		float: left;
+		width: 23%;
+		height: 246px;
+		margin-bottom: 56px;
+	}
+	.servicepage .serviceflow li > div {
+		max-width: 177px;
+	}
+	.servicepage .serviceflow img {
+		height: 177px;
+	}
+	.servicepage .serviceflow li:nth-child(5) { margin-left: 8% }
+	.servicepage .serviceflow li:nth-child(9) { margin-left: 23% }
+	.servicepage .serviceflow li:nth-child(5) > div,
+	.servicepage .serviceflow li:nth-child(6) > div,
+	.servicepage .serviceflow li:nth-child(7) > div,
+	.servicepage .serviceflow li:nth-child(8) > div{ margin: 0 auto; }
+	.servicepage .serviceflow .bimg {position: relative;}
+	.servicepage .serviceflow .btext {
+		position: absolute;
+		left: 0; top: 0;
+		opacity: 0;
+		width: 100%;height: 100%;
+		border-radius: 50%;
+		box-shadow: 0 0 30px #b7b7b7;
+		background: rgba(0,0,0,0.5);
+		transition: all 300ms;
+	}
+	.servicepage .serviceflow .btext p {
+		display: table;
+		width: 100%;height: 100%;
+		text-align: center;
+	}
+	.servicepage .serviceflow .btext span {
+		font-size: 14px;
+		color: #fff;
+		line-height: 24px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.servicepage .serviceflow .bimg p span {
+		display: cell-table;
+		vertical-align: center;
+	}
+	.servicepage .serviceflow .lines {
+		position: absolute;
+		width: 100%;
+		height: 12px;
+		background-color: #e5e5e5;
+		z-index: -1;
+	}
+	.servicepage .serviceflow .lineCen {
+		display: none;
+	}
+	.servicepage .serviceflow .lineTop {
+	    width: 130%;
+	    top: 37.1%;
+	    left: 0;
+	    margin-left: -30%;
+	}
+	.servicepage .serviceflow .lineCenter {
+		top: 64.1%;
+	}
+	.servicepage .serviceflow .lineBottom {
+		width: 130%;
+		left: 0;
+		top: 91.1%;
+	}
+	.servicepage .serviceflow .frame {
+		position: absolute;
+		width: 158px;
+		height: 316px;
+		background-color: #fff;
+		overflow: hidden;
+		z-index: -1;
+	}
+	.servicepage .serviceflow .frameLeft {
+		left: 0; top: 64.1%;
+	} 
+	.servicepage .serviceflow .frameLeft span {
+		left: 0;
+	}
+	.servicepage .serviceflow .frameRight {
+		right: 0; top: 37.1%;
+	} 
+	.servicepage .serviceflow .frameRight span {
+		left: -158px;
+	} 
+	.servicepage .serviceflow .frame span {
+		position: absolute; top: 0;
+		width: 316px; height: 316px;
+		border: 12px solid #e5e5e5;
+		border-radius: 50%;
+		box-sizing: border-box;
+	}
+	.servicepage .serviceflow .text {
+		display: block;
+		text-align: center;
+	}
+	.servicepage .serviceflow .point {
+		display: block;
+		width: 17px;
+		height: 17px;
+		margin: 16px auto;
+		border: 3px solid #ab2537;
+		border-radius: 50%;
+		background-color: #fff;
+		transition: all 300ms;
+	}
+	.servicepage .serviceflow li:hover .btext {opacity: 1}
+	.servicepage .serviceflow li:hover .text {color: #ab2537}
+	.servicepage .serviceflow li:hover .point {background-color: #ab2537}
+	
+/* 至尊服务 & END */
+
 
 
 @media screen and (max-width: 1024px) {
@@ -1383,13 +1609,32 @@
 		.aboutuspage .eliteteam .bg {position: relative;}
 		.aboutuspage .eliteteam .text {position: relative;width: 100%;height: auto;background: none;}
 	/* 关于我们 & END */
-
 	
+
+	/* 至尊服务 & START */
+		.servicepage .customerservice, .servicepage .customization {width: 96%;margin: 0 2%;}
+		.servicepage .tabtn {width: 33.33%;}
+		.servicepage .customerservice li {width: 25%; padding: 4%;}
+		.servicepage .serviceflow .frame {background-color: #f4f4f4;}
+		.servicepage .serviceflow {width: 96%;margin-left: auto;margin-right: auto;}
+		.servicepage .serviceflow img {height: 120px;}
+		.servicepage .serviceflow li > div {margin-top: 58px;max-width: 120px;}
+		.servicepage .serviceflow li:nth-child(5) > div,
+		.servicepage .serviceflow li:nth-child(6) > div,
+		.servicepage .serviceflow li:nth-child(7) > div,
+		.servicepage .serviceflow li:nth-child(8) > div{ margin-top: 58px; }
+		.servicepage .serviceflow li {width:20%;}
+		.servicepage .serviceflow li:nth-child(1) {margin-left: 5%}
+		.servicepage .serviceflow li:nth-child(5) {margin-left: 12%}
+	/* 至尊服务 & END */
+
+
 	@media screen and (max-width: 768px) {
 
 		/* 关于我们 & START */
 			.aboutuspage .advantage {display: flex; flex-flow: row wrap;}
 			.aboutuspage .advantage li, .aboutuspage .advantage li:nth-child(3n) {width: 48%;margin: 1%}
+			.servicepage .customization li, .servicepage .customization li:nth-child(3n) {width: 48%;margin: 1%}
 			.aboutuspage .advantage .CNText {width: 80%}
 			.aboutuspage .customer li { width: 33.3333%; }
 			.aboutuspage .brand .m-swiper-brand { width: 96%; margin: 0 2%;}
@@ -1399,6 +1644,20 @@
 			.aboutuspage .contact .more {margin: 0 auto;}
 			.aboutuspage .eliteteam .bg {width: 100%;}
 		/* 关于我们 & END */
+
+
+		/* 至尊服务 & START */
+			.servicepage .serviceflow .text {line-height: 50px;}
+			.servicepage .serviceflow .lines,.servicepage .serviceflow .frame {display: none;}
+			.servicepage .serviceflow .lineCen {display: block;left: 50%; top: 60px;width: 12px;height: 90%;margin-left: -6px;}
+			.servicepage .serviceflow .custommain li {width: 50%;margin: 0;height: auto;}
+			.servicepage .serviceflow .custommain li > div {max-width: none;width: 100%;text-align: center;margin-top: 0;}
+			.servicepage .serviceflow .point {position: absolute;right: -12px;top: 50%;margin-top: -30px;}
+			.servicepage .serviceflow li:nth-child(2n) .point {right: auto; left: -12px;}
+			.servicepage .serviceflow .custommain li:nth-child(2n) {margin-top: 170px}
+			.servicepage .serviceflow .btext {left: 50%;width: 120px;height: 120px;margin-left: -60px;}
+			.servicepage .serviceflow .btext span {font-size: 12px;}
+		/* 至尊服务 & END */
 
 	}
 
@@ -1414,6 +1673,7 @@
 		.commontabs .tabhead {flex-flow: row wrap;border-top: 1px solid #eee;}
 		.commontabs .tabtn { width: 33.3333%;border-bottom: 1px solid #eee;border-right: 1px solid #eee;box-sizing: border-box;}
 		.aboutuspage .advantage li, .aboutuspage .advantage li:nth-child(3n) {width: 96%;margin: 2%;}
+		.servicepage .customization li, .servicepage .customization li:nth-child(3n) {width: 96%;margin: 2%;}
 		.aboutuspage .customer li { width: 50%; }
 		.aboutuspage .brand .m-swiper-brand { height: 220px; }
 		.aboutuspage .new .imgbox {width: 100%;}
@@ -1422,12 +1682,9 @@
 		.aboutuspage .contact .maps {height: 250px;}
 		.aboutuspage .eliteteam .layui-form-label {width: auto;}
 		.aboutuspage .eliteteam .layui-input-block {margin-left: 80px;}
+		.servicepage .customerservice li {width: 50%;margin:0 auto 5%;}
+		.servicepage .customerservice .iconmain {justify-content: around;flex-flow: row wrap;}
 	}
 
 
-
-	
-
 }
-
-
