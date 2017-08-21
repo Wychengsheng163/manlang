@@ -1805,6 +1805,184 @@
 	    box-sizing: border-box;
 	    background-color: #8b0214;
 	}
+	.casepage .casedetail {
+		padding-bottom: 115px;
+	}
+	.casepage .casedetail .btitle {
+		position: relative;
+		font-size: 24px;
+		color: #646464;
+		height: 40px;
+		line-height: 40px;
+		padding: 25px 0 16px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.casepage .casedetail .btitle .line {
+		position: absolute;
+	    bottom: 0;
+	    left: 50%;
+	    width: 20px;
+	    height: 2px;
+	    margin-left: -10px;
+	    background-color: #ab2537;
+	}
+	.casepage .casedetail .related {
+		font-size: 16px;
+		color: #515151;
+		line-height: 30px;
+		padding: 15px 0 20px;
+		text-align: center;
+	}
+	.casepage .casedetail .related span {
+		margin-left: 2.5rem;
+	}
+	.casepage .casedetail .textCont {
+		font-size: 14px;
+		color: #8d8d8d;
+		line-height: 30px;
+		text-align: center;
+	}
+	.casepage .case-swiper {
+		margin-top: 25px;
+		margin-bottom: 40px;
+		padding-bottom: 50px;
+	}
+	.casepage .case-swiper .swiper-slide {
+		width: 1074px;
+		height: 692px;
+	}
+	.casepage .swiper-arrows {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		transition: all 300ms;
+		background-color: rgba(255,255,255,.5);
+	}
+	.casepage .swiper-arrows:hover {
+		background-color: rgba(255,255,255,1);
+	}
+	.casepage .swiper-button-prev {
+		left: 30px;
+		background-image: url(../images/case/casedetail_prev.png);
+	}
+	.casepage .swiper-button-next {
+		right: 30px;
+		background-image: url(../images/case/casedetail_next.png);
+	}
+	.casepage .formbox {
+		position: relative;
+		height: 172px;
+		padding-left: 100px;
+		background-color: #f8f8f8;
+	}
+	.casepage .yuybtn {
+		position: absolute;
+		left: 0; top: 0;
+		color: #fff;
+		font-size: 16px;
+		width: 100px; height: 100%;
+		background-color: #ab2537;
+	}
+	.casepage .yuybtn span {
+		display: block;
+		width: 20px;
+		text-align: center;
+		margin: 14px auto 0;
+		line-height: 36px;
+	}
+	.casepage .layui-form {
+		padding: 22px;
+	}
+	.casepage .column {
+		float: left;
+		width: 40%;
+		box-sizing: border-box;
+	}
+	.casepage .layui-form-item {
+		margin-bottom: 5px;
+	}
+	.casepage .layui-textarea {
+		height: 123px;
+		resize:none;
+	}
+	.casepage .more {
+		display: block;
+		width: 110px;
+		height: 34px;
+		color: #ab2537;
+		font-size: 16px;
+		line-height: 34px;
+		text-align: center;
+		border-radius: 17px;
+		box-shadow: 0 0 8px #e4e4e4;
+		transition: all 300ms;
+		margin: 44px auto;
+		background-color: #fff;
+	}
+	.casepage .more:hover {
+		opacity: 1;
+		color: #fff;
+		background-color: #ab2537;
+	}
+	.casepage .column-3 {
+		width: 20%;
+	}
+	.casepage .column-3 .layui-input-block {
+		margin-left: 0;
+	}
+
+	.casepage .relatedmenu li {
+		position: relative;
+		float: left;
+		width: 32.5%;
+		height: 250px;
+	    font-size: 14px;
+	    line-height: 24px;
+	    margin-bottom: 18px;
+		margin-right: 1.25%;
+		overflow: hidden;
+	}
+	.casepage .relatedmenu li:last-child {
+		margin-right: 0;
+	}
+	.casepage .aImg {
+		height: 250px;
+	}
+	.casepage .shadow {
+		position: absolute;
+		left: 0;
+		top: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		color: #fff;
+		opacity: 0;
+		text-align: center;
+		transition: all 300ms;
+		background: rgba(0,0,0,0.5);
+	}
+	.casepage .shadow .plusbtn {
+		display: block;
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		color: #fff;
+		font-size: 27px;
+		line-height: 0.9;
+		padding: 0 0 4px 1px;
+		margin: 20px auto 0;
+		font-weight: 100;
+		box-sizing: border-box;
+		background-color: #8b0214;
+	}
+	.casepage .relatedmenu li:hover .shadow {
+		top: 0; opacity: 1;
+	}
+	.casepage .CommontNews {margin-top: 80px}
+	.casepage .CommontNews .ntitle {margin-bottom: 20px}
 /* 工程案例 & END */
 
 @media screen and (max-width: 1024px) {

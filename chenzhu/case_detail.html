@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta content="telephone=no" name="format-detection">
+	<title>臣筑装饰</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="layui/css/layui.css">
+</head>
+<body>
+
+	<!-- PC端导航 -->
+	<div class="header cheader">
+		<div class="wrap clearfix">
+			<a href="index.html" class="logo fl"></a>
+			<div class="fr">
+				<div class="sec hotline"></div>
+				<div class="sec search" id="headsearch"><input id="searchInput" type="text"><button class="js_searchbtn"></button></div>
+				<div class="sec nav" id="headnav">
+					<button class="js_navbtn"></button>
+					<div id="navboxes">
+						<a href="javascript:;" class="active"><b>CASE</b>工程案例</a>
+						<a href="javascript:;"><b>SERVICE</b>至尊服务</a>
+						<a href="javascript:;"><b>CONSTRUCTION</b>品质施工</a>
+						<a href="javascript:;"><b>KNOWLEDGE</b>装修知识</a>
+						<a href="javascript:;"><b>ABOUT US</b>关于我们</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- 移动端导航 -->
+	<div class="header mheader">
+		
+		<div id="fixtop" class="top">
+			<button id="navbtn-a" class="navbtn navbtn-layer-1"></button>
+			<a class="logo" href="index.html"></a>
+		</div>
+
+		<div id="headboxes" class="boxes">
+
+			<button id="navbtn-b" class="navbtn navbtn-layer-2"></button>
+
+			<div id="masklayer" class="masklayer"></div>
+
+			<div class="slidemenu">
+				<ul id="sMenu" class="menu_1">
+					<li><a href="javascript:;">首页<span>HOME</span></a></li>
+					<li>
+						<a href="javascript:;">工程案例<span>CASE</span></a>
+						<ul class="menu_2">
+							<li><a href="javascript:;">行业分类</a></li>
+							<li><a href="javascript:;">装修区域</a></li>
+							<li><a href="javascript:;">装修面积</a></li>
+							<li><a href="javascript:;">装修材料</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">至尊服务<span>SERVICE</span></a></li>
+					<li><a href="javascript:;">品质施工<span>CONSTRUCTION</span></a></li>
+					<li><a href="javascript:;">装修知识<span>KNOWLEDGE</span></a></li>
+					<li><a href="javascript:;">关于我们<span>ABOUT US</span></a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- 正文内容 -->
+	<div class="container">
+		<div id="viewboxes" class="viewboxes" style="margin-left: 0;">
+			
+			
+			<div class="casepage">
+
+				<div class="commonbanner" style="background-image: url(images/case/case_banner.jpg)">
+					<h2 class="title">工程案例<b class="line"></b></h2>
+					<button class="btn">灵感，让办公不再沉闷</button>
+				</div>
+				
+
+				<!-- 面包屑 & START -->
+				<div class="commoncrumbs">
+					<div class="wrap clearfix">
+						<span class="crumbs fr">
+							<a href="/">首页</a> >
+							<a href="/aboutus.html">工程案例</a>
+						</span>
+					</div>
+				</div>
+				<!-- 面包屑 & END -->
+
+				
+				<div class="casedetail">
+					<div class="wrap">
+					
+						<p class="btitle">为什么选择臣筑装饰？ <span class="line"></span></p>
+						<p class="related">
+							<span>行业：教育培训</span>
+							<span>地区：闵行区</span>
+							<span>面积：850㎡</span>
+							<span>区域：接待区</span>
+						</p>
+						<p class="textCont">设计突显项目之专业品位，有条不紊。在狭小的空间，大气及细致并存，将建筑与艺术结合，展现刚柔并重，美观与实用兼备的办公空间。相比一般传统繁密的办公室规划，设计师创建了一个清脆，简洁又极具活力的空间，是国际视野的展示，对区内办公空间设计和营运文化的发展，奠定了重要的里程。</p>
+
+						<div class="swiper-container case-swiper">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide" style="background-image:url(images/case/case_detail_img_1.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/case/case_detail_img_1.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/case/case_detail_img_1.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/case/case_detail_img_1.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/case/case_detail_img_1.jpg)"></div>
+					        </div>
+					        <!-- Add Pagination -->
+					        <div class="swiper-pagination"></div>
+					        <!-- Add Arrows -->
+					        <div class="swiper-button-next swiper-arrows"></div>
+					        <div class="swiper-button-prev swiper-arrows"></div>
+					    </div>
+
+						
+					    <div class="formbox">
+					    	<div class="yuybtn"><span>预约设计</span></div>
+					    	<form class="layui-form clearfix" action="">
+					    		<div class="column column-1">
+					    			<div class="layui-form-item">
+					    			    <label class="layui-form-label"><span class="rColor">*</span>姓名</label>
+					    			    <div class="layui-input-block">
+					    			        <input type="text" name="title" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+					    			    </div>
+					    			</div>
+					    			<div class="layui-form-item">
+					    			    <label class="layui-form-label"><span class="rColor">*</span>电话</label>
+					    			    <div class="layui-input-block">
+					    			        <input type="text" name="title" required  lay-verify="phone" placeholder="请输入电话" autocomplete="off" class="layui-input">
+					    			    </div>
+					    			</div>
+					    		    <div class="layui-form-item">
+					    			    <label class="layui-form-label"><span class="rColor">*</span>面积</label>
+					    			    <div class="layui-input-block">
+					    			        <input type="text" name="title" required  lay-verify="number" placeholder="请输入面积" autocomplete="off" class="layui-input">
+					    			    </div>
+					    		    </div>
+					    	  	</div>
+					    	  	<div class="column column-2">
+					    		    <div class="layui-form-item layui-form-text">
+					    		    	<label class="layui-form-label"><span class="rColor">*</span>需求</label>
+					    		    	<div class="layui-input-block">
+					    		        	<textarea name="desc" required  lay-verify="required" placeholder="请输入您的需求" class="layui-textarea"></textarea>
+					    		    	</div>
+					    		    </div>
+					    		</div>
+					    		<div class="column column-3">
+					    		    <div class="layui-form-item">
+					    			    <div class="layui-input-block">
+					    			        <button class="layui-btn more" lay-submit lay-filter="formTeam">提 交</button>
+					    			    </div>
+					    		    </div>
+					    		</div>
+					    	</form>
+					    </div>
+
+
+					    <div class="CommontNews">
+							<div class="ntitle">
+								<h2>相关推荐 <span class="line"></span></h2>
+								<p>RELATED RECOMMENDATIONS</p>
+							</div>
+
+							<ul class="relatedmenu clearfix">
+								<li>
+									<a href="javascript:;">
+										<div class="aImg" style="background-image: url(images/index/case_6.jpg);"></div>
+										<div class="shadow">
+											<div>
+												<p class="head">上海启德教育分校区</p>
+												<p class="text">用建筑的语言表现室内空间，呼吁多余的装饰拥有专业的施工团队，砍掉中间环节，打通配套资源，保证施工品质</p>
+												<span class="plusbtn">+</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<div class="aImg" style="background-image: url(images/index/case_9.jpg);"></div>
+										<div class="shadow">
+											<div>
+												<p class="head">上海启德教育分校区</p>
+												<p class="text">用建筑的语言表现室内空间，呼吁多余的装饰拥有专业的施工团队，砍掉中间环节，打通配套资源，保证施工品质</p>
+												<span class="plusbtn">+</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;">
+										<div class="aImg" style="background-image: url(images/index/case_9.jpg);"></div>
+										<div class="shadow">
+											<div>
+												<p class="head">上海启德教育分校区</p>
+												<p class="text">用建筑的语言表现室内空间，呼吁多余的装饰拥有专业的施工团队，砍掉中间环节，打通配套资源，保证施工品质</p>
+												<span class="plusbtn">+</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+
+						</div>
+
+
+					</div>
+				</div>
+
+
+			</div>
+
+			<!-- PC端底部 -->
+			<div class="footer cfooter">
+				<div id="floating" class="floating" onclick="returntop()"></div>
+				<div class="nav">
+					<div class="wrap clearfix">
+						<div class="icons fl">
+							<span class="logo"></span>
+							<span class="sharing">
+								<div class="bdsharebuttonbox" data-tag="share_1">
+									<a class="bds_tsina" data-cmd="tsina"></a>
+									<a class="bds_weixin" data-cmd="weixin"></a>
+									<a class="bds_sqq" data-cmd="sqq"></a>
+								</div>
+								<script>
+									window._bd_share_config = {
+										common : {
+											bdText : '臣筑装饰',	
+											bdDesc : '臣筑装饰',
+										},
+										share : [{
+											"bdSize" : 24,
+										}]
+									}
+									with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+								</script>
+							</span>
+							<span class="phone"></span>
+							<span class="code"></span>
+						</div>
+						<div class="fr">
+							<ul class="navmenu clearfix">
+								<li>
+									<a href="javascript:;"><b>网站首页</b></a>
+									<a href="javascript:;">工程案例</a>
+								</li>
+								<li>
+									<a href="javascript:;"><b>精英团队</b></a>
+									<a href="javascript:;">设计团队</a>
+									<a href="javascript:;">施工团队</a>
+								</li>
+								<li>
+									<a href="javascript:;"><b>至尊服务</b></a>
+									<a href="javascript:;">全案定制</a>
+									<a href="javascript:;">服务流程</a>
+									<a href="javascript:;">售后服务</a>
+								</li>
+								<li>
+									<a href="javascript:;"><b>品质施工</b></a>
+									<a href="javascript:;">精湛工艺</a>
+									<a href="javascript:;">材料保障</a>
+									<a href="javascript:;">在施工地</a>
+								</li>
+								<li>
+									<a href="javascript:;"><b>装修知识</b></a>
+									<a href="javascript:;">办公室装修</a>
+									<a href="javascript:;">风水策划</a>
+								</li>
+								<li>
+									<a href="javascript:;"><b>关于臣筑</b></a>
+									<a href="javascript:;">品牌介绍</a>
+									<a href="javascript:;">臣筑优势</a>
+									<a href="javascript:;">新闻动态</a>
+									<a href="javascript:;">联系我们</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="link">
+					<div class="wrap">
+						友情链接：
+						<a target="_blank" href="javascript:;">臣筑装修官网</a>
+						<a target="_blank" href="javascript:;">设计本</a>
+						<a target="_blank" href="javascript:;">中国装修网</a>
+						<a target="_blank" href="javascript:;">上海装修公司</a>
+						<a target="_blank" href="javascript:;">臣筑装修官网</a>
+						<a target="_blank" href="javascript:;">设计本</a>
+						<a target="_blank" href="javascript:;">中国装修网</a>
+						<a target="_blank" href="javascript:;">上海装修公司</a>         
+					</div>
+				</div>
+				<div class="address">
+					<div class="wrap clearfix">
+						<span class="fl">COPYRIGHT.2003-2011 A SOARING LEADER. ALL RIGHTS RESERVED. 沪ICP备12035780号-1</span>
+						<span class="fr">
+							技术支持：
+							<a target="_blank" href="http://www.asl.com.cn">曼朗策划</a>
+							<a target="_blank" href="javascript:;">企业OA</a>
+							<a target="_blank" href="javascript:;">网站地图</a>
+							<a onclick="AddFavorite('http://www.asl.com.cn','曼朗策划')" href="javascript:void(0)" title="加入收藏">加入收藏</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 移动端底部 -->
+	<div id="mfooter" class="footer mfooter">
+		<a href="index.html"><b></b>首页</a>
+		<a href="javascript:;"><b></b>案例</a>
+		<a href="tel:+8618616273719"><b></b>电话</a>
+		<a href="javascript:;"><b></b>咨询</a>
+	</div>
+
+	<script src="script/jquery.js"></script>
+	<script src="script/swiper.min.js"></script>
+	<script src="script/common.js"></script>
+	<script src="layui/layui.js"></script>
+	<script>
+		var swiper = new Swiper('.case-swiper', {
+			loop: true,
+		    nextButton: '.swiper-button-next',
+		    prevButton: '.swiper-button-prev',
+		    pagination: '.swiper-pagination',
+		    paginationType: 'fraction',
+		    effect: 'coverflow',
+		    grabCursor: true,
+	        centeredSlides: true,
+	        slidesPerView: 'auto',
+		    coverflow: {
+	            rotate: 0,
+	            stretch: 0,
+	            depth: 300,
+	            modifier: 0.6,
+	            slideShadows : true
+	        }
+		});
+		
+		layui.use('form', function() { //表单验证
+
+			var form = layui.form();
+			  
+			form.on('submit(formDemo)', function(data){ //监听提交
+			    layer.msg("提交成功");
+			    return false;
+			})
+		});
+	</script>
+</body>
+</html>
