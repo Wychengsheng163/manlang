@@ -77,6 +77,84 @@
 	.commontabs .tabhead > a:nth-child(3n) {
 		border-right: none;
 	}
+	.commontabs .cntext {
+		font-size: 14px;
+		color: #666;
+		line-height: 26px;
+	}
+	.commontabs .entext {
+		font-size: 12px;
+		color: #adadad;
+		line-height: 22px;
+	}
+
+	.CommontNews .ntitle {
+		color: #737373;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+	.CommontNews .ntitle h2 {
+		position: relative;
+		font-size: 30px;
+		height: 60px;
+		line-height: 60px;
+		margin-bottom: 8px;
+	}
+	.CommontNews .ntitle p {
+		font-size: 16px;
+		color: #d1d1d1;
+		line-height: 30px;
+	}
+	.CommontNews .ntitle .line {
+		position: absolute;
+		bottom: 0; left: 50%;
+		width: 52px;
+		height: 3px;
+		margin-left: -26px;
+		background-color: #ab2537;
+	}
+	.CommontNews .morenews > ul {
+		width: 45%;
+	}
+	.CommontNews .morenews li {
+		float: left;
+	    width: 100%;
+	    margin-bottom: 20px;
+		box-sizing: border-box;
+		padding-left: 16px;
+		border-bottom: 1px solid #999;
+	}
+	.CommontNews .morenews .titles {
+		color: #515151;
+		font-size: 16px;
+	    line-height: 18px;
+	    padding-left: 14px;
+	    padding-right: 85px;
+	    margin-left: -16px;
+	    margin-bottom: 10px;
+	    border-left: 2px solid #afafaf;
+	}
+	.CommontNews .morenews .titles span {
+		float: right;
+		width: 85px;
+		margin-right: -85px;
+	}
+	.CommontNews .morenews .texts {
+		color: #888;
+	    font-size: 14px;
+	    line-height: 30px;
+	    margin-bottom: 20px;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	}
+	.CommontNews .morenews li:hover .titles {
+		color: #ab2537;
+		border-color: #ab2537;
+	}
+
 /* 公共样式表 & END */
 
 
@@ -558,7 +636,6 @@
 /* 首页样式表 & END */
 
 
-
 /* 关于我们 & START */
 	.aboutuspage .advantage {
 		padding-top: 76px;
@@ -950,45 +1027,6 @@
 		font-size: 14px;
 		padding: 0 10px;
 	}
-	.aboutuspage .new .ntitle {
-		color: #737373;
-		text-align: center;
-		margin-bottom: 60px;
-	}
-	.aboutuspage .new .ntitle h2 {
-		position: relative;
-		font-size: 30px;
-		height: 60px;
-		line-height: 60px;
-		margin-bottom: 8px;
-	}
-	.aboutuspage .new .ntitle p {
-		font-size: 16px;
-		color: #d1d1d1;
-		line-height: 30px;
-	}
-	.aboutuspage .new .ntitle .line {
-		position: absolute;
-		bottom: 0; left: 50%;
-		width: 52px;
-		height: 2px;
-		margin-left: -26px;
-		background-color: #ab2537;
-	}
-	.aboutuspage .new .morenews > ul {
-		width: 45%;
-	}
-	.aboutuspage .new .morenews li {
-		box-sizing: border-box;
-		padding-left: 16px;
-		border-bottom: 1px solid #999;
-	}
-	.aboutuspage .new .morenews .title {
-		margin-bottom: 10px;
-	}
-	.aboutuspage .new .morenews .text {
-		margin-bottom: 20px;
-	}
 	.aboutuspage .contact {
 		padding-top: 74px;
 		padding-bottom: 80px;
@@ -1065,23 +1103,81 @@
 		color: #fff;
 		background-color: #ab2537;
 	}
+
+	.aboutuspage .detailmain {
+		padding-bottom: 7.5rem;
+	}
+	.aboutuspage .detailmain .btitle {
+		position: relative;
+		font-size: 24px;
+		color: #8c8c8c;
+		height: 40px;
+		line-height: 40px;
+		padding: 25px 0 16px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.aboutuspage .detailmain .btitle .line {
+		position: absolute;
+		bottom: 0; left: 50%;
+		width: 20px;
+		height: 2px;
+		margin-left: -10px;
+		background-color: #ab2537;
+	}
+	.aboutuspage .detailmain .related {
+		font-size: 16px;
+		color: #515151;
+		line-height: 30px;
+		padding: 15px 0 20px;
+		text-align: center;
+	}
+	.aboutuspage .detailmain .related span {
+		margin-left: 2.5rem;
+	}
+	.aboutuspage .detailmain .detailCont {
+		font-size: 14px;
+		color: #888;
+		line-height: 28px;
+	}
+	.aboutuspage .detailmain .detailCont img {
+		display: block;
+	}
+	.aboutuspage .detailmain .links {
+		padding: 16px 0;
+	}
+	.aboutuspage .detailmain .links a {
+		display: block;
+		font-size: 14px;
+		color: #888;
+		line-height: 30px;
+	}
+	.aboutuspage .detailmain .links a:hover {
+		color: #ab2537;
+	}
+	.aboutuspage .detailmain .share {
+		margin: 25px 0;
+	}
+	.aboutuspage .detailmain .share a {
+		font-size: 14px;
+	}
+	.aboutuspage .detailmain .bds_tsina {
+		background: url(../images/common/xinlang_gray.png) no-repeat center;
+	}
+	.aboutuspage .detailmain .bds_weixin {
+		background: url(../images/common/weixin_gray.png) no-repeat center;
+	}
+	.aboutuspage .detailmain .bds_sqq {
+		background: url(../images/common/qq_gray.png) no-repeat center;
+	}
+
 /* 关于我们 & END */
 
 
 /* 至尊服务 & START */
 	.servicepage .customerservice {
-		padding-top: 74px;
+		padding-top: 76px;
 		padding-bottom: 60px;
-	}
-	.servicepage .cntext {
-		font-size: 14px;
-		color: #666;
-		line-height: 26px;
-	}
-	.servicepage .entext {
-		font-size: 12px;
-		color: #adadad;
-		line-height: 22px;
 	}
 	.servicepage .customerservice .iconmain {
 		display: flex;
@@ -1290,10 +1386,426 @@
 	.servicepage .serviceflow li:hover .btext {opacity: 1}
 	.servicepage .serviceflow li:hover .text {color: #ab2537}
 	.servicepage .serviceflow li:hover .point {background-color: #ab2537}
-	
 /* 至尊服务 & END */
 
 
+/* 品质施工 & START */
+	.qualitypage .material {
+		padding-top: 76px;
+		padding-bottom: 80px;
+	}
+	.qualitypage .materialmain {
+		margin-top: 30px;
+	}
+	.qualitypage .materialmain li {
+		float: left;
+		width: 100%;
+		margin-bottom: 28px;
+		border: 1px solid #fff;
+	}
+	.qualitypage .materialmain .bimg, .qualitypage .materialmain .btext {
+		height: 426px;
+	}
+	.qualitypage .materialmain .bimg {
+		width: 57.25%;
+		background-size: cover;
+	}
+	.qualitypage .materialmain .btext {
+		position: relative;
+		display: table;
+		font-size: 14px;
+		color: #818181;
+		line-height: 30px;
+		padding: 0 4.375rem 1.5rem;
+		width: 42.75%;
+		text-align: center;
+		box-sizing: border-box;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.qualitypage .materialmain .textboxs {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.qualitypage .materialmain .t1 {
+		font-size: 24px;
+		line-height: 58px;
+	} 
+	.qualitypage .materialmain .t2 {
+		font-size: 16px;
+		line-height: 42px;
+	} 
+	.qualitypage .materialmain .arrowbtn {
+		position: absolute;
+		left: 0; top: 50%;
+		width: 0; height: 0;
+		margin-top: -25px;
+		border-top: 25px solid transparent;
+		border-right: 40px solid transparent;
+		border-bottom: 25px solid transparent;
+		border-left: 40px solid transparent;
+	}
+	.qualitypage .materialmain .arrowL {
+		left: -80px; right: auto;
+		border-right-color: #fff;
+	}
+	.qualitypage .materialmain .arrowR {
+		left: auto; right: -80px;
+		border-left-color: #fff;
+	}
+	.qualitypage .materialmain li:nth-child(1) .btext { background-image: url(../images/quality/material_icon_1.png) }
+	.qualitypage .materialmain li:nth-child(2) .btext { background-image: url(../images/quality/material_icon_2.png) }
+	.qualitypage .materialmain li:nth-child(3) .btext { background-image: url(../images/quality/material_icon_3.png) }
+	.qualitypage .materialmain li:nth-child(4) .btext { background-image: url(../images/quality/material_icon_4.png) }
+	.qualitypage .materialmain li:nth-child(5) .btext { background-image: url(../images/quality/material_icon_5.png) }
+	.qualitypage .materialmain li:hover {border-color: #ab2537}
+	.qualitypage .materialmain li:hover .t1 {color: #ab2537} 
+
+
+	.qualitypage .technology {
+		padding-top: 76px;
+		padding-bottom: 10rem;
+	}
+	.qualitypage .technologymain {
+		margin-top: 55px;
+	}
+	.qualitypage .technologymain li {
+		position: relative;
+		float: left;
+		width: 31.5%;
+		border-radius: 12px;
+		margin-right: 2.75%;
+		margin-bottom: 2.1875rem;
+		overflow: hidden;
+	} 
+	.qualitypage .technologymain li:nth-child(3n){
+		margin-right: 0;
+	}
+	.qualitypage .technologymain li img {
+		max-height: 230px;
+	}
+	.qualitypage .technologymain .layer {
+		position: absolute;
+		left: 0; bottom: -44px;
+		width: 100%;
+		color: #fff;
+		font-size: 1rem;
+		line-height: 2.75rem;
+		text-align: center;
+		background: rgba(0,0,0,0.5);
+		transition: all 300ms;
+	}
+	.qualitypage .technologymain li:hover .layer {
+		bottom: 0;
+	}
+
+
+	.qualitypage .construction {
+		padding-top: 76px;
+		padding-bottom: 94px;
+	}
+	.qualitypage .constructionmain {
+		margin-top: 40px;
+	}
+	.qualitypage .constructionmain li {
+		float: left;
+		width: 100%;
+		margin-bottom: 1.875rem;
+		background-color: #f8f8f8;
+	}
+	.qualitypage .constructionmain .bimg, .qualitypage .constructionmain .btext {
+		height: 428px;
+	}
+	.qualitypage .constructionmain .bimg {
+		width: 66.66%;
+		background-size: cover;
+	}
+	.qualitypage .constructionmain .btext {
+		position: relative;
+		display: table;
+		font-size: 14px;
+		color: #818181;
+		line-height: 2.1875rem;
+		padding: 0 2rem 0 5.4rem;
+		width: 33.33%;
+		text-align: left;
+		box-sizing: border-box;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.qualitypage .constructionmain .textboxs {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.qualitypage .constructionmain .tit {
+		display: block;
+		font-size: 16px;
+		line-height: 2.75rem;
+	}
+	.qualitypage .constructionmain .reservebtn {
+		display: block;
+		font-size: 16px;
+		color: #ab2537;
+		width: 114px;
+		height: 36px;
+		line-height: 36px;
+		text-align: center;
+		border-radius: 18px;
+		margin-top: 1.875rem;
+		box-shadow: 0 0 8px #d2d2d2;
+		transition: all 300ms;
+	}
+	.qualitypage .constructionmain li:hover .tit {
+		color: #ab2537;
+	}
+	.qualitypage .constructionmain li:hover .reservebtn {
+		color: #fff;
+		background-color: #ab2537;
+	}
+	.qualitypage .qualityTable th {
+		font-size: 16px;
+		color: #fff;
+		line-height: 4.25rem;
+		border-right: 1px solid #fff;
+		background-color: #777;
+	}
+	.qualitypage .qualityTable th:last-child { border-color: #ababab; }
+	.qualitypage .qualityTable td {
+		font-size: 14px;
+		color: #818181;
+		line-height: 28px;
+		padding: 15px 0;
+		border: 1px solid #ababab;
+		text-align: center;
+	}
+	.qualitypage .qualityTable .yybtn {
+		display: block;
+		width: 6.875rem;
+		height: 2.125rem;
+		line-height: 2.125rem;
+		text-align: center;
+		color: #ab2537;
+		margin: 0 auto;
+		border-radius: 1.0625rem;
+		box-shadow: 0 0 8px #d2d2d2;
+		transition: all 300ms;
+	}
+	.qualitypage .qualityTable tr:hover td {
+		color: #ab2537;
+	}
+	.qualitypage .qualityTable tr:hover .yybtn {
+		color: #fff;
+		background-color: #ab2537;
+	}
+	.qualitypage .construction .tablemore {
+		display: block;
+		width: 110px;
+		line-height: 34px;
+		text-align: center;
+		color: #ab2537;
+		font-size: 16px;
+		margin: 40px auto 0;
+		border-radius: 17px;
+		box-shadow: 0 0 8px #d2d2d2;
+		transition: all 300ms;
+	}
+	.qualitypage .construction .tablemore:hover {
+		color: #fff;
+		background-color: #ab2537;
+	}
+/* 品质施工 & END */
+
+
+/* 工程案例 & START */
+	.casepage .casemain {
+		padding-bottom: 90px;
+	}
+	.casepage .classboxs {
+		position: relative;
+		padding-left: 310px;
+		margin-bottom: 2.375rem;
+	}
+	.casepage .caseclass {
+		position: absolute;
+		left: 0; top: 0;
+		width: 300px;
+		height: 256px;
+		border-top: 1px solid #d1d1d1;
+		border-left: 1px solid #d1d1d1;
+		box-sizing: border-box;
+	}
+	.casepage .caseclass li {
+		height: 64px;
+		cursor: pointer;
+		box-sizing: border-box;
+		
+		border-bottom: 1px solid #d1d1d1;
+	}
+	.casepage .caseclass .channel-wen {
+		position: relative;
+		z-index: 2;
+		width: 100%; height: 100%;
+		padding: 10px 0 10px 88px;
+		border-right: 1px solid #d1d1d1;
+		background-color: #fff;
+		box-sizing: border-box;
+	}
+	.casepage .caseclass .cnt {
+		font-size: 16px;
+		color: #000;
+		line-height: 24px;
+	}
+	.casepage .caseclass .ent {
+		font-size: 12px;
+		color: #a0a0a0;
+		line-height: 20px;
+	}
+	.casepage .caseclass .icon {
+		position: absolute;
+		left: 26px; top: 14px;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+		background-color: #d8d8d8;
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: all 300ms;
+	}
+	.casepage .caseclass .arrowr {
+		position: absolute;
+		right: 10px; top: 50%;
+		width: 20px; height: 20px;
+		font-size: 16px;
+		color: #dadada;
+		margin-top: -10px;
+		line-height: 20px;
+		text-align: center;
+	}
+	.casepage .caseclass .channel-list-tit {
+		line-height: 32px;
+		width: 88%;
+		margin: 10px auto 0;
+		border-bottom: 1px solid #e5e5e5;
+		font-size: 14px;
+		color: #d4b563;
+	}
+	.casepage .caseclass .channel-list-wen {
+		width: 88%;
+	    margin: 0 auto;
+	    color: #666;
+	    line-height: 48px;
+	    margin-top: 5px;
+	}
+	.casepage .caseclass .channel-list-wen a {
+		display: block;
+	}
+	.casepage .caseclass .channel-list {
+		position: absolute;
+		left: 270px; top: -1px;
+		z-index: -1;
+		width: 300px; height: 256px;
+		border: 1px solid #d1d1d1;
+		border-left: none;
+		padding: 8px 24px;
+		box-sizing: border-box;
+		background-color: #fff;
+		transition: all 400ms;
+		overflow: auto;
+		opacity: 0;
+	}
+	.casepage .caseclass li:hover .channel-list {
+		transform: translateX(29px);
+		opacity: 1;
+		z-index: 0;
+	}
+	.casepage .caseclass li:hover .channel-wen {border-right: 0}
+	.casepage .caseclass li:hover .arrowr {display: none}
+	.casepage .caseclass li:hover .icon {background-color: #404040;}
+	.casepage .imgboxs {
+		width: 100%;
+		height: 256px;
+		border: 1px solid #d1d1d1;
+		background-repeat: no-repeat;
+		background-position: center;
+		box-sizing: border-box;
+	}  
+	
+	.casepage .caselist {
+		min-height: 335px;
+		max-height: 886px;
+		overflow: hidden;
+	}
+	.casepage .case-util {
+		float: left;
+		width: 32.5%;
+		margin-right: 1.25%;
+	}
+	.casepage .case-util:last-child {
+		margin-right: 0;
+	}
+	.casepage .case-util li {
+		position: relative;
+		margin-bottom: 4.5%;
+		overflow: hidden;
+	}
+	.casepage .casemore {
+		display: block;
+		width: 110px;
+		border-radius: 17px;
+		margin: 60px auto 0;
+		text-align: center;
+		font-size: 16px;
+		color: #ab2537;
+		line-height: 34px;
+		box-shadow: 0 0 8px #e4e4e4;
+		transition: all 300ms;
+	}
+	.casepage .casemore:hover {
+		color: #fff;
+		background-color: #ab2537;
+	}
+	.casepage .case-util .shadowboxs {
+		position: absolute;
+		top: 50px; left: 0;
+		width: 100%; height: 100%;
+		background: rgba(0,0,0,0.6);
+		transition: all 300ms;
+		opacity: 0;
+	}
+	.casepage .case-util .shadow {
+		display: table;
+		width: 100%; height: 100%;
+		font-size: 14px;
+		color: #fff;
+		line-height: 32px;
+		text-align: center;
+	}
+	.casepage .case-util .shadow .cont {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.casepage .case-util li:hover .shadowboxs {
+		top: 0; opacity: 1;
+	}
+	.casepage .case-util .shadow .shtit {
+		font-size: 16px;
+		margin-bottom: 12px;
+	}
+	.casepage .case-util .shadow .plus {
+		display: block;
+	    width: 22px;
+	    height: 22px;
+	    border-radius: 50%;
+	    color: #fff;
+	    font-size: 27px;
+	    line-height: 0;
+	    padding: 0 0 4px 1px;
+	    margin: 20px auto 0;
+	    font-weight: 100;
+	    box-sizing: border-box;
+	    background-color: #8b0214;
+	}
+/* 工程案例 & END */
 
 @media screen and (max-width: 1024px) {
 
@@ -1608,11 +2120,12 @@
 		.aboutuspage .eliteteam .teambox {height: auto;}
 		.aboutuspage .eliteteam .bg {position: relative;}
 		.aboutuspage .eliteteam .text {position: relative;width: 100%;height: auto;background: none;}
+		.aboutuspage .detailmain {width: 96%;margin: 0 2%;}
 	/* 关于我们 & END */
 	
 
 	/* 至尊服务 & START */
-		.servicepage .customerservice, .servicepage .customization {width: 96%;margin: 0 2%;}
+		.servicepage .customerservice, .servicepage .customization, .tabmain {width: 96%;margin: 0 2%;}
 		.servicepage .tabtn {width: 33.33%;}
 		.servicepage .customerservice li {width: 25%; padding: 4%;}
 		.servicepage .serviceflow .frame {background-color: #f4f4f4;}
@@ -1626,8 +2139,15 @@
 		.servicepage .serviceflow li {width:20%;}
 		.servicepage .serviceflow li:nth-child(1) {margin-left: 5%}
 		.servicepage .serviceflow li:nth-child(5) {margin-left: 12%}
+		
 	/* 至尊服务 & END */
 
+	/* 品质施工 & START */
+		.qualitypage .materialmain .arrowL {border-right-color: #f4f4f4}
+		.qualitypage .materialmain .arrowR {border-left-color: #f4f4f4}
+		.qualitypage .materialmain .btext {padding-bottom: 0}
+		.qualitypage .constructionmain .bimg, .qualitypage .constructionmain .btext {width: 50%}
+	/* 品质施工 & END */
 
 	@media screen and (max-width: 768px) {
 
@@ -1638,11 +2158,11 @@
 			.aboutuspage .advantage .CNText {width: 80%}
 			.aboutuspage .customer li { width: 33.3333%; }
 			.aboutuspage .brand .m-swiper-brand { width: 96%; margin: 0 2%;}
-			.aboutuspage .new .morenews > ul {width: 100%;}
 			.aboutuspage .contact .forms {width: 100%;}
 			.aboutuspage .contact .formbox {padding: 4%;}
 			.aboutuspage .contact .more {margin: 0 auto;}
 			.aboutuspage .eliteteam .bg {width: 100%;}
+			.CommontNews .morenews > ul {width: 100%;}
 		/* 关于我们 & END */
 
 
@@ -1659,13 +2179,16 @@
 			.servicepage .serviceflow .btext span {font-size: 12px;}
 		/* 至尊服务 & END */
 
+		/* 品质施工 & START */
+			.qualitypage .materialmain .bimg, .qualitypage .materialmain .btext {width: 50%}
+		/* 品质施工 & END */
 	}
 
 
 
 	@media screen and (max-width: 640px) { 
 
-		 html {font-size: 12px;}
+		html {font-size: 12px;}
 		.mhomeNav b { background-size: 2.166rem; }
 		.commonbanner { height: 300px; }
 		.commonbanner .btn {font-size: 1rem;width: 18.75rem;margin-left: -9.375rem;}
@@ -1684,6 +2207,50 @@
 		.aboutuspage .eliteteam .layui-input-block {margin-left: 80px;}
 		.servicepage .customerservice li {width: 50%;margin:0 auto 5%;}
 		.servicepage .customerservice .iconmain {justify-content: around;flex-flow: row wrap;}
+		.qualitypage .materialmain .bimg, .qualitypage .materialmain .btext {width: 100%;}
+		.qualitypage .constructionmain .bimg, .qualitypage .constructionmain .btext {width: 100%}
+		.qualitypage .materialmain .arrowbtn {
+			right: auto;
+			margin-top: 0;
+			margin-left: -25px;
+			border-right-width: 25px;
+		    border-left-width: 25px;
+		    border-top-width: 40px;
+		    border-bottom-width: 40px;
+		    border-color: transparent;
+		}
+		.qualitypage .materialmain .arrowL {
+			top: -78px;
+		    left: 50%;
+		    bottom: auto;
+		    border-bottom-color: #f4f4f4;
+		}
+		.qualitypage .materialmain .arrowR {
+			left: 50%;
+			bottom: -78px;
+			top: auto;
+			border-top-color: #f4f4f4;
+		}
+		.qualitypage .technologymain li {width: 48.625%;}
+		.qualitypage .technologymain li:nth-child(3n) {margin-right: 2.75%;}
+		.qualitypage .technologymain li:nth-child(2n) {margin-right: 0;}
+		.qualitypage .constructionmain .bimg {height: 250px;}
+		.qualitypage .constructionmain .btext {height: auto;padding: 4%;}
+		.qualitypage .constructionmain .reservebtn {margin: 1.875rem auto 0;}
+
+	}
+
+
+	@media screen and (max-width: 480px) {
+		.qualitypage .qualityTable .yybtn {
+			width: auto;
+			box-shadow: none;
+			border-radius: 0;
+		}
+		.qualitypage .qualityTable tr:hover .yybtn {
+			color: #ab2537;
+			background-color: #f4f4f4;
+		} 
 	}
 
 

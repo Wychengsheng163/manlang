@@ -234,25 +234,24 @@ html,body { height: 100%; }
 			transition: all 300ms;
 			background: url(../images/common/arrowtop.jpg) no-repeat center;
 		}
-		.cfooter .floating:hover {
-			top: -35px;
+		.cfooter .bdshare-button-style0-24 {
+			text-align: right;
+			font-size: 0;
 		}
-		.cfooter .bdshare-button-style0-32 a {
-			margin-right: 50px;
-			background-size: 32px;
+		.cfooter .bdshare-button-style0-24 a {
+			float: none;
+			display: inline-block;
+			width: 34px;
+			height: 34px;
+			padding-left: 0;
+			margin-left: 10px;
+			background-size: cover;
 			background-repeat: no-repeat;
-			background-position: 0;
+			background-position: center;
 		}
-		.cfooter a.bds_tsina {
-			background-image: url(../images/common/xinlang.png);
-		}
-		.cfooter a.bds_weixin {
-			background-image: url(../images/common/weixin.png);
-		}
-		.cfooter a.bds_sqq {
-			margin-right: 0;
-			background-image: url(../images/common/qq.png);
-		}
+		.cfooter a.bds_tsina {background-image: url(../images/common/xinlang.png)}
+		.cfooter a.bds_weixin {background-image: url(../images/common/weixin.png)}
+		.cfooter a.bds_sqq {background-image: url(../images/common/qq.png);margin-right: 0}
     /* footer - end */
 
 	@media screen and (min-width: 1025px) and (max-width: 1280px) {
