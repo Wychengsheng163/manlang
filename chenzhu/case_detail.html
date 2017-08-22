@@ -109,7 +109,8 @@
 							<span>区域：接待区</span>
 						</p>
 						<p class="textCont">设计突显项目之专业品位，有条不紊。在狭小的空间，大气及细致并存，将建筑与艺术结合，展现刚柔并重，美观与实用兼备的办公空间。相比一般传统繁密的办公室规划，设计师创建了一个清脆，简洁又极具活力的空间，是国际视野的展示，对区内办公空间设计和营运文化的发展，奠定了重要的里程。</p>
-
+						
+						<!-- PC端轮播图 & START -->
 						<div class="swiper-container case-swiper">
 					        <div class="swiper-wrapper">
 					            <div class="swiper-slide" style="background-image:url(images/case/case_detail_img_1.jpg)"></div>
@@ -118,14 +119,27 @@
 						        <div class="swiper-slide" style="background-image:url(images/case/case_detail_img_1.jpg)"></div>
 						        <div class="swiper-slide" style="background-image:url(images/case/case_detail_img_1.jpg)"></div>
 					        </div>
-					        <!-- Add Pagination -->
 					        <div class="swiper-pagination"></div>
-					        <!-- Add Arrows -->
 					        <div class="swiper-button-next swiper-arrows"></div>
 					        <div class="swiper-button-prev swiper-arrows"></div>
 					    </div>
+						<!-- PC端轮播图 & END -->
+	
+						<!-- 移动端端轮播图 & START -->
+						<div class="swiper-container m-case-swiper" style="display: none;">
+						    <div class="swiper-wrapper">
+						        <div class="swiper-slide" style="background-image:url(images/aboutus/brand_2.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/aboutus/brand_2.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/aboutus/brand_2.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/aboutus/brand_2.jpg)"></div>
+						        <div class="swiper-slide" style="background-image:url(images/aboutus/brand_2.jpg)"></div>
+						    </div>
 
-						
+						    <div class="swiper-pagination m-case-pagination"></div>
+						</div>
+						<!-- 移动端端轮播图 & END -->					
+	
+
 					    <div class="formbox">
 					    	<div class="yuybtn"><span>预约设计</span></div>
 					    	<form class="layui-form clearfix" action="">
@@ -333,24 +347,48 @@
 	<script src="script/common.js"></script>
 	<script src="layui/layui.js"></script>
 	<script>
-		var swiper = new Swiper('.case-swiper', {
-			loop: true,
-		    nextButton: '.swiper-button-next',
-		    prevButton: '.swiper-button-prev',
-		    pagination: '.swiper-pagination',
-		    paginationType: 'fraction',
-		    effect: 'coverflow',
-		    grabCursor: true,
-	        centeredSlides: true,
-	        slidesPerView: 'auto',
-		    coverflow: {
-	            rotate: 0,
-	            stretch: 0,
-	            depth: 300,
-	            modifier: 0.6,
-	            slideShadows : true
-	        }
-		});
+
+		var fnCase = (function() { //品牌介绍轮播图
+
+			var swipercase  = $(".case-swiper");
+			var mswipercase = $(".m-case-swiper");
+
+			if ( $(window).width() > 1024 ) {
+				mswipercase.hide();
+				swipercase.show();
+				var swipercase = new Swiper('.case-swiper', {
+					loop: true,
+				    nextButton: '.swiper-button-next',
+				    prevButton: '.swiper-button-prev',
+				    pagination: '.swiper-pagination',
+				    paginationType: 'fraction',
+				    effect: 'coverflow',
+				    grabCursor: true,
+			        centeredSlides: true,
+			        slidesPerView: 'auto',
+				    coverflow: {
+			            rotate: 0,
+			            stretch: 0,
+			            depth: 300,
+			            modifier: 0.6,
+			            slideShadows : true
+			        }
+				});
+			} 
+			else {
+				swipercase.hide();
+				mswipercase.show();
+				var mswipercase = new Swiper ('.m-case-swiper', {
+				    pagination: '.m-case-pagination',
+				});        
+			}
+
+			return arguments.callee;
+		}());
+
+
+		$(window).resize(fnCase);
+
 		
 		layui.use('form', function() { //表单验证
 
@@ -361,6 +399,7 @@
 			    return false;
 			})
 		});
+		
 	</script>
 </body>
 </html>
