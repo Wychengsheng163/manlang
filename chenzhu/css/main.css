@@ -1814,13 +1814,6 @@
 		margin-bottom: 4.5%;
 		overflow: hidden;
 	}
-	.casepage .case-util .Imgbox {
-		width: 100%;
-		height: 100%;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
 	.casepage .casemore {
 		display: block;
 		width: 110px;
@@ -1840,13 +1833,12 @@
 	.casepage .case-util .shadowboxs {
 		position: absolute;
 		top: 50px; left: 0;
-		color: #fff;
 		width: 100%; height: 100%;
 		background: rgba(0,0,0,0.6);
 		transition: all 300ms;
 		opacity: 0;
 	}
-	.casepage .case-util .shadows {
+	.casepage .case-util .shadow {
 		display: table;
 		width: 100%; height: 100%;
 		font-size: 14px;
@@ -1854,18 +1846,18 @@
 		line-height: 32px;
 		text-align: center;
 	}
-	.casepage .case-util .shadows .cont {
+	.casepage .case-util .shadow .cont {
 		display: table-cell;
 		vertical-align: middle;
 	}
-	 .casepage .case-util li:hover .shadowboxs {
+	.casepage .case-util li:hover .shadowboxs {
 		top: 0; opacity: 1;
-	} 
-	.casepage .case-util .shadows .shtit {
+	}
+	.casepage .case-util .shadow .shtit {
 		font-size: 16px;
 		margin-bottom: 12px;
 	}
-	.casepage .case-util .shadows .plus {
+	.casepage .case-util .shadow .plus {
 		display: block;
 	    width: 22px;
 	    height: 22px;
@@ -2015,7 +2007,6 @@
 	    line-height: 24px;
 	    margin-bottom: 18px;
 		margin-right: 1.25%;
-
 		overflow: hidden;
 	}
 	.casepage .relatedmenu li:last-child {
@@ -2023,9 +2014,6 @@
 	}
 	.casepage .aImg {
 		height: 250px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
 	}
 	.casepage .shadow {
 		position: absolute;
@@ -2376,6 +2364,7 @@
 
 
 	/* 关于我们 & START */
+		.aboutuspage .customer, .aboutuspage .new, .aboutuspage .eliteteam { width: 96%;margin: 0 2%; }
 		.aboutuspage .customer li { width: 25%; }
 		.aboutuspage .customer li:hover .cusico { width: 100%;height: 100%;left: 0;top: 0;z-index: 0;background-size: 80%;}
 		.aboutuspage .eliteteam .formbox {height: auto;padding-left: 0;}
@@ -2412,48 +2401,12 @@
 		#popover .swiper-slide { height: 500px; }
 	/* 至尊服务 & END */
 
-
 	/* 品质施工 & START */
 		.qualitypage .materialmain .arrowL {border-right-color: #f4f4f4}
 		.qualitypage .materialmain .arrowR {border-left-color: #f4f4f4}
 		.qualitypage .materialmain .btext {padding-bottom: 0}
 		.qualitypage .constructionmain .bimg, .qualitypage .constructionmain .btext {width: 50%}
 	/* 品质施工 & END */
-
-	
-	/* 工程案例 & START */
-		.casepage .classboxs {display: none}
-		.casepage .caselist {width: 96%;margin: 2% auto;}
-		.casedetail {width: 96%;margin: 0 2%;}
-		.casepage .formbox {height: auto;padding-left: 0;}
-		.casepage .yuybtn {position: relative;width: 100%; height: 40px;line-height: 40px;text-align: center;}
-		.casepage .yuybtn span {display: inline;}
-		.casepage .column {width: 100%;}
-		.casepage .relatedmenu {
-			display: flex;
-			justify-content: center;
-			flex-flow: row wrap;
-		}
-		.casepage .relatedmenu li {
-			width: 49.375%;
-			margin-bottom: 1.2%;
-		}
-		.casepage .relatedmenu li:nth-child(2n) {
-			margin-right: 0;
-		}
-		.casepage .m-case-swiper {
-			width: 100%;
-			height: 300px;
-			margin-top: 25px;
-		    margin-bottom: 40px;
-		}
-		.casepage .swiper-slide {
-			background-size: cover;
-		}
-		.casepage .swiper-pagination-bullet-active {
-		    background: #ab2537;
-		}
-	/* 工程案例 & END */
 
 	@media screen and (max-width: 768px) {
 
@@ -2490,13 +2443,6 @@
 		/* 品质施工 & START */
 			.qualitypage .materialmain .bimg, .qualitypage .materialmain .btext {width: 50%}
 		/* 品质施工 & END */
-		
-		/* 工程案例 & START */
-			.casepage .case-util {width: 100%;margin-right: 0;}
-			.casepage .case-util li {float: left;width: 49.375%;height: 180px;margin: 0 1.125% 1.125% 0;}
-			.casepage .case-util li:nth-child(2n) {margin-right: 0}
-			.casepage .case-util img {display: none;}
-		/* 工程案例 & END */
 	}
 
 
@@ -2519,6 +2465,7 @@
 		.aboutuspage .new .more {margin: 0 auto;}
 		.aboutuspage .contact .maps {height: 250px;}
 		.aboutuspage .eliteteam .layui-form-label {width: auto;}
+		.aboutuspage .eliteteam .layui-input-block {margin-left: 80px;}
 		.servicepage .customerservice li {width: 50%;margin:0 auto 5%;}
 		.servicepage .customerservice .iconmain {justify-content: around;flex-flow: row wrap;}
 		.qualitypage .materialmain .bimg, .qualitypage .materialmain .btext {width: 100%;}
@@ -2551,11 +2498,15 @@
 		.qualitypage .constructionmain .bimg {height: 250px;}
 		.qualitypage .constructionmain .btext {height: auto;padding: 4%;}
 		.qualitypage .constructionmain .reservebtn {margin: 1.875rem auto 0;}
+<<<<<<< HEAD
 		.formbox .layui-form-label {width: auto;padding: 9px 5px;}
 		.formbox .layui-input-block {margin-left: 50px;}
 		#popover .swiper-container {top: 50%; margin-top: -150px;}
 		#popover .swiper-slide {height: 300px;}
 		#popover .swiper-arrows {display: none;}
+=======
+
+>>>>>>> parent of 1ab9fef... 工程案例/详情页
 	}
 
 
@@ -2569,16 +2520,6 @@
 			color: #ab2537;
 			background-color: #f4f4f4;
 		} 
-		.casepage .relatedmenu li {
-			width: 100%;
-			margin: 0 auto 2%;
-		}
-		.casepage .case-util li {
-			width: 100%;
-			height: 200px;
-			margin-bottom: 2%;
-			margin-right: 0;
-		}
 	}
 
 
