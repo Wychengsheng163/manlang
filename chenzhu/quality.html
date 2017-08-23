@@ -7,6 +7,7 @@
 	<title>臣筑装饰</title>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="layui/css/layui.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
@@ -238,7 +239,28 @@
 											<p class="layer">电工</p>
 										</li>
 									</ul>
-									
+
+
+									<!-- 弹出图集 -->
+									<div id="popover" class="popover" style="display: none;">
+										<div class="layer"></div>
+										<div class="popover-box">
+											<div class="close"></div>
+											<div class="swiper-container popover-swiper">
+										        <div class="swiper-wrapper">
+										            <div class="swiper-slide" style="background-image:url(images/case/case_detail_img_1.jpg)"></div>
+											        <div class="swiper-slide" style="background-image:url(images/quality/technology_1.jpg)"></div>
+											        <div class="swiper-slide" style="background-image:url(images/quality/technology_2.jpg)"></div>
+											        <div class="swiper-slide" style="background-image:url(images/quality/technology_3.jpg)"></div>
+											        <div class="swiper-slide" style="background-image:url(images/quality/technology_4.jpg)"></div>
+										        </div>
+										        <div class="swiper-button-next swiper-arrows"></div>
+										        <div class="swiper-button-prev swiper-arrows"></div>
+										    </div>
+										    <div class="swiper-pagination"></div>
+									    </div>
+								    </div>
+
 								</div>
 							</div>
 						</div>
@@ -273,7 +295,7 @@
 														面积：1000平方米<br>
 														装修费用：100万<br>
 													</p>
-													<button class="reservebtn">预约参观</button>
+													<button class="reservebtn signbtn">预约参观</button>
 												</div>
 											</div>
 										</li>
@@ -345,9 +367,56 @@
 
 
 			</div>
-
-
 			
+
+			<!-- 报名弹窗 -->
+			<div id="signup" class="signup" style="display: none;">
+				<div class="formboxs">
+					<div class="forms">
+						<p class="titles">免费提供设计方案</p>
+						<button class="close"></button>
+						<form class="layui-form" action="">
+							<div class="column column-1">
+								<div class="layui-form-item">
+								    <div class="layui-input-block">
+								        <input type="text" name="title" placeholder="姓名 : " autocomplete="off" class="layui-input yy_name">
+								    </div>
+								</div>
+								<div class="layui-form-item">
+								    <div class="layui-input-block">
+								        <input type="text" name="title" placeholder="电话 : " autocomplete="off" class="layui-input yy_telphone">
+								    </div>
+								</div>
+							    <div class="layui-form-item">
+								    <div class="layui-input-block">
+								        <input type="text" name="title" placeholder="面积 : " autocomplete="off" class="layui-input yy_areas">
+								    </div>
+							    </div>
+							    <div class="layui-form-item">
+								    <div class="layui-input-block">
+								        <input type="text" name="title" placeholder="区域 : " autocomplete="off" class="layui-input yy_areas">
+								    </div>
+							    </div>
+						  	</div>
+						  	<div class="column column-2">
+							    <div class="layui-form-item layui-form-text">
+							    	<div class="layui-input-block">
+							        	<textarea name="desc" placeholder="需求 : " class="layui-textarea yy_request"></textarea>
+							    	</div>
+							    </div>
+							</div>
+							<div class="column column-3">
+							    <div class="layui-form-item">
+								    <div class="layui-input-block">
+								        <button class="layui-btn yy_submit" lay-submit="" lay-filter="formbtn">立即预约</button>
+								    </div>
+							    </div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
 
 			<!-- PC端底部 -->
 			<div class="footer cfooter">
@@ -454,8 +523,13 @@
 		<a href="tel:+8618716273719"><b></b>电话</a>
 		<a href="javascript:;"><b></b>咨询</a>
 	</div>
+	
+	
+
+	
 
 	<script src="script/jquery.js"></script>
+	<script src="layui/layui.js"></script>
 	<script src="script/swiper.min.js"></script>
 	<script src="layui/layui.js"></script>
 	<script src="script/common.js"></script>
@@ -501,7 +575,138 @@
 		        });
 		    });
 
+
+		    $(".technologymain").on("click","li",function(){
+
+
+		    	$("#popover").fadeIn(300);
+
+		    	if ( $(window).width() > 1200 ) {
+
+			    	var swipercase = new Swiper('.popover-swiper', {
+		    		    nextButton: '.swiper-button-next',
+		    		    prevButton: '.swiper-button-prev',
+		    		    pagination: '.swiper-pagination',
+		    		    paginationType: 'fraction',
+		    		    effect: 'coverflow',
+		    		    grabCursor: true,
+		    	        centeredSlides: true,
+		    	        slidesPerView: 'auto',
+		    	        autoHeight: true,
+		    		    coverflow: {
+		    	            rotate: 0,
+		    	            stretch: 0,
+		    	            depth: 300,
+		    	            modifier: 0.6,
+		    	            slideShadows : true
+		    	        }
+		    		});
+		    	}
+		    	else {
+			    	var swipercase = new Swiper('.popover-swiper', {
+		    		    nextButton: '.swiper-button-next',
+		    		    prevButton: '.swiper-button-prev',
+		    		    pagination: '.swiper-pagination',
+		    		    paginationType: 'fraction',
+		    		    grabCursor: true,
+		    	        centeredSlides: true,
+		    		});
+		    	}
+
+		    	
+
+		    	$("#popover .close").click(function(){
+
+		    		$("#popover").fadeOut(300);
+
+		    	});
+
+		    });
 		}());
+
+
+		$(".signbtn").click(function(){
+
+			$("#signup").fadeIn(300);
+
+			$("#signup .close").click(function(){
+
+				$("#signup").fadeOut(300);
+
+			});
+
+		});
+
+		/*表单验证*/
+		$(function(){
+			$(".yy_submit").click(function(){
+
+				var name = $(".yy_name").val();
+				var telphone = $(".yy_telphone").val();
+				var areas = $(".yy_areas").val();
+				var request = $(".yy_request").val();
+				var url = "/chenzhu/Public/addyysj.html";
+				if(name==""){
+					alert("请输入您的姓名！");
+					$(".yy_name").focus();
+					return false;
+				}
+				if(telphone==""){
+					alert("请输入您的电话！");
+					$(".yy_telphone").focus();
+					return false;
+				}
+				else{
+					var testtel = /^(0[0-9]{2,3}-)?[0-9]{7,8}$/;
+					var testStr=/^0?(13[0-9]|15[012356789]|18[0-9]|14[57]|17[57])[0-9]{8}$/;
+					if(!testStr.test(telphone) && !testtel.test(telphone) ){
+			            alert("请填写正确的电话号码！");
+			            return false;
+			        }
+				}
+
+				if(areas == ""){
+					alert("请输入面积");
+					$(".yy_areas").focus();
+					return false;
+				}
+
+				if(request == ""){
+					alert("请输入您的需求！");
+					$(".yy_request").focus();
+					return false;
+				}
+
+				var form_data = {
+					"name":name,
+					"telphone":telphone,
+					"areas":areas,
+					"request":request
+				}
+	            $.ajax({
+						url:url,
+						data:form_data,
+						type:'POST',
+					
+						success: function (data){
+							if(data.status==1){
+								alert("您已提交成功!!");
+								
+								$(".yy_name").val("");
+								$(".yy_telphone").val("");
+								$(".yy_areas").val("");
+								$(".yy_request").val("");
+							}else {
+								alert("请重新提交！");
+								alert(data.text);
+							}
+							
+						}
+
+				})
+
+			});
+		});
 
 	</script>
 </body>
